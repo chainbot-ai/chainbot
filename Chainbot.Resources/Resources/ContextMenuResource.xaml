@@ -1,0 +1,115 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:lclz="clr-namespace:Chainbot.Resources.Properties"
+                     >
+
+    <ContextMenu x:Key="EmptyContextMenu" Visibility="Collapsed">
+    </ContextMenu>
+
+    <ContextMenu x:Key="OutputItemContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.OutputItemContextMenu_Header1}"  Command="{Binding CopyItemMsgCommand}" CommandParameter="{Binding}"/>
+        <MenuItem Header="{x:Static lclz:Resources.OutputItemContextMenu_Header2}"  Command="{Binding ViewItemMsgDetailCommand}" CommandParameter="{Binding}"/>
+    </ContextMenu>
+
+    <ContextMenu x:Key="ProjectViewContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header1}" Command="{Binding RefreshCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header2}" Command="{Binding ExpandAllCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header3}" Command="{Binding CollapseAllCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+    <ContextMenu x:Key="ProjectRootItemContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header1}" Command="{Binding OpenDirCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header2}" Command="{Binding OpenProjectSettingsCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header3}" Command="{Binding NewFolderCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header4}" Command="{Binding NewSequenceCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header5}" Command="{Binding NewFlowchartCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header6}" Command="{Binding NewStateMachineCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header7}" Command="{Binding ImportWorkflowCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header8}" Command="{Binding ExportNupkgCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header9}" Command="{Binding CloseProjectCommand}" CommandParameter="{Binding}"/>
+    </ContextMenu>
+
+    <ContextMenu x:Key="ProjectDirItemContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header1}" Command="{Binding OpenDirCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header2}" Command="{Binding RenameDirCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header3}" Command="{Binding DeleteDirCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header3}" Command="{Binding NewFolderCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header4}" Command="{Binding NewSequenceCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header5}" Command="{Binding NewFlowchartCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header6}" Command="{Binding NewStateMachineCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+    <ContextMenu x:Key="ProjectDirItemScreenshotsContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header1}" Command="{Binding OpenDirCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemScreenshotsContextMenu_Header1}" Command="{Binding RemoveUnusedScreenshotsCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+    
+
+    <ContextMenu x:Key="ProjectFileItemMainXamlContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header1}" Command="{Binding OpenXamlCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header2}" Command="{Binding RenameFileCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header3}" Command="{Binding DeleteFileCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectFileItemMainXamlContextMenu_Header1}" Command="{Binding RunCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+    <ContextMenu x:Key="ProjectFileItemXamlContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header1}" Command="{Binding OpenXamlCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header2}" Command="{Binding RenameFileCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header3}" Command="{Binding DeleteFileCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectFileItemMainXamlContextMenu_Header1}" Command="{Binding RunCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectFileItemXamlContextMenu_Header1}" Command="{Binding SetAsMainCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+    <ContextMenu x:Key="ProjectFileItemContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header2}" Command="{Binding RenameFileCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header3}" Command="{Binding DeleteFileCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+
+    <ContextMenu x:Key="ActivityViewContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header2}" Command="{Binding ExpandAllCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header3}" Command="{Binding CollapseAllCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+    
+    <ContextMenu x:Key="AddToFavoritesContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.FavoritesContextMenu_Header1}"  Command="{Binding AddToFavoritesCommand}" CommandParameter="{Binding}"/>
+    </ContextMenu>
+
+    <ContextMenu x:Key="RemoveFromFavoritesContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.FavoritesContextMenu_Header2}"  Command="{Binding RemoveFromFavoritesCommand}" CommandParameter="{Binding}"/>
+    </ContextMenu>
+
+    <ContextMenu x:Key="RecentUsedProjectItemContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.RecentUsedProjectItemContextMenu_Header1}" Command="{Binding OpenCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.RecentUsedProjectItemContextMenu_Header2}" Command="{Binding OpenDirCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.RecentUsedProjectItemContextMenu_Header3}" Command="{Binding RemoveFromRecentUsedProjectsCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+    <ContextMenu x:Key="SnippetItemUserAddContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header1}" Command="{Binding OpenSnippetCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.SnippetItemUserAddContextMenu_Header1}" Command="{Binding RemoveSnippetCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+    <ContextMenu x:Key="SnippetItemContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectDirItemContextMenu_Header1}" Command="{Binding OpenSnippetCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+    <ContextMenu x:Key="SnippetsViewContextMenu">
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header1}" Command="{Binding RefreshCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header2}" Command="{Binding ExpandAllCommand}" CommandParameter="{Binding}" />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectViewContextMenu_Header3}" Command="{Binding CollapseAllCommand}" CommandParameter="{Binding}" />
+        <Separator />
+        <MenuItem Header="{x:Static lclz:Resources.ProjectRootItemContextMenu_Header3}" Command="{Binding AddFolderCommand}" CommandParameter="{Binding}" />
+    </ContextMenu>
+
+</ResourceDictionary>

@@ -1,0 +1,1511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivityBuilderImplementationVersion" xml:space="preserve">
+    <value>实现版本</value>
+  </data>
+  <data name="ActivityBuilderName" xml:space="preserve">
+    <value>显示名称</value>
+  </data>
+  <data name="AssignToDisplayName" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="AssignValueDisplayName" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="BasicCategoryName" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="Body_DiaplayName" xml:space="preserve">
+    <value>正文</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>集合</value>
+  </data>
+  <data name="CollectionResultDisplayName" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="ConditionPropertyName" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="ContextMenu_Header1" xml:space="preserve">
+    <value>用异常处理包围</value>
+  </data>
+  <data name="ContextMenu_Header2" xml:space="preserve">
+    <value>取消异常处理包围</value>
+  </data>
+  <data name="ContextMenu_Header3" xml:space="preserve">
+    <value>启用活动</value>
+  </data>
+  <data name="ContextMenu_Header4" xml:space="preserve">
+    <value>禁用活动</value>
+  </data>
+  <data name="ContextMenu_Header5" xml:space="preserve">
+    <value>切换断点</value>
+  </data>
+  <data name="ContextMenu_Header6" xml:space="preserve">
+    <value>删除未使用的变量和参数</value>
+  </data>
+  <data name="ContextMenu_Header7" xml:space="preserve">
+    <value>从此活动开始运行</value>
+  </data>
+  <data name="ContextMenu_Header8" xml:space="preserve">
+    <value>测试此活动</value>
+  </data>
+  <data name="ContextMenu_Header9" xml:space="preserve">
+    <value>帮助...</value>
+  </data>
+  <data name="DelayDurationDisplayName" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="DisplayNamePropertyName" xml:space="preserve">
+    <value>显示名称</value>
+  </data>
+  <data name="DoWhileConditionDisplayName" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="FavoritesContextMenu_Header1" xml:space="preserve">
+    <value>添加到收藏夹</value>
+  </data>
+  <data name="FavoritesContextMenu_Header2" xml:space="preserve">
+    <value>从收藏夹移除</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Flowchart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\Flowchart.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlowchartValidateUnconnectedNodesDisplayName" xml:space="preserve">
+    <value>验证未连接的节点</value>
+  </data>
+  <data name="FlowDecisionConditionDisplayName" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="FlowDecisionExpressionDisplayName" xml:space="preserve">
+    <value>表达式</value>
+  </data>
+  <data name="FlowDecisionFalseDisplayName" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="FlowDecisionTrueDisplayName" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="GenericTypeArgumentsDisplayName" xml:space="preserve">
+    <value>通用类型参数</value>
+  </data>
+  <data name="IfConditionDisplayName" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="InputCategoryName" xml:space="preserve">
+    <value>输入</value>
+  </data>
+  <data name="InvokeMethodResultDisplayName" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="ItemDisplayName" xml:space="preserve">
+    <value>项</value>
+  </data>
+  <data name="Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\Main.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Message_Exception1" xml:space="preserve">
+    <value>工作流加载失败，请检查工作流文档内容！</value>
+  </data>
+  <data name="Message_Exception2" xml:space="preserve">
+    <value>工作流设计器状态异常，请检查！</value>
+  </data>
+  <data name="Message_Exception3" xml:space="preserve">
+    <value>获取到的工作流文档格式非法，请检查！</value>
+  </data>
+  <data name="Message_UnhandledException1" xml:space="preserve">
+    <value>UI线程全局异常</value>
+  </data>
+  <data name="Message_UnhandledException2" xml:space="preserve">
+    <value>程序运行过程中出现了异常，请联系软件开发商！</value>
+  </data>
+  <data name="Message_UnhandledException3" xml:space="preserve">
+    <value>不可恢复的UI线程全局异常</value>
+  </data>
+  <data name="Message_UnhandledException4" xml:space="preserve">
+    <value>程序运行过程中出现了严重错误，即将退出，请联系软件开发商！</value>
+  </data>
+  <data name="Message_UnhandledException5" xml:space="preserve">
+    <value>隔离域UI线程全局异常：</value>
+  </data>
+  <data name="Message_UnhandledException6" xml:space="preserve">
+    <value>隔离域非UI线程全局异常：</value>
+  </data>
+  <data name="Message_UnhandledException7" xml:space="preserve">
+    <value>之前的域未正确卸载！</value>
+  </data>
+  <data name="MethodNameDisplayName" xml:space="preserve">
+    <value>方法名称</value>
+  </data>
+  <data name="NewXamlFileConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\NewXamlFileConfig.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OutputCategoryName" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="OutputItemContextMenu_Header1" xml:space="preserve">
+    <value>复制（Ctrl+C）</value>
+  </data>
+  <data name="OutputItemContextMenu_Header2" xml:space="preserve">
+    <value>查看消息详情</value>
+  </data>
+  <data name="ParallelCompletionConditionDisplayName" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="ParallelForEachCompletionConditionDisplayName" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="ParallelForEachValuesDisplayName" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="ParametersDisplayName" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="ProjectCreateName" xml:space="preserve">
+    <value>空白流程</value>
+  </data>
+  <data name="ProjectDirItemContextMenu_Header1" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="ProjectDirItemContextMenu_Header2" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="ProjectDirItemContextMenu_Header3" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ProjectDirItemScreenshotsContextMenu_Header1" xml:space="preserve">
+    <value>移除无用的截图</value>
+  </data>
+  <data name="ProjectFileItemMainXamlContextMenu_Header1" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="ProjectFileItemXamlContextMenu_Header1" xml:space="preserve">
+    <value>设置为主文件</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header1" xml:space="preserve">
+    <value>打开项目文件夹</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header2" xml:space="preserve">
+    <value>项目设置</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header3" xml:space="preserve">
+    <value>新建文件夹</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header4" xml:space="preserve">
+    <value>新建序列图</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header5" xml:space="preserve">
+    <value>新建流程图</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header6" xml:space="preserve">
+    <value>新建状态机</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header7" xml:space="preserve">
+    <value>导入工作流</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header8" xml:space="preserve">
+    <value>导出项目</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header9" xml:space="preserve">
+    <value>关闭项目</value>
+  </data>
+  <data name="ProjectViewContextMenu_Header1" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="ProjectViewContextMenu_Header2" xml:space="preserve">
+    <value>全部展开</value>
+  </data>
+  <data name="ProjectViewContextMenu_Header3" xml:space="preserve">
+    <value>全部折叠</value>
+  </data>
+  <data name="RecentUsedProjectItemContextMenu_Header1" xml:space="preserve">
+    <value>打开项目</value>
+  </data>
+  <data name="RecentUsedProjectItemContextMenu_Header2" xml:space="preserve">
+    <value>打开所在的文件夹</value>
+  </data>
+  <data name="RecentUsedProjectItemContextMenu_Header3" xml:space="preserve">
+    <value>从列表中移除</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>结果</value>
+  </data>
+  <data name="RunAsynchronouslyDisplayName" xml:space="preserve">
+    <value>异步运行</value>
+  </data>
+  <data name="Sequence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\Sequence.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SnippetItemUserAddContextMenu_Header1" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="StateMachine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\StateMachine.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SwitchExpressionDisplayName" xml:space="preserve">
+    <value>表达式</value>
+  </data>
+  <data name="TargetObjectDisplayName" xml:space="preserve">
+    <value>目标对象</value>
+  </data>
+  <data name="TargetTypeDisplayName" xml:space="preserve">
+    <value>目标类型</value>
+  </data>
+  <data name="TerminateWorkflowExceptionDisplayName" xml:space="preserve">
+    <value>异常</value>
+  </data>
+  <data name="TerminateWorkflowReasonDisplayName" xml:space="preserve">
+    <value>原因</value>
+  </data>
+  <data name="ThrowExceptionDisplayName" xml:space="preserve">
+    <value>异常</value>
+  </data>
+  <data name="WhileConditionDisplayName" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="WriteLineTextDisplayName" xml:space="preserve">
+    <value>文本</value>
+  </data>
+  <data name="WriteLineTextWriterDisplayName" xml:space="preserve">
+    <value>文本重定向</value>
+  </data>
+  <data name="AccountPage_CheckBoxLabel1" xml:space="preserve">
+    <value>记住密码</value>
+  </data>
+  <data name="AccountPage_CheckBoxLabel2" xml:space="preserve">
+    <value>自动登录</value>
+  </data>
+  <data name="AccountPage_KeyWatermark" xml:space="preserve">
+    <value>请输入验证码</value>
+  </data>
+  <data name="AccountPage_LoginButtonLabel" xml:space="preserve">
+    <value>登      录</value>
+  </data>
+  <data name="AccountPage_NameWatermark" xml:space="preserve">
+    <value>请输入用户名</value>
+  </data>
+  <data name="AccountPage_PasswordWatermark" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="Activities_FacoritesName" xml:space="preserve">
+    <value>收藏</value>
+  </data>
+  <data name="Activities_FacoritesToolTip" xml:space="preserve">
+    <value>收藏的内容按组件名称排序</value>
+  </data>
+  <data name="Activities_ListName" xml:space="preserve">
+    <value>组件列表</value>
+  </data>
+  <data name="Activities_RecentName" xml:space="preserve">
+    <value>最近</value>
+  </data>
+  <data name="Activities_RecentToolTip" xml:space="preserve">
+    <value>最近的内容按拖动组件的时间排序</value>
+  </data>
+  <data name="ApplicationMenu_Account" xml:space="preserve">
+    <value>账户</value>
+  </data>
+  <data name="ApplicationMenu_Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ApplicationMenu_Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="ApplicationMenu_Open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="ApplicationMenu_Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="ApplicationMenu_Start" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="ApplicationMenu_Tools" xml:space="preserve">
+    <value>工具</value>
+  </data>
+  <data name="ApplicationMenu_Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Backstage_Debug" xml:space="preserve">
+    <value>调试</value>
+  </data>
+  <data name="Backstage_Design" xml:space="preserve">
+    <value>设计</value>
+  </data>
+  <data name="Backstage_Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="DataExtractor_ErrMessage1" xml:space="preserve">
+    <value>两次选择不能是同一目标。</value>
+  </data>
+  <data name="DataExtractor_ErrMessage2" xml:space="preserve">
+    <value>两次选择目标不是同类型。</value>
+  </data>
+  <data name="DataExtractor_ErrMessage3" xml:space="preserve">
+    <value>数据抓取出现异常！</value>
+  </data>
+  <data name="DataExtractor_ErrMessage4" xml:space="preserve">
+    <value>至少勾选文字或链接的一个！</value>
+  </data>
+  <data name="DataExtractor_FinishButton" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="DataExtractor_MoreButton" xml:space="preserve">
+    <value>抓取更多数据</value>
+  </data>
+  <data name="DataExtractor_NextButton" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="DataExtractor_OneLabel1" xml:space="preserve">
+    <value>选择元素</value>
+  </data>
+  <data name="DataExtractor_OneLabel2" xml:space="preserve">
+    <value>1.打开浏览器或者SAP程序，并导航至您想要从中提取数据的位置。</value>
+  </data>
+  <data name="DataExtractor_OneLabel3" xml:space="preserve">
+    <value>2.在本对话框中按"下一个"，并将鼠标光标悬停在数据源字段上方。</value>
+  </data>
+  <data name="DataExtractor_OneLabel4" xml:space="preserve">
+    <value>3.单击该字段。</value>
+  </data>
+  <data name="DataExtractor_QuestionMessage1" xml:space="preserve">
+    <value>检测到你选择的是一个表格，是否要抓取整个表格？</value>
+  </data>
+  <data name="DataExtractor_QuestionMessage2" xml:space="preserve">
+    <value>识别导航至下一页的元素，可以是\"下一页\"按钮或箭头（而不是页码），点击\"是\"后指示它。</value>
+  </data>
+  <data name="DataExtractor_ReturnButton" xml:space="preserve">
+    <value>&lt;返回</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel1" xml:space="preserve">
+    <value>配置列：</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel2" xml:space="preserve">
+    <value>已确定字段将高亮显示。</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel3" xml:space="preserve">
+    <value>提取文本</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel4" xml:space="preserve">
+    <value>文本列名称</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel5" xml:space="preserve">
+    <value>提取URL</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel6" xml:space="preserve">
+    <value>URL列名称</value>
+  </data>
+  <data name="DataExtractor_Title" xml:space="preserve">
+    <value>数据抓取</value>
+  </data>
+  <data name="DataExtractor_TwoLabel1" xml:space="preserve">
+    <value>选择第二个元素</value>
+  </data>
+  <data name="DataExtractor_TwoLabel2" xml:space="preserve">
+    <value>如需创建模式，请指出类似字段，最好是集合中的最后一个字段。</value>
+  </data>
+  <data name="DebugView_NameColumn" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="DebugView_ValueColumn" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DebugView_ViewButtonToolTip" xml:space="preserve">
+    <value>查看更多</value>
+  </data>
+  <data name="DockTitle_Activities" xml:space="preserve">
+    <value>组件</value>
+  </data>
+  <data name="DockTitle_DebugInfo" xml:space="preserve">
+    <value>调试信息</value>
+  </data>
+  <data name="DockTitle_OutLine" xml:space="preserve">
+    <value>大纲</value>
+  </data>
+  <data name="DockTitle_OutPut" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="DockTitle_Project" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="DockTitle_Properties" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="DockTitle_Snippets" xml:space="preserve">
+    <value>代码示例</value>
+  </data>
+  <data name="Export_CancelButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Export_CustomLocation" xml:space="preserve">
+    <value>自定义位置</value>
+  </data>
+  <data name="Export_Description" xml:space="preserve">
+    <value>导出说明</value>
+  </data>
+  <data name="Export_ExceptionMessage1" xml:space="preserve">
+    <value>找不到导出后的包</value>
+  </data>
+  <data name="Export_ExceptionMessage2" xml:space="preserve">
+    <value>导出项目失败！</value>
+  </data>
+  <data name="Export_Location" xml:space="preserve">
+    <value>导出位置</value>
+  </data>
+  <data name="Export_OkButton" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Export_SelectDir" xml:space="preserve">
+    <value>请选择一个位置来导出项目</value>
+  </data>
+  <data name="Export_SuccessMessage" xml:space="preserve">
+    <value>项目导出成功。
+名称：{0}
+版本：{1}
+位置：{2}</value>
+  </data>
+  <data name="Export_Title" xml:space="preserve">
+    <value>导出Nupkg包</value>
+  </data>
+  <data name="Export_UrlValidateWrong" xml:space="preserve">
+    <value>指定的路径不存在</value>
+  </data>
+  <data name="FileDialog_Filter1" xml:space="preserve">
+    <value>工作流文件</value>
+  </data>
+  <data name="FileDialog_Filter2" xml:space="preserve">
+    <value>Nupkg包文件</value>
+  </data>
+  <data name="FileDialog_Filter3" xml:space="preserve">
+    <value>工作流项目文件</value>
+  </data>
+  <data name="FileDialog_Title1" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="FileDialog_Title2" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="FileDialog_Title3" xml:space="preserve">
+    <value>选择工作流文件进行导入</value>
+  </data>
+  <data name="HelpPage_CommunityDescription" xml:space="preserve">
+    <value>社区讨论、分享知识和获得帮助的论坛</value>
+  </data>
+  <data name="HelpPage_CommunityLable" xml:space="preserve">
+    <value>社区论坛</value>
+  </data>
+  <data name="HelpPage_DocumentDescription" xml:space="preserve">
+    <value>查看产品的帮助文档</value>
+  </data>
+  <data name="HelpPage_DocumentLable" xml:space="preserve">
+    <value>产品文档</value>
+  </data>
+  <data name="HelpPage_HistoryVersionDescription" xml:space="preserve">
+    <value>查看产品的历史版本说明</value>
+  </data>
+  <data name="HelpPage_HistoryVersionLable" xml:space="preserve">
+    <value>历史版本</value>
+  </data>
+  <data name="HelpPage_Lable" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="Listitem_DarkTheme" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="Listitem_LightTheme" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="MessageBox_CancelButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="MessageBox_ErrorTitle" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="MessageBox_NoButton" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="MessageBox_OkButton" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="MessageBox_PromptTitle" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="MessageBox_QuestionTitle" xml:space="preserve">
+    <value>询问</value>
+  </data>
+  <data name="MessageBox_WarningTitle" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="MessageBox_YesButton" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="MessageDetails_CopyButton" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="MessageDetails_Title1" xml:space="preserve">
+    <value>属性值信息</value>
+  </data>
+  <data name="MessageDetails_Title2" xml:space="preserve">
+    <value>消息详情</value>
+  </data>
+  <data name="Message_CommandLine" xml:space="preserve">
+    <value>用户通过双击文件或传递参数 {0} 打开了程序</value>
+  </data>
+  <data name="Message_DeleteDirQuestion" xml:space="preserve">
+    <value>确认删除目录"{0}"和它的所有内容吗？</value>
+  </data>
+  <data name="Message_DeleteFileQuestion" xml:space="preserve">
+    <value>确认删除文件"{0}"吗？</value>
+  </data>
+  <data name="Message_DeleteMainWarn" xml:space="preserve">
+    <value>当前文件为主文件，不能删除，请设置其它文件为主文件再删除该文件！</value>
+  </data>
+  <data name="Message_DocumentCloseQuery1" xml:space="preserve">
+    <value>当前文档正在被调试，确定终止调试并关闭"{0}"吗？</value>
+  </data>
+  <data name="Message_DocumentCloseQuery2" xml:space="preserve">
+    <value>文件有修改，需要保存文件"{0}"吗？</value>
+  </data>
+  <data name="Message_DoubleJumpError" xml:space="preserve">
+    <value>双击跳转发生错误，请检查！</value>
+  </data>
+  <data name="Message_DropError1" xml:space="preserve">
+    <value>目标目录有重名目录，无法移动目录</value>
+  </data>
+  <data name="Message_DropError2" xml:space="preserve">
+    <value>目标目录有重名文件，无法移动文件</value>
+  </data>
+  <data name="Message_JumpError" xml:space="preserve">
+    <value>组件跳转发生异常！
+原因是：</value>
+  </data>
+  <data name="Message_NupkgInvalid" xml:space="preserve">
+    <value>该Nupkg包无法正常读取，可能包格式非法！</value>
+  </data>
+  <data name="Message_OpenRecentQuestion" xml:space="preserve">
+    <value>无法打开项目配置文件{0}，是否从最近项目列表中移除该条目？</value>
+  </data>
+  <data name="Message_OpenSnippetDir" xml:space="preserve">
+    <value>打开代码片断发生错误，请检查！</value>
+  </data>
+  <data name="Message_OpenSnippetError" xml:space="preserve">
+    <value>打开代码片断发生错误，请检查！</value>
+  </data>
+  <data name="Message_OpenWorkflowFileError" xml:space="preserve">
+    <value>打开工作流文档发生错误，请检查！</value>
+  </data>
+  <data name="Message_ReadOnlyDocument" xml:space="preserve">
+    <value>(只读)</value>
+  </data>
+  <data name="Message_RemoveUnusedScreenshot1" xml:space="preserve">
+    <value>该项目不存在截图目录，无需清理。</value>
+  </data>
+  <data name="Message_RemoveUnusedScreenshot2" xml:space="preserve">
+    <value>找不到需要清理的未使用的截图。</value>
+  </data>
+  <data name="Message_RemoveUnusedScreenshot3" xml:space="preserve">
+    <value>{0}个未使用的截图已经被成功移除。</value>
+  </data>
+  <data name="Message_SaveAsDocumentError" xml:space="preserve">
+    <value>另存为工作流文档发生错误，请检查！</value>
+  </data>
+  <data name="Message_SaveDocumentError" xml:space="preserve">
+    <value>保存工作流文档发生错误，请检查！</value>
+  </data>
+  <data name="Message_UnhandledException8" xml:space="preserve">
+    <value>隔离域非UI线程全局异常：</value>
+  </data>
+  <data name="Message_WorkflowVaildateError" xml:space="preserve">
+    <value>工作流校验错误，请检查参数配置！</value>
+  </data>
+  <data name="Message_WorkflowVaildateSuccess" xml:space="preserve">
+    <value>工作流校验正确。</value>
+  </data>
+  <data name="Name_Dependencies" xml:space="preserve">
+    <value>依赖包</value>
+  </data>
+  <data name="NewFile_NameValidateWrong" xml:space="preserve">
+    <value>指定的文件已存在</value>
+  </data>
+  <data name="NewFile_PathValidateWrong" xml:space="preserve">
+    <value>指定的位置必须是项目所在目录或其子目录中</value>
+  </data>
+  <data name="NewFolder_CancelButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="NewFolder_NameValidateWrong" xml:space="preserve">
+    <value>已经存在同名称的目录</value>
+  </data>
+  <data name="NewFolder_OkButton" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="NewFolder_Title" xml:space="preserve">
+    <value>新建文件夹</value>
+  </data>
+  <data name="NewProject_ButtonLabel" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="NewProject_DescriptionLabel" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="NewProject_LocationLabel" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="NewProject_LocationValidateCorrect" xml:space="preserve">
+    <value>位置字段校验成功</value>
+  </data>
+  <data name="NewProject_LocationValidateWrong1" xml:space="preserve">
+    <value>位置不能为空</value>
+  </data>
+  <data name="NewProject_LocationValidateWrong2" xml:space="preserve">
+    <value>指定的位置不存在</value>
+  </data>
+  <data name="NewProject_NameContent" xml:space="preserve">
+    <value>空白流程</value>
+  </data>
+  <data name="NewProject_NameLabel" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="NewProject_NameValidateCorrect" xml:space="preserve">
+    <value>名称字段校验成功</value>
+  </data>
+  <data name="NewProject_NameValidateWrong1" xml:space="preserve">
+    <value>名称不能为空</value>
+  </data>
+  <data name="NewProject_NameValidateWrong2" xml:space="preserve">
+    <value>名称不能有非法字符</value>
+  </data>
+  <data name="NewProject_NameValidateWrong3" xml:space="preserve">
+    <value>名称不能有特殊字符，不能用空格、顿号、逗号等符号，或以特殊符号结尾等形式</value>
+  </data>
+  <data name="NewProject_NameValidateWrong4" xml:space="preserve">
+    <value>已经存在同名称的项目</value>
+  </data>
+  <data name="NewProject_ProjectDescription" xml:space="preserve">
+    <value>空白项目</value>
+  </data>
+  <data name="NewProject_SelectLocation" xml:space="preserve">
+    <value>请选择一个位置来新建项目</value>
+  </data>
+  <data name="NewProject_SubTitle1" xml:space="preserve">
+    <value>新建空项目</value>
+  </data>
+  <data name="NewProject_SubTitle2" xml:space="preserve">
+    <value>新建项目</value>
+  </data>
+  <data name="NewProject_SubTitleDescription1" xml:space="preserve">
+    <value>新建一个空白的项目</value>
+  </data>
+  <data name="NewProject_SubTitleDescription2" xml:space="preserve">
+    <value>导入Nupkg包的内容到新项目中</value>
+  </data>
+  <data name="NewProject_WindowTitle1" xml:space="preserve">
+    <value>新建项目</value>
+  </data>
+  <data name="NewProject_WindowTitle2" xml:space="preserve">
+    <value>导入Nupkg包</value>
+  </data>
+  <data name="OutPutView_ClearToolTip" xml:space="preserve">
+    <value>清空所有</value>
+  </data>
+  <data name="OutPutView_DoubleClickToolTip" xml:space="preserve">
+    <value>双击跳转</value>
+  </data>
+  <data name="OutPutView_ErrLabel" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="OutPutView_ErrToolTip" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="OutPutView_InfoLabel" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="OutPutView_InfoToolTip" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="OutPutView_ShowTimeToolTip" xml:space="preserve">
+    <value>显示时间</value>
+  </data>
+  <data name="OutPutView_TraceLabel" xml:space="preserve">
+    <value>跟踪</value>
+  </data>
+  <data name="OutPutView_TraceToolTip" xml:space="preserve">
+    <value>跟踪</value>
+  </data>
+  <data name="OutPutView_WarnLabel" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="OutPutView_WarnToolTip" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="ProjectSettings_DescriptionLabel" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="ProjectSettings_Detail" xml:space="preserve">
+    <value>修改项目相关配置如名称和描述</value>
+  </data>
+  <data name="ProjectSettings_Title" xml:space="preserve">
+    <value>项目设置</value>
+  </data>
+  <data name="Publish_CancelButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Publish_ControlCenter" xml:space="preserve">
+    <value>控制中心地址</value>
+  </data>
+  <data name="Publish_CurrentVersion" xml:space="preserve">
+    <value>当前版本</value>
+  </data>
+  <data name="Publish_Description" xml:space="preserve">
+    <value>发布说明</value>
+  </data>
+  <data name="Publish_ErrorMessage" xml:space="preserve">
+    <value>项目发布失败。
+名称：{0}
+版本：{1}
+位置：{2}</value>
+  </data>
+  <data name="Publish_ExceptionMessage1" xml:space="preserve">
+    <value>找不到发布后的包</value>
+  </data>
+  <data name="Publish_ExceptionMessage2" xml:space="preserve">
+    <value>发布项目失败！</value>
+  </data>
+  <data name="Publish_Location" xml:space="preserve">
+    <value>发布位置</value>
+  </data>
+  <data name="Publish_NewVersion" xml:space="preserve">
+    <value>新版本</value>
+  </data>
+  <data name="Publish_OkButton" xml:space="preserve">
+    <value>发布</value>
+  </data>
+  <data name="Publish_PublishTo" xml:space="preserve">
+    <value>发布到</value>
+  </data>
+  <data name="Publish_PublishToControlCenter" xml:space="preserve">
+    <value>控制中心</value>
+  </data>
+  <data name="Publish_PublishToLocal" xml:space="preserve">
+    <value>本地机器人</value>
+  </data>
+  <data name="Publish_SuccessMessage" xml:space="preserve">
+    <value>项目发布成功。
+名称：{0}
+版本：{1}
+位置：{2}</value>
+  </data>
+  <data name="Publish_Title" xml:space="preserve">
+    <value>发布流程</value>
+  </data>
+  <data name="Publish_UrlValidateCorrect" xml:space="preserve">
+    <value>地址字段校验成功</value>
+  </data>
+  <data name="Publish_UrlValidateWrong1" xml:space="preserve">
+    <value>控制中心地址不能为空</value>
+  </data>
+  <data name="Publish_UrlValidateWrong2" xml:space="preserve">
+    <value>控制中心地址必须为http(s)形式</value>
+  </data>
+  <data name="Publish_UrlValidateWrong3" xml:space="preserve">
+    <value>控制中心地址非法</value>
+  </data>
+  <data name="Publish_Version" xml:space="preserve">
+    <value>版本号</value>
+  </data>
+  <data name="Publish_VersionValidateCorrect" xml:space="preserve">
+    <value>版本字段校验成功</value>
+  </data>
+  <data name="Publish_VersionValidateWrong1" xml:space="preserve">
+    <value>版本号不能为空</value>
+  </data>
+  <data name="Publish_VersionValidateWrong2" xml:space="preserve">
+    <value>版本号须为a.b.c形式</value>
+  </data>
+  <data name="Publish_VersionValidateWrong3" xml:space="preserve">
+    <value>版本号非法</value>
+  </data>
+  <data name="Question_Language" xml:space="preserve">
+    <value>显示语言已修改，重新启动设计器以应用更改。
+点击“是”进行立即重启，稍后重启请点击“否”。</value>
+  </data>
+  <data name="Question_Theme" xml:space="preserve">
+    <value>主题样式已修改，重新启动设计器以应用更改。
+点击“是”进行立即重启，稍后重启请点击“否”。</value>
+  </data>
+  <data name="RecordView_ClickButton" xml:space="preserve">
+    <value>单击</value>
+  </data>
+  <data name="RecordView_DoubleClickButton" xml:space="preserve">
+    <value>双击</value>
+  </data>
+  <data name="RecordView_HotKeyButton" xml:space="preserve">
+    <value>发送热键</value>
+  </data>
+  <data name="RecordView_HoverButton" xml:space="preserve">
+    <value>悬浮</value>
+  </data>
+  <data name="RecordView_InputButton" xml:space="preserve">
+    <value>输入</value>
+  </data>
+  <data name="RecordView_KeyboardLabel" xml:space="preserve">
+    <value>键盘</value>
+  </data>
+  <data name="RecordView_KeyboardToolTip" xml:space="preserve">
+    <value>键盘相关的录制功能</value>
+  </data>
+  <data name="RecordView_MouseLabel" xml:space="preserve">
+    <value>鼠标</value>
+  </data>
+  <data name="RecordView_MouseToolTip" xml:space="preserve">
+    <value>鼠标相关的录制功能</value>
+  </data>
+  <data name="RecordView_QuestionMessage" xml:space="preserve">
+    <value>录制结果未保存，确定退出吗？</value>
+  </data>
+  <data name="RecordView_RightClickButton" xml:space="preserve">
+    <value>右击</value>
+  </data>
+  <data name="RecordView_SaveLabel" xml:space="preserve">
+    <value>保存并退出</value>
+  </data>
+  <data name="RecordView_Title" xml:space="preserve">
+    <value>录制</value>
+  </data>
+  <data name="Rename_From" xml:space="preserve">
+    <value>原始名：</value>
+  </data>
+  <data name="Rename_NameValidateWrong" xml:space="preserve">
+    <value>相同名字的文件已存在</value>
+  </data>
+  <data name="Rename_Title" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="Rename_To" xml:space="preserve">
+    <value>目标名：</value>
+  </data>
+  <data name="SearchView_Activities" xml:space="preserve">
+    <value>组件</value>
+  </data>
+  <data name="SearchView_ActivitiesToolTip" xml:space="preserve">
+    <value>选择是否搜索组件</value>
+  </data>
+  <data name="SearchView_AllOpen" xml:space="preserve">
+    <value>所有已打开文件</value>
+  </data>
+  <data name="SearchView_AllOpenToolTip" xml:space="preserve">
+    <value>在所有已打开文件中进行查找</value>
+  </data>
+  <data name="SearchView_Arguments" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="SearchView_ArgumentsToolTip" xml:space="preserve">
+    <value>选择是否搜索参数</value>
+  </data>
+  <data name="SearchView_Current" xml:space="preserve">
+    <value>当前文件</value>
+  </data>
+  <data name="SearchView_CurrentToolTip" xml:space="preserve">
+    <value>在当前选择的文件中进行查找</value>
+  </data>
+  <data name="SearchView_LookIn" xml:space="preserve">
+    <value>查找范围：</value>
+  </data>
+  <data name="SearchView_Option" xml:space="preserve">
+    <value>查找选项：</value>
+  </data>
+  <data name="SearchView_Variables" xml:space="preserve">
+    <value>变量</value>
+  </data>
+  <data name="SearchView_VariablesToolTip" xml:space="preserve">
+    <value>选择是否搜索变量</value>
+  </data>
+  <data name="SearchView_Watermark" xml:space="preserve">
+    <value>请输入搜索内容</value>
+  </data>
+  <data name="SettingsPage_ActivityLable" xml:space="preserve">
+    <value>组件</value>
+  </data>
+  <data name="SettingsPage_AIDescription" xml:space="preserve">
+    <value>服务的地址</value>
+  </data>
+  <data name="SettingsPage_AILable" xml:space="preserve">
+    <value>AI服务</value>
+  </data>
+  <data name="SettingsPage_AIWatermark" xml:space="preserve">
+    <value>AI的服务地址，例如http://127.0.0.1:18888</value>
+  </data>
+  <data name="SettingsPage_ConterCenterWatermark" xml:space="preserve">
+    <value>控制中心的服务地址，例如https://192.168.0.1:8080/OSPServer</value>
+  </data>
+  <data name="SettingsPage_ControlCenterDescription" xml:space="preserve">
+    <value>设置控制中心的地址</value>
+  </data>
+  <data name="SettingsPage_ControlCenterLable" xml:space="preserve">
+    <value>控制中心</value>
+  </data>
+  <data name="SettingsPage_GeneralLable" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="SettingsPage_Lable" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingsPage_LanguageDescription" xml:space="preserve">
+    <value>使用此选项来更改设计器中的界面语言</value>
+  </data>
+  <data name="SettingsPage_LanguageLable" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="SettingsPage_ProjectDescription" xml:space="preserve">
+    <value>更改新建项目时的默认路径</value>
+  </data>
+  <data name="SettingsPage_ProjectLable" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="SettingsPage_ProjectWatermark" xml:space="preserve">
+    <value>默认路径为【我的文档\ChainbotStudio\Projects】</value>
+  </data>
+  <data name="SettingsPage_PythonDescription" xml:space="preserve">
+    <value>自定义Python路径（python.exe所在的目录，只支持Python3版本）</value>
+  </data>
+  <data name="SettingsPage_PythonLable" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="SettingsPage_PythonWatermark" xml:space="preserve">
+    <value>默认路径为安装目录下自带的Python目录</value>
+  </data>
+  <data name="SettingsPage_SelectDirectory" xml:space="preserve">
+    <value>浏览..</value>
+  </data>
+  <data name="SettingsPage_SelectProjectDirectory" xml:space="preserve">
+    <value>请选择新建项目时的默认路径</value>
+  </data>
+  <data name="SettingsPage_SelectPythonDirectory" xml:space="preserve">
+    <value>请选择python.exe所在的路径</value>
+  </data>
+  <data name="SettingsPage_ThemeDescription" xml:space="preserve">
+    <value>使用此选项来更改设计器中的主题</value>
+  </data>
+  <data name="SettingsPage_ThemeLable" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="SettingsPage_ValidateCorrect" xml:space="preserve">
+    <value>位置字段校验成功</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong1" xml:space="preserve">
+    <value>指定的路径不存在，请检查</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong2" xml:space="preserve">
+    <value>指定的路径不是合法的Python3目录，请检查</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong3" xml:space="preserve">
+    <value>控制中心地址不合法</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong4" xml:space="preserve">
+    <value>AI服务地址不合法</value>
+  </data>
+  <data name="SettingsPage_WebLable" xml:space="preserve">
+    <value>网络</value>
+  </data>
+  <data name="SnippetsView_SelectDirectory" xml:space="preserve">
+    <value>请选择一个目录添加到代码示例中</value>
+  </data>
+  <data name="StartPage_NewLable" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="StartPage_ProcessDescription" xml:space="preserve">
+    <value>新建一个自动化的空白流程项目</value>
+  </data>
+  <data name="StartPage_ProcessLable" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="StartPage_ProcessToolTip" xml:space="preserve">
+    <value>描述：{0}
+位置：{1}</value>
+  </data>
+  <data name="StartPage_RecentLable" xml:space="preserve">
+    <value>最近</value>
+  </data>
+  <data name="Text_ImportWorkflowSuffix" xml:space="preserve">
+    <value>-导入</value>
+  </data>
+  <data name="Text_SearchEmpty" xml:space="preserve">
+    <value>搜索结果为空</value>
+  </data>
+  <data name="Text_Searching" xml:space="preserve">
+    <value>正在检索中……</value>
+  </data>
+  <data name="Title_Main" xml:space="preserve">
+    <value>Chainbot机器人流程自动化平台</value>
+  </data>
+  <data name="ToolsPage_BrowserLable" xml:space="preserve">
+    <value>浏览器插件</value>
+  </data>
+  <data name="ToolsPage_ChromeDescription" xml:space="preserve">
+    <value>安装用于在Chrome中自动化网站的浏览器扩展程序</value>
+  </data>
+  <data name="ToolsPage_ChromeInstallError" xml:space="preserve">
+    <value>Chrome浏览器插件安装失败！</value>
+  </data>
+  <data name="ToolsPage_ChromeInstallQuestion" xml:space="preserve">
+    <value>Chrome扩展未安装或禁用，在安装前需要关闭Chrome浏览器！点击"是"后进行安装。</value>
+  </data>
+  <data name="ToolsPage_ChromeInstallSuccess" xml:space="preserve">
+    <value>Chrome浏览器插件安装成功，请打开浏览器启用（com.rpa.msghost）扩展程序！</value>
+  </data>
+  <data name="ToolsPage_FirefoxDescription" xml:space="preserve">
+    <value>安装用于在Firefox中自动化网站的浏览器扩展程序</value>
+  </data>
+  <data name="ToolsPage_FirefoxInstallError" xml:space="preserve">
+    <value>Firefox浏览器插件安装失败！</value>
+  </data>
+  <data name="ToolsPage_FirefoxInstallSuccess" xml:space="preserve">
+    <value>Firefox浏览器插件安装成功，请在已打开的浏览器中点击添加（rpa_msghost）扩展！</value>
+  </data>
+  <data name="ToolsPage_InstallDescription" xml:space="preserve">
+    <value>安装屏幕解锁服务</value>
+  </data>
+  <data name="ToolsPage_InstallLable" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="ToolsPage_UninstallDescription" xml:space="preserve">
+    <value>卸载屏幕解锁服务</value>
+  </data>
+  <data name="ToolsPage_UninstallLable" xml:space="preserve">
+    <value>卸载</value>
+  </data>
+  <data name="ToolsPage_UnlockInstallError" xml:space="preserve">
+    <value>解锁屏幕服务安装失败！
+失败原因：</value>
+  </data>
+  <data name="ToolsPage_UnlockInstallSuccess" xml:space="preserve">
+    <value>解锁屏幕服务安装成功！</value>
+  </data>
+  <data name="ToolsPage_UnlockLable" xml:space="preserve">
+    <value>屏幕解锁服务</value>
+  </data>
+  <data name="ToolsPage_UnlockUninstallError" xml:space="preserve">
+    <value>解锁屏幕服务卸载失败！
+失败原因：</value>
+  </data>
+  <data name="ToolsPage_UnlockUninstallSuccess" xml:space="preserve">
+    <value>解锁屏幕服务卸载成功！</value>
+  </data>
+  <data name="ToolTip_Breakpoint" xml:space="preserve">
+    <value>切换断点（F9）</value>
+  </data>
+  <data name="ToolTip_Continue" xml:space="preserve">
+    <value>继续调试（F7）</value>
+  </data>
+  <data name="ToolTip_Copy" xml:space="preserve">
+    <value>复制（Ctrl+C）</value>
+  </data>
+  <data name="ToolTip_Cut" xml:space="preserve">
+    <value>剪切（Ctrl+X）</value>
+  </data>
+  <data name="ToolTip_DataScrap" xml:space="preserve">
+    <value>抓取网页的格式化数据</value>
+  </data>
+  <data name="ToolTip_Debug" xml:space="preserve">
+    <value>调试（F7）</value>
+  </data>
+  <data name="ToolTip_Export" xml:space="preserve">
+    <value>导出项目为Nupkg包</value>
+  </data>
+  <data name="ToolTip_Help" xml:space="preserve">
+    <value>帮助（F1）</value>
+  </data>
+  <data name="ToolTip_New" xml:space="preserve">
+    <value>新建序列图、流程图或状态机（Ctrl+N）</value>
+  </data>
+  <data name="ToolTip_NewFlowchart" xml:space="preserve">
+    <value>流程图</value>
+  </data>
+  <data name="ToolTip_NewSequrence" xml:space="preserve">
+    <value>序列图（Ctrl+N）</value>
+  </data>
+  <data name="ToolTip_NewStateMachine" xml:space="preserve">
+    <value>状态机</value>
+  </data>
+  <data name="ToolTip_OpenLogs" xml:space="preserve">
+    <value>打开日志文件所在目录（Ctrl+L）</value>
+  </data>
+  <data name="ToolTip_Option" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="ToolTip_OutPut1" xml:space="preserve">
+    <value>日志时间：{0}
+日志内容：{1}</value>
+  </data>
+  <data name="ToolTip_OutPut2" xml:space="preserve">
+    <value>日志内容：{0}</value>
+  </data>
+  <data name="ToolTip_Paste" xml:space="preserve">
+    <value>粘贴（Ctrl+V）</value>
+  </data>
+  <data name="ToolTip_Publish" xml:space="preserve">
+    <value>发布项目为Nupkg包到本地或控制中心</value>
+  </data>
+  <data name="ToolTip_Record" xml:space="preserve">
+    <value>录制用户操作序列</value>
+  </data>
+  <data name="ToolTip_RemoveAllBreakpoints" xml:space="preserve">
+    <value>清除所有断点（Shift+F9）</value>
+  </data>
+  <data name="ToolTip_Run" xml:space="preserve">
+    <value>运行（F5）</value>
+  </data>
+  <data name="ToolTip_Save" xml:space="preserve">
+    <value>保存（Ctrl+S）</value>
+  </data>
+  <data name="ToolTip_SaveAll" xml:space="preserve">
+    <value>全部保存（Ctrl+Shift+S）</value>
+  </data>
+  <data name="ToolTip_SaveAs" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="ToolTip_Search" xml:space="preserve">
+    <value>检索和定位流程文件中指定名称的组件、变量和属性（Ctrl+F）</value>
+  </data>
+  <data name="ToolTip_SlowDebug" xml:space="preserve">
+    <value>慢速调试，从最慢的1倍到最快的4倍速进行调试</value>
+  </data>
+  <data name="ToolTip_StepInto" xml:space="preserve">
+    <value>逐语句（F11）</value>
+  </data>
+  <data name="ToolTip_StepOver" xml:space="preserve">
+    <value>逐过程（Shift+F11）</value>
+  </data>
+  <data name="ToolTip_Stop" xml:space="preserve">
+    <value>停止（F12）</value>
+  </data>
+  <data name="ToolTip_Suspend" xml:space="preserve">
+    <value>中断执行（暂停）</value>
+  </data>
+  <data name="ToolTip_ToggleBreakpoin" xml:space="preserve">
+    <value>切换断点（F9）</value>
+  </data>
+  <data name="ToolTip_Validate" xml:space="preserve">
+    <value>检查错误（F8）</value>
+  </data>
+  <data name="Tool_Breakpoint" xml:space="preserve">
+    <value>断点</value>
+  </data>
+  <data name="Tool_Continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="Tool_Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Tool_Cut" xml:space="preserve">
+    <value>剪贴</value>
+  </data>
+  <data name="Tool_DataScrap" xml:space="preserve">
+    <value>数据抓取</value>
+  </data>
+  <data name="Tool_Debug" xml:space="preserve">
+    <value>调试</value>
+  </data>
+  <data name="Tool_Deploy" xml:space="preserve">
+    <value>部署</value>
+  </data>
+  <data name="Tool_Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="Tool_Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Tool_LogActivities" xml:space="preserve">
+    <value>记录活动</value>
+  </data>
+  <data name="Tool_New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="Tool_NewFlowchart" xml:space="preserve">
+    <value>流程图</value>
+  </data>
+  <data name="Tool_NewSequrence" xml:space="preserve">
+    <value>序列图</value>
+  </data>
+  <data name="Tool_NewStateMachine" xml:space="preserve">
+    <value>状态机</value>
+  </data>
+  <data name="Tool_OpenLogs" xml:space="preserve">
+    <value>打开日志</value>
+  </data>
+  <data name="Tool_Operate" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Tool_Option" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="Tool_Other" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Tool_Paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="Tool_Publish" xml:space="preserve">
+    <value>发布</value>
+  </data>
+  <data name="Tool_Record" xml:space="preserve">
+    <value>录制</value>
+  </data>
+  <data name="Tool_RemoveAllBreakpoints" xml:space="preserve">
+    <value>清除所有断点</value>
+  </data>
+  <data name="Tool_Run" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="Tool_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Tool_SaveAll" xml:space="preserve">
+    <value>全部保存</value>
+  </data>
+  <data name="Tool_SaveAs" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="Tool_Search" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="Tool_SlowDebug" xml:space="preserve">
+    <value>慢速 调试</value>
+  </data>
+  <data name="Tool_Start" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="Tool_StepInto" xml:space="preserve">
+    <value>逐语句</value>
+  </data>
+  <data name="Tool_StepOver" xml:space="preserve">
+    <value>逐过程</value>
+  </data>
+  <data name="Tool_Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Tool_Suspend" xml:space="preserve">
+    <value>中断</value>
+  </data>
+  <data name="Tool_ToggleBreakpoin" xml:space="preserve">
+    <value>切换断点</value>
+  </data>
+  <data name="Tool_Validate" xml:space="preserve">
+    <value>校验</value>
+  </data>
+  <data name="Tool_WorkFlow" xml:space="preserve">
+    <value>工作流</value>
+  </data>
+  <data name="UpgradePage_CheckUpdateButtonLabel" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="UpgradePage_CurrentLogLabel" xml:space="preserve">
+    <value>当前版本更新日志</value>
+  </data>
+  <data name="UpgradePage_CurrentVersionLabel" xml:space="preserve">
+    <value>当前版本：</value>
+  </data>
+  <data name="UpgradePage_ErrMessage1" xml:space="preserve">
+    <value>获取升级信息出错，请检查！</value>
+  </data>
+  <data name="UpgradePage_ErrMessage2" xml:space="preserve">
+    <value>重命名{0}到{1}失败！</value>
+  </data>
+  <data name="UpgradePage_ErrMessage3" xml:space="preserve">
+    <value>升级包重命名操作出现异常，请检查！</value>
+  </data>
+  <data name="UpgradePage_ErrMessage4" xml:space="preserve">
+    <value>升级包MD5校验不一致，请重试！</value>
+  </data>
+  <data name="UpgradePage_ErrMessage5" xml:space="preserve">
+    <value>下载过程中出现异常，请检查并重试！</value>
+  </data>
+  <data name="UpgradePage_ErrMessage6" xml:space="preserve">
+    <value>获取升级配置文件失败，请检查！URL=</value>
+  </data>
+  <data name="UpgradePage_LatestLogLabel" xml:space="preserve">
+    <value>最新版本更新日志</value>
+  </data>
+  <data name="UpgradePage_LatestVersionLabel" xml:space="preserve">
+    <value>最新版本：</value>
+  </data>
+  <data name="UpgradePage_NotFoundLabel" xml:space="preserve">
+    <value>未发现新版本</value>
+  </data>
+  <data name="UpgradePage_QuestionMessage" xml:space="preserve">
+    <value>升级包已经下载好，是否现在更新？</value>
+  </data>
+  <data name="UpgradePage_UpdateNowButtonLabel" xml:space="preserve">
+    <value>立即更新</value>
+  </data>
+  <data name="UpgradePage_ViewButtonLabel" xml:space="preserve">
+    <value>查看日志</value>
+  </data>
+  <data name="ActivitiesChildrenOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\ActivitiesChildrenOrder.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CommentOutDisplayName" xml:space="preserve">
+    <value>注释活动</value>
+  </data>
+  <data name="Message_ActivitiesMountError" xml:space="preserve">
+    <value>挂载{0}中的activity.config.xml信息出错</value>
+  </data>
+  <data name="Message_EndDebug" xml:space="preserve">
+    <value>{0} 结束调试，耗时：{1}</value>
+  </data>
+  <data name="Message_EndRun" xml:space="preserve">
+    <value>{0} 结束运行，耗时：{1}</value>
+  </data>
+  <data name="Message_ExecError" xml:space="preserve">
+    <value>运行时执行错误</value>
+  </data>
+  <data name="Message_StartDebug" xml:space="preserve">
+    <value>{0} 开始调试</value>
+  </data>
+  <data name="Message_StartRun" xml:space="preserve">
+    <value>{0} 开始运行</value>
+  </data>
+  <data name="SequenceDisplayName" xml:space="preserve">
+    <value>序列</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SystemActivities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\SystemActivities.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataExtractorActivityDisplayName" xml:space="preserve">
+    <value>数据抓取</value>
+  </data>
+  <data name="GetThemeErrMsg" xml:space="preserve">
+    <value>主题样式获取失败！</value>
+  </data>
+  <data name="IsRunOrDebugMsg" xml:space="preserve">
+    <value>请停止当前正在运行或调试的项目再关闭！</value>
+  </data>
+  <data name="NewProjectErrMsg" xml:space="preserve">
+    <value>创建项目目录失败，请检查！</value>
+  </data>
+  <data name="OpenProjectErrMsg" xml:space="preserve">
+    <value>打开项目时发生异常，请检查！</value>
+  </data>
+</root>

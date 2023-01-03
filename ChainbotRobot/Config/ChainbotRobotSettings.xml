@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ChainbotRobotSettings schemaVersion="1.0.2"> 
+  <UserSettings>
+    <IsAutoRun>False</IsAutoRun>
+    <IsAutoOpenMainWindow>True</IsAutoOpenMainWindow>
+    <IsEnableScreenRecorder>False</IsEnableScreenRecorder>
+    <FPS>30</FPS>
+    <Quality>50</Quality>
+    <IsEnableControlServer>False</IsEnableControlServer>
+    <ControlServerUri></ControlServerUri>
+  </UserSettings> 
+</ChainbotRobotSettings>

@@ -1,0 +1,68 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:swd="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation" xmlns:themes="http://schemas.actiprosoftware.com/winfx/xaml/themes" xmlns:conv="clr-namespace:Chainbot.Resources.Librarys">
+    <conv:ResourceKeyToColorConverter
+		x:Key="ResourceKeyToColorConverter" />
+
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_3"
+		Color="#FFC8C8C8"
+		x:Key="{x:Static swd:WorkflowDesignerColors.WorkflowViewElementSelectedBackgroundColorKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_4"
+		Color="#FFC8C8C8"
+		x:Key="{x:Static swd:WorkflowDesignerColors.WorkflowViewElementSelectedBorderColorKey}" />
+
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_39"
+		Color="#FFC8C8C8"
+		x:Key="{x:Static swd:WorkflowDesignerColors.OutlineViewItemHighlightBackgroundColorKey}" />
+    <!--<SolidColorBrush
+		x:Uid="SolidColorBrush_56"
+		Color="White"
+		x:Key="{x:Static swd:WorkflowDesignerColors.OutlineViewItemSelectedTextColorKey}" />-->
+    
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_10"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.DockingWindowContainerTitleBarBackgroundInactiveBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarColorGradientBeginKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_11"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.DockingWindowContainerTitleBarBackgroundInactiveBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarColorGradientEndKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_12"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.ToolWindowContainerTabItemBackgroundSelectedBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientBeginKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_13"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.ToolWindowContainerTabItemBackgroundSelectedBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientEndKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_14"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.ToolWindowContainerTabItemBackgroundHoverBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientBeginKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_15"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.ToolWindowContainerTabItemBackgroundHoverBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientEndKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_16"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.ToolWindowContainerTabItemBackgroundNormalBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarControlBackgroundColorKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_17"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.ToolWindowContainerTabItemForegroundSelectedBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarCaptionActiveColorKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_18"
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.WindowForegroundNormalBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static swd:WorkflowDesignerColors.DesignerViewShellBarCaptionColorKey}" />
+    
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_64"
+		Color="#FFC8C8C8"
+		x:Key="{x:Static swd:WorkflowDesignerColors.PropertyInspectorSelectedBackgroundBrushKey}" />
+    <SolidColorBrush
+		x:Uid="SolidColorBrush_65"
+		Color="Black"
+		x:Key="{x:Static swd:WorkflowDesignerColors.PropertyInspectorSelectedForegroundBrushKey}" />
+</ResourceDictionary>

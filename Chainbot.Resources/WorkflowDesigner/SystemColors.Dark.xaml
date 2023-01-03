@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:themes="http://schemas.actiprosoftware.com/winfx/xaml/themes" xmlns:datagridThemes="clr-namespace:ActiproSoftware.Windows.Themes;assembly=ActiproSoftware.DataGrid.Contrib.Wpf" xmlns:conv="clr-namespace:Chainbot.Resources.Librarys"
+	>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary
+			Source="pack://application:,,,/System.Activities.Presentation;component/themes/generic.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <conv:ResourceKeyToColorConverter
+		x:Key="ResourceKeyToColorConverter" />
+    <SolidColorBrush
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.DocumentViewerForegroundNormalBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static SystemColors.ControlTextBrushKey}" />
+    <SolidColorBrush
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.DocumentTextBackgroundNormalBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static SystemColors.ControlBrushKey}" />
+    <SolidColorBrush
+		Color="{Binding Source={x:Static themes:AssetResourceKeys.DocumentTextAccent1ForegroundNormalBrushKey}, Converter={StaticResource ResourceKeyToColorConverter}}"
+		x:Key="{x:Static SystemColors.GrayTextBrushKey}" />
+    <SolidColorBrush
+		Color="#76767F"
+		x:Key="{x:Static SystemColors.WindowBrushKey}" />
+    
+</ResourceDictionary>

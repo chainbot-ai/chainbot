@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF733F55-DE6B-491E-A8D7-9392E70A8714}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chainbot.Contracts</RootNamespace>
+    <AssemblyName>Chainbot.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Common, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Common.4.5.3\lib\net45\NuGet.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Configuration, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Configuration.4.5.3\lib\net45\NuGet.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=2.14.0.832, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Core.2.14.0\lib\net40-Client\NuGet.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Frameworks, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Frameworks.4.5.3\lib\net45\NuGet.Frameworks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Packaging, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Packaging.4.5.3\lib\net45\NuGet.Packaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Packaging.Core.4.5.3\lib\net45\NuGet.Packaging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Protocol, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Protocol.4.5.3\lib\net45\NuGet.Protocol.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Resolver, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Resolver.4.5.3\lib\net45\NuGet.Resolver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Versioning, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Versioning.4.5.3\lib\net45\NuGet.Versioning.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Activities.DurableInstancing" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.AddIn.Contract" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\IActivitiesDefaultAttributesService.cs" />
+    <Compile Include="Activities\IActivitiesService.cs" />
+    <Compile Include="Activities\IActivitiesServiceProxy.cs" />
+    <Compile Include="Activities\IActivityFavoritesService.cs" />
+    <Compile Include="Activities\IActivityMountService.cs" />
+    <Compile Include="Activities\IActivityRecentService.cs" />
+    <Compile Include="Activities\IDataExtractorService.cs" />
+    <Compile Include="Activities\IDataExtractorServiceProxy.cs" />
+    <Compile Include="Activities\IRecordingService.cs" />
+    <Compile Include="Activities\IRecordingServiceProxy.cs" />
+    <Compile Include="Activities\ISystemActivityIconService.cs" />
+    <Compile Include="AppDomains\IAppDomainContainerService.cs" />
+    <Compile Include="AppDomains\IAppDomainControllerService.cs" />
+    <Compile Include="AppDomains\IAppDomainServiceHost.cs" />
+    <Compile Include="AppDomains\IAssemblyResolveService.cs" />
+    <Compile Include="App\IConsoleManager.cs" />
+    <Compile Include="App\IServiceLocator.cs" />
+    <Compile Include="App\IUpgradeAppSettingsService.cs" />
+    <Compile Include="Classes\ActivityGroupItem.cs" />
+    <Compile Include="Classes\ActivityGroupOrLeafItem.cs" />
+    <Compile Include="Classes\ActivityLeafItem.cs" />
+    <Compile Include="Classes\ConstantAssemblyQualifiedName.cs" />
+    <Compile Include="Classes\DesignerWrapper.cs" />
+    <Compile Include="Classes\GlobalConfig.cs" />
+    <Compile Include="Classes\GlobalConstant.cs" />
+    <Compile Include="Classes\GlobalVars.cs" />
+    <Compile Include="Classes\InjectJavaScriptFileFactory.cs" />
+    <Compile Include="Classes\InvokePythonFileFactory.cs" />
+    <Compile Include="Classes\InvokeWorkflowFileFactory.cs" />
+    <Compile Include="Classes\LanguageUtil.cs" />
+    <Compile Include="Classes\MarshalByRefServiceBase.cs" />
+    <Compile Include="Classes\MarshalByRefServiceProxyBase.cs" />
+    <Compile Include="Classes\ModelItemExtensions.cs" />
+    <Compile Include="Classes\ModelItemInsertExtensions.cs" />
+    <Compile Include="Classes\PropertyValueChange.cs" />
+    <Compile Include="Classes\ServiceLocator.cs" />
+    <Compile Include="Classes\ServiceLocatorAutofac.cs" />
+    <Compile Include="Classes\DirItem.cs" />
+    <Compile Include="Classes\DirOrFileItem.cs" />
+    <Compile Include="Classes\FileItem.cs" />
+    <Compile Include="Classes\NugetPackageItem.cs" />
+    <Compile Include="Classes\ProjectJsonConfig.cs" />
+    <Compile Include="Classes\InsertSnippetItemFactory.cs" />
+    <Compile Include="Classes\TypeExtensions.cs" />
+    <Compile Include="CodeAnalysis\IExpressionTokenizer.cs" />
+    <Compile Include="Config\IActivitiesChildrenOrderService.cs" />
+    <Compile Include="Config\IAppSettingsConfigService.cs" />
+    <Compile Include="Config\IConstantConfigService.cs" />
+    <Compile Include="Config\IServerSettingsService.cs" />
+    <Compile Include="Config\IPathConfigService.cs" />
+    <Compile Include="Config\IProjectUserConfigService.cs" />
+    <Compile Include="Config\IRecentProjectsConfigService.cs" />
+    <Compile Include="JumpToChild\IJumpToChildHandler.cs" />
+    <Compile Include="Log\ILogService.cs" />
+    <Compile Include="App\IStudioApplication.cs" />
+    <Compile Include="Config\IProjectConfigFileService.cs" />
+    <Compile Include="Nupkg\IPackageControlService.cs" />
+    <Compile Include="Nupkg\IPackageExportService.cs" />
+    <Compile Include="Nupkg\IPackageIdentityService.cs" />
+    <Compile Include="Nupkg\IPackageImportService.cs" />
+    <Compile Include="Nupkg\IPackageRepositoryService.cs" />
+    <Compile Include="Project\IProjectDependenciesService.cs" />
+    <Compile Include="Project\IProjectManagerService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IControlServerService.cs" />
+    <Compile Include="UI\IContextMenuService.cs" />
+    <Compile Include="UI\IDialogService.cs" />
+    <Compile Include="UI\IDispatcherService.cs" />
+    <Compile Include="UI\IMessageBoxService.cs" />
+    <Compile Include="UI\IWindowService.cs" />
+    <Compile Include="Utils\IAuthorizationService.cs" />
+    <Compile Include="Utils\ICommonService.cs" />
+    <Compile Include="Utils\IDirectoryService.cs" />
+    <Compile Include="Workflow\IWorkflowActivityService.cs" />
+    <Compile Include="Workflow\IWorkflowDesignerJumpService.cs" />
+    <Compile Include="Workflow\IWorkflowDesignerJumpServiceProxy.cs" />
+    <Compile Include="Workflow\IWorkflowDesignerMainServiceProxy.cs" />
+    <Compile Include="Workflow\IWorkflowBreakpointsService.cs" />
+    <Compile Include="Workflow\IWorkflowBreakpointsServiceProxy.cs" />
+    <Compile Include="Workflow\IWorkflowDebugService.cs" />
+    <Compile Include="Workflow\IWorkflowDesignerCollectService.cs" />
+    <Compile Include="Workflow\IWorkflowDesignerCollectServiceProxy.cs" />
+    <Compile Include="Workflow\IWorkflowRunService.cs" />
+    <Compile Include="Workflow\IWorkflowDesignerService.cs" />
+    <Compile Include="Workflow\IWorkflowDesignerServiceProxy.cs" />
+    <Compile Include="Workflow\IWorkflowStateService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

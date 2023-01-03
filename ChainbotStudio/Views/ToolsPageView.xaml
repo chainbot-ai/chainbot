@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="ChainbotStudio.Views.ToolsPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ribbon="http://schemas.actiprosoftware.com/winfx/xaml/ribbon"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+             xmlns:local="clr-namespace:ChainbotStudio.Views"
+             xmlns:lclz="clr-namespace:Chainbot.Resources.Properties;assembly=Chainbot.Resources"
+             mc:Ignorable="d" 
+             DataContext="{Binding ToolsPage, Source={StaticResource Locator}}"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+             xmlns:svgc = "http://sharpvectors.codeplex.com/svgc/"
+             d:DesignHeight="300" d:DesignWidth="300" Margin="20,0,20,0">
+    <UserControl.Resources>
+        <Style x:Key="StackPanelStyle" TargetType="{x:Type StackPanel}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource StartPageView.Item.MouseOver.Background}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel>
+            <ribbon:Separator Label="{x:Static lclz:Resources.ToolsPage_BrowserLable}" Context="BackstageItem" Style="{DynamicResource BackstageItemSeparatorStyle}" />
+
+            <StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle}" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonUp">
+                            <cmd:EventToCommand Command="{Binding InstallChromePluginCommand}" PassEventArgsToCommand="True" ></cmd:EventToCommand>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Image Width="40" Height="40" Source="{svgc:SvgImage Source=/Image/ToolsPage/chrome.svg, AppName=Chainbot.Resources}" />
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <StackPanel Margin="10,0,0,0">
+                                <TextBlock FontSize="13" Foreground="{StaticResource StartPageView.Item.Title.Foreground}" FontWeight="Bold">Chrome</TextBlock>
+                                <TextBlock Foreground="{StaticResource StartPageView.Item.Description.Foreground}" Margin="0,5,0,0" Text="{x:Static lclz:Resources.ToolsPage_ChromeDescription}" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Style="{StaticResource StackPanelStyle}" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonUp">
+                            <cmd:EventToCommand Command="{Binding InstallFirefoxPluginCommand}" PassEventArgsToCommand="True" ></cmd:EventToCommand>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Image Width="40" Height="40" Source="pack://application:,,,/Chainbot.Resources;Component/Image/ToolsPage/firefox.png" />
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <StackPanel Margin="10,0,0,0">
+                                <TextBlock FontSize="13" Foreground="{StaticResource StartPageView.Item.Title.Foreground}" FontWeight="Bold">Firefox</TextBlock>
+                                <TextBlock Foreground="{StaticResource StartPageView.Item.Description.Foreground}" Margin="0,5,0,0" Text="{x:Static lclz:Resources.ToolsPage_FirefoxDescription}" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+
+            <ribbon:Separator Label="{x:Static lclz:Resources.ToolsPage_UnlockLable}" Context="BackstageItem" Style="{DynamicResource BackstageItemSeparatorStyle}" />
+
+            <StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle}" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonUp">
+                            <cmd:EventToCommand Command="{Binding InstallUnlockServerCommand}" PassEventArgsToCommand="True" ></cmd:EventToCommand>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Image Width="40" Height="40" Source="{StaticResource InstallDrawingImage}" />
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <StackPanel Margin="10,0,0,0">
+                                <TextBlock FontSize="13" Foreground="{StaticResource StartPageView.Item.Title.Foreground}" FontWeight="Bold" Text="{x:Static lclz:Resources.ToolsPage_InstallLable}" />
+                                <TextBlock Foreground="{StaticResource StartPageView.Item.Description.Foreground}" Margin="0,5,0,0" Text="{x:Static lclz:Resources.ToolsPage_InstallDescription}" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Style="{StaticResource StackPanelStyle}" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonUp">
+                            <cmd:EventToCommand Command="{Binding UninstallUnlockServerCommand}" PassEventArgsToCommand="True" ></cmd:EventToCommand>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Image Width="40" Height="40" Source="{StaticResource UninstallDrawingImage}" />
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <StackPanel Margin="10,0,0,0">
+                                <TextBlock FontSize="13" Foreground="{StaticResource StartPageView.Item.Title.Foreground}" FontWeight="Bold" Text="{x:Static lclz:Resources.ToolsPage_UninstallLable}" />
+                                <TextBlock Foreground="{StaticResource StartPageView.Item.Description.Foreground}" Margin="0,5,0,0" Text="{x:Static lclz:Resources.ToolsPage_UninstallDescription}" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+
+
+
+        </StackPanel>
+
+
+       
+        
+    </Grid>
+</UserControl>

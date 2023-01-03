@@ -1,0 +1,19 @@
+﻿<Page x:Class="ChainbotStudio.Views.DataExtractorPageTwoWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ChainbotStudio.Views"
+      xmlns:lclz="clr-namespace:Chainbot.Resources.Properties;assembly=Chainbot.Resources"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="DataExtractorPageTwoWindow">
+    <Page.Resources>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource TextBlockStyle}" />
+        <Style TargetType="Button" BasedOn="{StaticResource ButtonStyle}" />
+    </Page.Resources>
+    <Grid>
+        <TextBlock x:Name="label" Text="{x:Static lclz:Resources.DataExtractor_TwoLabel1}" HorizontalAlignment="Left" Margin="128,75,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="label1" Text="{x:Static lclz:Resources.DataExtractor_TwoLabel2}" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="128,115,100,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

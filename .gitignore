@@ -1,0 +1,12 @@
+ChainbotStudio/ChainbotStudio.VC.db
+ChainbotStudio/ChainbotStudio.VC.opendb
+
+**/Debug/**
+**/Release/**
+ChainbotStudio/packages/**
+ChainbotStudio/.vs/**
+*.csproj.user
+Activities/nupkgs/*.nupkg
+packages/**
+.vs/
+**/obj/**

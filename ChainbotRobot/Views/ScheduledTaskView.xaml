@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="ChainbotRobot.Views.ScheduledTaskView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:editors="http://schemas.actiprosoftware.com/winfx/xaml/editors"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:ChainbotRobot.Views"
+             DataContext="{Binding ScheduledTask, Source={StaticResource Locator}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="510">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <cmd:EventToCommand Command="{Binding LoadedCommand}" PassEventArgsToCommand="True" ></cmd:EventToCommand>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Add a scheduled task" Visibility="{Binding IsNew,Mode=OneWay, Converter={StaticResource BoolVisibilityConverter}}" FontSize="15" VerticalAlignment="Bottom" FontWeight="Bold" />
+            <TextBlock Text="Edit Scheduled Task" Visibility="{Binding IsNew,Mode=OneWay, Converter={StaticResource BoolNotVisibilityConverter}}" FontSize="15" VerticalAlignment="Bottom" FontWeight="Bold" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" Margin="0,0,10,0">Process：</TextBlock>
+
+                <editors:AutoCompleteBox x:Name="_selectedPackageItemAutoCompleteBox" IsEnabled="{Binding IsNew}" Width="370" Height="25" HasClearButton="True" HorizontalAlignment="Left" PlaceholderText="Search" TextMemberPath="Name"
+									 NoItemsContent="(No result)" ItemsSource="{Binding ScheduledPackageItems}" >
+                    <editors:AutoCompleteBox.DataFilter>
+                        <editors:AutoCompleteBoxStringFilter />
+                    </editors:AutoCompleteBox.DataFilter>
+                    <editors:AutoCompleteBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" ToolTip="{Binding Version}" >
+                                <shared:AdvancedTextBlock Text="{Binding Name, Mode=OneWay}" TextTrimming="None" FontWeight="Bold" VerticalAlignment="Center" 
+													  HighlightBackground="#40ffea00" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </editors:AutoCompleteBox.ItemTemplate>
+                    <editors:AutoCompleteBox.NoItemsContentTemplate>
+                        <DataTemplate>
+                            <TextBlock Margin="20,3" Text="{Binding}" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </editors:AutoCompleteBox.NoItemsContentTemplate>
+                </editors:AutoCompleteBox>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel Margin="0,20,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,4,0">Frequency: </TextBlock>
+                    <ComboBox x:Name="_selectedFrequencyComboBox" VerticalContentAlignment="Center" Width="80" Height="25" SelectedIndex="{Binding SelectedFrequencIndex}">
+                        <ComboBoxItem>Once</ComboBoxItem>
+                        <ComboBoxItem>Day</ComboBoxItem>
+                        <ComboBoxItem>Week</ComboBoxItem>
+                        <ComboBoxItem>Month</ComboBoxItem>
+                    </ComboBox>
+                    <StackPanel Orientation="Horizontal" Margin="20,0,0,0" Visibility="{Binding IsShowDailyFrequency,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}" >
+                        <TextBlock VerticalAlignment="Center">Every</TextBlock>
+                        <editors:Int32EditBox Margin="10,0,0,0" Width="60" Height="25" Value="{Binding EveryNum}" VerticalAlignment="Center" Minimum="1" />
+                        <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">Day</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="20,0,0,0" Visibility="{Binding IsShowWeeklyFrequency,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}" >
+                        <TextBlock VerticalAlignment="Center">Every</TextBlock>
+                        <editors:Int32EditBox Margin="10,0,0,0" Width="60" Height="25" Value="{Binding EveryNum}" VerticalAlignment="Center" Minimum="1" />
+                        <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">Week</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="20,0,0,0" Visibility="{Binding IsShowMonthlyFrequency,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}" >
+                        <TextBlock VerticalAlignment="Center">Every</TextBlock>
+                        <editors:Int32EditBox Margin="10,0,0,0" Width="60" Height="25" Value="{Binding EveryNum}" VerticalAlignment="Center" Minimum="1" />
+                        <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">Month</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <Grid>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,10" Visibility="{Binding IsShowWeeklyFrequency,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}" >
+                        <TextBlock x:Name="_weekEnumWithFlagsTextBlock" VerticalAlignment="Center" ToolTip="One or more days from Monday to Sunday must be specified.">Select day of week:：</TextBlock>
+                        <editors:EnumEditBox Height="25" HorizontalAlignment="Left" MinWidth="200" PlaceholderText="Enum" 
+								 IsNullAllowed="True" EnumType="{Binding WeekEnumWithFlagsType}" Value="{Binding WeekEnumWithFlagsCurrentValue}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,10" Visibility="{Binding IsShowMonthlyFrequency,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}" >
+                        <TextBlock VerticalAlignment="Center" >Select which day：</TextBlock>
+                        <ComboBox x:Name="_monthPositionComboBox"  Width="150" Height="25" VerticalContentAlignment="Center" SelectedIndex="{Binding MonthPositionSelectedIndex}">
+                            <ComboBoxItem>Day</ComboBoxItem>
+                            <ComboBoxItem>First</ComboBoxItem>
+                            <ComboBoxItem>Second</ComboBoxItem>
+                            <ComboBoxItem>Third</ComboBoxItem>
+                            <ComboBoxItem>Fourth</ComboBoxItem>
+                            <ComboBoxItem>Last</ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox x:Name="_dayOfMonthInfoComboBox" Width="150" Height="25" VerticalContentAlignment="Center" SelectedIndex="{Binding DayOfMonthInfoSelectedIndex}" Margin="20,0,0,0" Visibility="{Binding IsShowMonthlyFrequencyAndDay,Mode=OneWay, Converter={StaticResource BoolNotCollapsedConverter}}" VerticalAlignment="Center">
+                            <ComboBoxItem>Day</ComboBoxItem>
+                            <ComboBoxItem ToolTip="Monday to Friday">Weekday</ComboBoxItem>
+                            <ComboBoxItem ToolTip="Saturday and Sunday">Weekend</ComboBoxItem>
+                            <ComboBoxItem>Monday</ComboBoxItem>
+                            <ComboBoxItem>Tuesday</ComboBoxItem>
+                            <ComboBoxItem>Wednesday</ComboBoxItem>
+                            <ComboBoxItem>Thursday</ComboBoxItem>
+                            <ComboBoxItem>Friday</ComboBoxItem>
+                            <ComboBoxItem>Saturday</ComboBoxItem>
+                            <ComboBoxItem>Sunday</ComboBoxItem>
+                        </ComboBox>
+                        <StackPanel Orientation="Horizontal" Visibility="{Binding IsShowMonthlyFrequencyAndDay,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}">
+                            <editors:Int32EditBox Margin="20,0,0,0"  Width="60" Height="25" Value="{Binding DayOfMonthNum}" VerticalAlignment="Center" Minimum="1" />
+                            <TextBlock VerticalAlignment="Center" Margin="10,0,0,0">th</TextBlock>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBlock VerticalAlignment="Center" ToolTip="The time point at which the scheduled task starts running." Margin="0,0,5,0">Start Time: </TextBlock>
+                    <editors:TimeEditBox HorizontalAlignment="Left" Height="25" MinWidth="200" PlaceholderText="time" Value="{Binding RunTime}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBlock VerticalAlignment="Center" ToolTip="Start date of the scheduled task (including this date)." Margin="0,0,5,0">Start Date: </TextBlock>
+                    <editors:DateEditBox HorizontalAlignment="Left" Height="25" MinWidth="200" Format="yyyy-MM-dd"  PlaceholderText="Date" Value="{Binding BeginDate}" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="3" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock>Task Description：</TextBlock>
+            <TextBox Grid.Column="1" Foreground="#FF660874" IsReadOnly="True" BorderThickness="0" Text="{Binding TaskDescription}" TextWrapping="Wrap"  HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+
+        </Grid>
+        <Grid Grid.Row="4">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                <Button Command="{Binding SaveCommand}" Width="50" Height="25">Save</Button>
+                <Button Command="{Binding CancelCommand}" Width="50" Height="25" Margin="15,0,15,0">Cancel</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

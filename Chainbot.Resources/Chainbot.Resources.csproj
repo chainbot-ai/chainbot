@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76C53786-1FF7-4CA9-B120-F06EE8094662}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chainbot.Resources</RootNamespace>
+    <AssemblyName>Chainbot.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.DataGrid.Contrib.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.DataGrid.Contrib.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Docking.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Docking.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Editors.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Editors.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Grids.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Grids.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Ribbon.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Shared.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shell.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Shell.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Addons.Xml.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.SyntaxEditor.Addons.Xml.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.SyntaxEditor.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Addons.DotNet.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Text.Addons.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Addons.Xml.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Text.Addons.Xml.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.LLParser.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Text.LLParser.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Chainbot.Cores\References\ActiproSoftware.Text.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Panuon.UI.Silver, Version=2.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Panuon.UI.Silver.2.0.0.9-alpha\lib\net45\Panuon.UI.Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.2\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.2\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.2\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.2\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.2\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Librarys\Converters.cs" />
+    <Compile Include="Librarys\ResourceKeyToColorConverter.cs" />
+    <Compile Include="Librarys\ResourcesLoader.cs" />
+    <Compile Include="Librarys\TreeViewHelperExt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="FileTemplate\Flowchart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="FileTemplate\Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="FileTemplate\Sequence.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="FileTemplate\StateMachine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="FileTemplate\Main_en.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="FileTemplate\Sequence_en.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="FileTemplate\StateMachine_en.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="FileTemplate\Flowchart_en.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <Page Include="Resources\ContextMenuResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ImageResource.Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ImageResource.Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Resource.Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Resource.Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ScrollBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Separator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TaskTabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Converters.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Panuon.UI.Silver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ContextMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\LightBrushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkBrushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkflowDesigner\GlobalColors.Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkflowDesigner\PropertyInspectorFontAndColorData.Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkflowDesigner\SystemColors.Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkflowDesigner\SystemColors.Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkflowDesigner\GlobalColors.Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkflowDesigner\PropertyInspectorFontAndColorData.Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Toolbar\break.png" />
+    <Resource Include="Image\Toolbar\competency-center.png" />
+    <Resource Include="Image\Toolbar\debug.png" />
+    <Resource Include="Image\Toolbar\preview.png" />
+    <Resource Include="Image\Toolbar\publish.png" />
+    <Resource Include="Image\Toolbar\run.png" />
+    <Resource Include="Image\Toolbar\save.png" />
+    <Resource Include="Image\Toolbar\step-into.png" />
+    <Resource Include="Image\Toolbar\step-over.png" />
+    <Resource Include="Image\Toolbar\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Toolbar\triangle-right-botom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Project\correct.png" />
+    <Resource Include="Image\Project\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Designer\redo.png" />
+    <Resource Include="Image\Designer\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\ProjectUserConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\SystemActivities.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Config\AppSettings.xml" />
+    <None Include="Config\CodeSnippets.xml" />
+    <None Include="Config\FavoriteActivities.xml" />
+    <None Include="Config\RecentActivities.xml" />
+    <None Include="Config\RecentProjects.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Splash\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Project\dir-collapsed.png" />
+    <Resource Include="Image\Project\dir-expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Project\project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Project\xaml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Output\timestamp.Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Output\clear-all.png" />
+    <Resource Include="Image\Output\error.png" />
+    <Resource Include="Image\Output\Information.png" />
+    <Resource Include="Image\Output\trace.png" />
+    <Resource Include="Image\Output\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Dark.vssettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Recording\hotkey.png" />
+    <Resource Include="Image\Recording\hover.png" />
+    <Resource Include="Image\Recording\keyboard.png" />
+    <Resource Include="Image\Recording\mouse.png" />
+    <Resource Include="Image\Recording\mouseclick.png" />
+    <Resource Include="Image\Recording\save.png" />
+    <Resource Include="Image\Recording\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\CaptionBar\bell.png" />
+    <Resource Include="Image\CaptionBar\user.png" />
+    <Resource Include="Image\CaptionBar\red-dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Toolbar\export.png" />
+    <Resource Include="Image\Toolbar\new.png" />
+    <Resource Include="Image\Toolbar\open.png" />
+    <Resource Include="Image\Toolbar\recording.png" />
+    <Resource Include="Image\Toolbar\triangle-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Designer\copy.png" />
+    <Resource Include="Image\Designer\cut.png" />
+    <Resource Include="Image\Designer\delete.png" />
+    <Resource Include="Image\Designer\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Activities\activities.png" />
+    <Resource Include="Image\Activities\favorites.png" />
+    <Resource Include="Image\Activities\recent.png" />
+    <Resource Include="Image\Activities\template.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Debugger\breakpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Debugger\break.png" />
+    <Resource Include="Image\Debugger\remove-all-breakpoints.png" />
+    <Resource Include="Image\Debugger\step-into.png" />
+    <Resource Include="Image\Debugger\step-over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Debugger\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\ToolsPage\chrome.svg" />
+    <Resource Include="Image\ToolsPage\screen-lock-install.png" />
+    <Resource Include="Image\ToolsPage\screen-lock-uninstall.png" />
+    <Resource Include="Image\Output\timestamp.png" />
+    <Resource Include="Image\SettingsPage\net.png" />
+    <Resource Include="Image\Output\jump.png" />
+    <Resource Include="Image\Search\activity.png" />
+    <Resource Include="Image\Search\argument.png" />
+    <Resource Include="Image\Search\reference.png" />
+    <Resource Include="Image\Search\variables.png" />
+    <Resource Include="Image\Help\history-version.png" />
+    <None Include="Config\HistoryVersion_en.txt" />
+    <Resource Include="Image\Toolbar\help.png" />
+    <Resource Include="Image\Account\AccountFour.svg" />
+    <Resource Include="Image\Account\AccountOne.svg" />
+    <Resource Include="Image\Account\AccountThree.svg" />
+    <Resource Include="Image\Account\AccountTwo.svg" />
+    <Resource Include="Image\Account\key.png" />
+    <Resource Include="Image\Account\name.png" />
+    <Resource Include="Image\Account\password.png" />
+    <None Include="Config\HistoryVersion.txt" />
+    <None Include="Config\ActivitiesChildrenOrder_en.xml" />
+    <Content Include="Config\NewXamlFileConfig_en.xml" />
+    <Resource Include="Image\Account\Chainbot.svg" />
+    <Resource Include="Image\Splash\splash_en.png" />
+    <None Include="Config\SystemActivities_en.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="Image\Recording\doubleclick.png" />
+    <Content Include="Image\Toolbar\open.Light.png" />
+    <Content Include="Image\Toolbar\preview.Light.png" />
+    <Resource Include="Image\Toolbar\search.png" />
+    <Content Include="Image\Toolbar\triangle-down.Light.png" />
+    <Resource Include="Image\Misc\magnifier.png" />
+    <Resource Include="Image\Misc\magnifier.Dark.png" />
+    <Resource Include="Image\Debugger\remove-all-breakpoints.Light.png" />
+    <Resource Include="Image\Debugger\break.Light.png" />
+    <Resource Include="Image\SettingsPage\component.png" />
+    <Resource Include="Image\SettingsPage\general.png" />
+    <Resource Include="Image\ToolsPage\chrome.png" />
+    <Resource Include="Image\ToolsPage\firefox.png" />
+    <Resource Include="Image\ToolsPage\ie.png" />
+    <Resource Include="Image\Project\depend-item.png" />
+    <Resource Include="Image\Project\dependencies.png" />
+    <Resource Include="Image\Dock\remove-unused-screenshots.png" />
+    <Resource Include="Image\Dock\debug.png" />
+    <Resource Include="Image\Help\community-forum.png" />
+    <Resource Include="Image\Help\product-documentation.png" />
+    <Resource Include="Image\Dock\activities-collapse-all.png" />
+    <Resource Include="Image\Dock\activities-expand-all.png" />
+    <Resource Include="Image\Dock\activities-menu.png" />
+    <Resource Include="Image\Dock\activities.png" />
+    <Resource Include="Image\Dock\add-dir.png" />
+    <Resource Include="Image\Dock\dir-collapsed.png" />
+    <Resource Include="Image\Dock\dir-expand.png" />
+    <Resource Include="Image\Dock\document.png" />
+    <Resource Include="Image\Dock\file-explorer.png" />
+    <Resource Include="Image\Dock\menu-open.png" />
+    <Resource Include="Image\Dock\menu-remove.png" />
+    <Resource Include="Image\Dock\null.png" />
+    <Resource Include="Image\Dock\outline.png" />
+    <Resource Include="Image\Dock\output.png" />
+    <Resource Include="Image\Dock\project.png" />
+    <Resource Include="Image\Dock\property.png" />
+    <Resource Include="Image\Dock\refresh.png" />
+    <Resource Include="Image\Dock\remove.png" />
+    <Resource Include="Image\Dock\search-clear.png" />
+    <Resource Include="Image\Dock\search-magnifier.png" />
+    <Resource Include="Image\Dock\settings.png" />
+    <Resource Include="Image\Dock\snippet-file.png" />
+    <Resource Include="Image\Dock\snippets.png" />
+    <Resource Include="Image\Dock\source.png" />
+    <Resource Include="Image\Dock\view-variable.png" />
+    <Resource Include="Image\Toolbar\breakpoints.png" />
+    <Resource Include="Image\Toolbar\copy.png" />
+    <Resource Include="Image\Toolbar\cut.png" />
+    <Resource Include="Image\Toolbar\dataextract.png" />
+    <Resource Include="Image\Toolbar\flowchart.png" />
+    <Resource Include="Image\Toolbar\open-logs.png" />
+    <Resource Include="Image\Toolbar\options.png" />
+    <Resource Include="Image\Toolbar\paste.png" />
+    <Resource Include="Image\Toolbar\remove-all-breakpoints.png" />
+    <Resource Include="Image\Toolbar\save-all.png" />
+    <Resource Include="Image\Toolbar\save-as.png" />
+    <Resource Include="Image\Toolbar\sequence.png" />
+    <Resource Include="Image\Toolbar\slow-step-1x.png" />
+    <Resource Include="Image\Toolbar\slow-step-2x.png" />
+    <Resource Include="Image\Toolbar\slow-step-3x.png" />
+    <Resource Include="Image\Toolbar\slow-step-4x.png" />
+    <Resource Include="Image\Toolbar\slow-step-off.png" />
+    <Resource Include="Image\Toolbar\state-machine.png" />
+    <Resource Include="Image\Toolbar\validate.png" />
+    <None Include="Config\ActivitiesChildrenOrder.xml" />
+    <None Include="Config\ServerSettings.xml" />
+    <Content Include="Config\NewXamlFileConfig.xml" />
+    <Resource Include="Image\Toolbar\arrow-up.png" />
+    <Resource Include="Image\MessageBox\error.png" />
+    <Resource Include="Image\MessageBox\question.png" />
+    <Resource Include="Image\MessageBox\warning.png" />
+    <Resource Include="Image\MessageBox\information.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Chainbot.Contracts\Chainbot.Contracts.csproj">
+      <Project>{bf733f55-de6b-491e-a8d7-9392e70a8714}</Project>
+      <Name>Chainbot.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCopy /E /Y "$(SolutionDir)Help\Sample" "$(SolutionDir)ChainbotStudio\$(OutDir)Snippets\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

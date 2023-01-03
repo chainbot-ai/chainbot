@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutProducts" xml:space="preserve">
+    <value>关于产品</value>
+  </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="ActivityLog" xml:space="preserve">
+    <value>活动日志：type={0},msg={1},msgDetails={2}</value>
+  </data>
+  <data name="AreYouSureToRemoveThePackage" xml:space="preserve">
+    <value>确定移除当前包吗？</value>
+  </data>
+  <data name="AreYouSureToReset" xml:space="preserve">
+    <value>确认重置为默认设置吗？</value>
+  </data>
+  <data name="AutomaticallyOpenWindowContent" xml:space="preserve">
+    <value>启动后自动打开主窗口</value>
+  </data>
+  <data name="AutomaticallyStartAtBootContent" xml:space="preserve">
+    <value>开机时自动启动</value>
+  </data>
+  <data name="AvailableProcessesListText" xml:space="preserve">
+    <value>可用流程列表</value>
+  </data>
+  <data name="BrowseLogsToolTip" xml:space="preserve">
+    <value>浏览日志</value>
+  </data>
+  <data name="BrowserExtensionsToolTip" xml:space="preserve">
+    <value>浏览器插件</value>
+  </data>
+  <data name="BrowserWindowTitle" xml:space="preserve">
+    <value>浏览器插件</value>
+  </data>
+  <data name="BrowseVideos" xml:space="preserve">
+    <value>浏览录像</value>
+  </data>
+  <data name="CancelContent" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CannotFindChainbotExecutor" xml:space="preserve">
+    <value>执行器不存在！请检查是否被杀毒软件误删除</value>
+  </data>
+  <data name="CannotFindMainXamlFileError" xml:space="preserve">
+    <value>找不到主文件</value>
+  </data>
+  <data name="CannotFindProjectJsonFile" xml:space="preserve">
+    <value>无法找到项目配置文件project.json</value>
+  </data>
+  <data name="ChainbotRobotTitle" xml:space="preserve">
+    <value>Chainbot机器人</value>
+  </data>
+  <data name="CloseContent" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ComputerId" xml:space="preserve">
+    <value>机器ID：</value>
+  </data>
+  <data name="ComputerName" xml:space="preserve">
+    <value>机器名：</value>
+  </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>询问</value>
+  </data>
+  <data name="ControlCenterAddress" xml:space="preserve">
+    <value>控制中心地址：</value>
+  </data>
+  <data name="ControlCenterConfiguration" xml:space="preserve">
+    <value>控制中心配置</value>
+  </data>
+  <data name="CopyInformation" xml:space="preserve">
+    <value>复制信息</value>
+  </data>
+  <data name="EnableControlCenter" xml:space="preserve">
+    <value>启用控制中心</value>
+  </data>
+  <data name="EnableScreenRecording" xml:space="preserve">
+    <value>启用屏幕录像</value>
+  </data>
+  <data name="EndProcessRun" xml:space="preserve">
+    <value>流程运行结束</value>
+  </data>
+  <data name="EndScreenRecording" xml:space="preserve">
+    <value>屏幕录像结束</value>
+  </data>
+  <data name="FramesText" xml:space="preserve">
+    <value>帧数：</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>Ip地址：</value>
+  </data>
+  <data name="LoadingProjectDependencies" xml:space="preserve">
+    <value>正在加载项目依赖项</value>
+  </data>
+  <data name="LoadingProjectDependenciesError" xml:space="preserve">
+    <value>加载项目依赖项出错！</value>
+  </data>
+  <data name="LocateCurrentPackage" xml:space="preserve">
+    <value>定位当前包</value>
+  </data>
+  <data name="OKContent" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="PackageToolTip" xml:space="preserve">
+    <value>名称：{0}\r\n版本：{1}\r\n发布说明：{2}\r\n项目描述：{3}\r\n发布时间：{4}</value>
+  </data>
+  <data name="ProcessStart" xml:space="preserve">
+    <value>流程启动</value>
+  </data>
+  <data name="ProjectStartError" xml:space="preserve">
+    <value>流程运行过程中发生异常！</value>
+  </data>
+  <data name="PromptText" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="QualityText" xml:space="preserve">
+    <value>画质：</value>
+  </data>
+  <data name="RecordingLimitDays" xml:space="preserve">
+    <value>保留天数：</value>
+  </data>
+  <data name="RecordingSettings" xml:space="preserve">
+    <value>录像设置</value>
+  </data>
+  <data name="RefreshToolTip" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="RemoveCurrentPackage" xml:space="preserve">
+    <value>移除当前包</value>
+  </data>
+  <data name="ResetSettingsContent" xml:space="preserve">
+    <value>重置设置</value>
+  </data>
+  <data name="RunningText" xml:space="preserve">
+    <value>正在运行</value>
+  </data>
+  <data name="ScreenRecordingStarted" xml:space="preserve">
+    <value>屏幕录像开始……</value>
+  </data>
+  <data name="SearchHintText" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchResultEmptyText" xml:space="preserve">
+    <value>搜索结果为空</value>
+  </data>
+  <data name="StartText" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="StopText" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="SystemSettingsHeader" xml:space="preserve">
+    <value>系统设置</value>
+  </data>
+  <data name="TheProcessStarted" xml:space="preserve">
+    <value>流程运行开始……</value>
+  </data>
+  <data name="TillText" xml:space="preserve">
+    <value>截止到</value>
+  </data>
+  <data name="UpdateText" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="UserSettings" xml:space="preserve">
+    <value>用户设置</value>
+  </data>
+  <data name="ValidityPeriodText" xml:space="preserve">
+    <value>有效期：</value>
+  </data>
+  <data name="VersionText" xml:space="preserve">
+    <value>版本号：</value>
+  </data>
+  <data name="WorkflowAlreadyRunning" xml:space="preserve">
+    <value>已经有工作流正在运行，请等待它结束后再运行！</value>
+  </data>
+  <data name="YYYYMMDD" xml:space="preserve">
+    <value>yyyy年MM月dd日HH时mm分ss秒</value>
+  </data>
+</root>

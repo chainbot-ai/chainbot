@@ -1,0 +1,167 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+                    xmlns:purs="clr-namespace:Panuon.UI.Silver.Resources;assembly=Panuon.UI.Silver"
+                    xmlns:libs="clr-namespace:ChainbotRobot.Librarys"
+                     >
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Chainbot.Resources;component/Styles/Converters.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="MinimizeButtonStyle" TargetType="Button"
+               BasedOn="{StaticResource {x:Static purs:ResourceKeys.WindowXMinimizeButtonStyle}}">
+        <Style.Triggers>
+            <Trigger Property="pu:ButtonHelper.ButtonStyle" Value="Hollow">
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="ToolTip" Value="Minimize" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="MaximizeButtonStyle" TargetType="Button"
+               BasedOn="{StaticResource {x:Static purs:ResourceKeys.WindowXMaximizeButtonStyle}}">
+        <Style.Triggers>
+            <Trigger Property="pu:ButtonHelper.ButtonStyle" Value="Hollow">
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="ToolTip" Value="Maximize" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CloseButtonStyle" TargetType="Button"
+               BasedOn="{StaticResource {x:Static purs:ResourceKeys.WindowXCloseButtonStyle}}">
+        <Style.Triggers>
+            <Trigger Property="pu:ButtonHelper.ButtonStyle" Value="Hollow">
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="ToolTip" Value="Close" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="WindowXStyle" TargetType="pu:WindowX" BasedOn="{StaticResource {x:Type pu:WindowX}}">
+        <Style.Triggers>
+            <MultiTrigger>
+                <Setter Property="pu:WindowXCaption.Background" Value="#FF660874" />
+                <Setter Property="pu:WindowXCaption.Foreground" Value="White" />
+
+                <Setter Property="pu:WindowXCaption.MinimizeButtonStyle" Value="{DynamicResource MinimizeButtonStyle}" />
+                <Setter Property="pu:WindowXCaption.MaximizeButtonStyle" Value="{DynamicResource MaximizeButtonStyle}" />
+                <Setter Property="pu:WindowXCaption.CloseButtonStyle" Value="{DynamicResource CloseButtonStyle}" />
+                <Setter Property="pu:WindowXCaption.HorizontalHeaderAlignment" Value="Stretch" />
+
+                <Setter Property="Icon" Value="/ChainbotRobot;component/Resources/Ico/ChainbotRobot.ico" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderBrush" Value="#FF660874" />
+                <Setter Property="Background" Value="White" />
+                <Setter Property="Foreground" Value="Black" />
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button"
+       BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Background" Value="#FFDCDADA" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="pu:ButtonHelper.HoverBrush" Value="#FFECEAEA" />
+    </Style>
+
+    <libs:BoolVisibilityConverter x:Key="BoolVisibilityConverter"/>
+    <libs:BoolNotVisibilityConverter x:Key="BoolNotVisibilityConverter"/>
+    <libs:BoolCollapsedConverter x:Key="BoolCollapsedConverter"/>
+    <libs:BoolNotCollapsedConverter x:Key="BoolNotCollapsedConverter"/>
+    <libs:NullImageConverter x:Key="NullImageConverter"/>
+    <libs:SingleLineTextConverter x:Key="SingleLineTextConverter"/>
+    <libs:SingleLineWithSpaceCombineTextConverter x:Key="SingleLineWithSpaceCombineTextConverter"/>
+    <libs:BoolNotConverter x:Key="BoolNotConverter"/>
+
+    <Style TargetType="MenuItem">
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value="0.5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type libs:ButtonThreeState}">
+        <Setter Property="ToolTipService.InitialShowDelay" Value="1000"/>
+        <Setter Property="Foreground" Value="{Binding def_foreground, RelativeSource={RelativeSource Self}}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type libs:ButtonThreeState}">
+                    <Grid>
+                        <Image x:Name="btnbg" Source="{Binding def, RelativeSource={RelativeSource TemplatedParent}}" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Source"  Value="{Binding hover, RelativeSource={RelativeSource TemplatedParent}}" TargetName="btnbg" />
+                            <Setter Property="Foreground" Value="{Binding hover_foreground, RelativeSource={RelativeSource Self}}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Source" Value="{Binding active, RelativeSource={RelativeSource TemplatedParent}}" TargetName="btnbg" />
+                            <Setter Property="Foreground" Value="{Binding click_foreground, RelativeSource={RelativeSource Self}}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Source" Value="{Binding forbid, RelativeSource={RelativeSource TemplatedParent}}" TargetName="btnbg"/>
+                            <Setter Property="Foreground" Value="{Binding forbid_foreground, RelativeSource={RelativeSource Self}}"/>
+                        </Trigger>
+                        <Trigger Property="ToolTip" Value="">
+                            <Setter Property="ToolTipService.IsEnabled" Value="False"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type libs:ColorButtonThreeState}">
+        <Setter Property="ToolTipService.InitialShowDelay" Value="1000"/>
+        <Setter Property="Foreground" Value="{Binding def_foreground, RelativeSource={RelativeSource Self}}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type libs:ColorButtonThreeState}">
+                    <Grid>
+                        <Border x:Name="btnbg" Background="{Binding def, RelativeSource={RelativeSource TemplatedParent}}" />
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="btnimg" Margin="2" Source="{Binding def_img, RelativeSource={RelativeSource TemplatedParent}}" />
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </StackPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background"  Value="{Binding hover, RelativeSource={RelativeSource TemplatedParent}}" TargetName="btnbg" />
+                            <Setter Property="Foreground" Value="{Binding hover_foreground, RelativeSource={RelativeSource Self}}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{Binding active, RelativeSource={RelativeSource TemplatedParent}}" TargetName="btnbg" />
+                            <Setter Property="Foreground" Value="{Binding click_foreground, RelativeSource={RelativeSource Self}}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="{Binding forbid, RelativeSource={RelativeSource TemplatedParent}}" TargetName="btnbg"/>
+                            <Setter Property="Foreground" Value="{Binding forbid_foreground, RelativeSource={RelativeSource Self}}"/>
+                        </Trigger>
+                        <Trigger Property="ToolTip" Value="">
+                            <Setter Property="ToolTipService.IsEnabled" Value="False"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <ContextMenu x:Key="PackageItemContextMenu">
+        <MenuItem Header="Copy Information"  Command="{Binding CopyItemInfoCommand}" CommandParameter="{Binding}"/>
+        <MenuItem Header="Locate" Command="{Binding LocateItemCommand}" CommandParameter="{Binding}"/>
+        <Separator />
+        <MenuItem Header="Remove" Command="{Binding RemoveItemCommand}" CommandParameter="{Binding}"/>
+    </ContextMenu>
+
+    <ContextMenu x:Key="ScheduledTaskItemContextMenu">
+        <MenuItem Header="Copy Task Details" Command="{Binding CopyItemInfoCommand}" CommandParameter="{Binding}"/>
+        <Separator />
+        <MenuItem Header="Remove" Command="{Binding RemoveItemCommand}" CommandParameter="{Binding}"/>
+    </ContextMenu>
+
+</ResourceDictionary>

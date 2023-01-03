@@ -1,0 +1,456 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:themes="http://schemas.actiprosoftware.com/winfx/xaml/themes" 
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                     >
+    <SolidColorBrush
+		Color="#FF498249"
+		x:Key="Diff_ItemAddedColorBrush" />
+    <SolidColorBrush
+		Color="#FF905F67"
+		x:Key="Diff_ItemDeletedColorBrush" />
+    <SolidColorBrush
+		Color="#FF716145"
+		x:Key="Diff_ItemModifiedColorBrush" />
+    <SolidColorBrush
+		Color="Gray"
+		x:Key="Diff_DummyItemColorBrush" />
+    <SolidColorBrush
+		Color="LightGray"
+		x:Key="Diff_SelectedItemBorderBrush" />
+  
+    <SolidColorBrush
+		Color="#FFCDCDCD"
+		x:Key="IconNormalGray" />
+    <SolidColorBrush
+		Color="#FFE0E0E1"
+		x:Key="IconDarkGray" />
+    <SolidColorBrush
+		Color="#FF4F4F4F"
+		x:Key="IconLightGray" />
+    <SolidColorBrush
+		Color="#FF333333"
+		x:Key="IconVeryLightGray" />
+    <SolidColorBrush
+		Color="#FF77D277"
+		x:Key="IconGreen" />
+    <SolidColorBrush
+		Color="#DF495D"
+		x:Key="IconRed" />
+    <SolidColorBrush
+		Color="#db8b0a"
+		x:Key="WarningYellow" />
+    <SolidColorBrush
+		Color="#2b5978"
+		x:Key="IconLessContrastBlue" />
+    <SolidColorBrush
+		Color="#F2697B"
+		x:Key="CustomRed" />
+    <SolidColorBrush
+		Color="DarkOrange"
+		x:Key="CustomDarkOrange" />
+    <SolidColorBrush
+		Color="#FF4C9CE6"
+		x:Key="CustomRoyalBlue" />
+    <SolidColorBrush
+		Color="#FFB7B7B8"
+		x:Key="CustomMediumGray" />
+    <SolidColorBrush
+		Color="#FF9ACA9A"
+		x:Key="CustomGreen" />
+    <SolidColorBrush
+		Color="#FFffbadc"
+		x:Key="CustomHotPink" />
+    <SolidColorBrush
+		Color="{Binding Color, Source={StaticResource {x:Static themes:AssetResourceKeys.StatusBarBackgroundNormalBrushKey}}}"
+		x:Key="ControlBlue" />
+    <SolidColorBrush
+		Color="#525252"
+		x:Key="LargeVerticalSeparatorBrush" />
+    <SolidColorBrush
+		Color="#0791ED"
+		x:Key="ServiceGetBlue" />
+    <SolidColorBrush
+		Color="#5fac06"
+		x:Key="ServicePostGreen" />
+    <SolidColorBrush
+		Color="#DF8B00"
+		x:Key="ServicePutOrange" />
+    <SolidColorBrush
+		Color="#EE2B45"
+		x:Key="ServiceDeleteRed" />
+    <SolidColorBrush
+		Color="#b85300"
+		x:Key="AccentColor" />
+    <SolidColorBrush
+		Color="#B73136"
+		x:Key="TooltipErrorForegroundColor" />
+    <SolidColorBrush
+		Color="#FFECED"
+		x:Key="TooltipErrorBackgroundColor" />
+    <SolidColorBrush
+		Color="#E0DEB0"
+		x:Key="InfoBarBackground" />
+    <SolidColorBrush
+		Color="#1E1E1E"
+		x:Key="InfoBarForeground" />
+    <SolidColorBrush
+		Color="#AAFFFFFF"
+		x:Key="BackstageFooterForeground" />
+    <SolidColorBrush
+		Color="#A7A8A9"
+		x:Key="BackstageSeparatorForeground" />
+    <Color
+		x:Key="BackstageSeparatorBorderBrush">#525252</Color>
+    <SolidColorBrush
+		Color="#3F3F46"
+		x:Key="ControlNormalBackgroundBrush" />
+    <SolidColorBrush
+		Color="#56565F"
+		x:Key="ControlHoverBackgroundBrush" />
+    <SolidColorBrush
+		Color="#52525A"
+		x:Key="ControlPressedBackgroundBrush" />
+    <SolidColorBrush
+		Color="#FF00600F"
+		x:Key="ActivityCoverageBackgroundBrush" />
+    <SolidColorBrush
+		Color="#FF00600F"
+		x:Key="ActivityCoverageBorderBrush" />
+    <SolidColorBrush
+		Color="#FFE5F7ED"
+		x:Key="CoverageBackgroundHigh" />
+    <SolidColorBrush
+		Color="#FF00893E"
+		x:Key="CoverageBorderHigh" />
+    <SolidColorBrush
+		Color="#FFFFE0B2"
+		x:Key="CoverageBackgroundMedium" />
+    <SolidColorBrush
+		Color="#FFFB8C00"
+		x:Key="CoverageBorderMedium" />
+    <SolidColorBrush
+		Color="#FFFFCCCB"
+		x:Key="CoverageBackgroundLow" />
+    <SolidColorBrush
+		Color="#FFD32F2F"
+		x:Key="CoverageBorderLow" />
+    <Color
+		x:Key="TabItemSelectedBackgroundBrush">#3F3F46</Color>
+    <SolidColorBrush
+		Color="{Binding Color, Source={StaticResource IconNormalGray}}"
+		x:Key="PseudoMonochromeIconBrush" />
+    <SolidColorBrush
+		Color="#282828"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarEditBackgroundDisabledBrushKey}" />
+    <SolidColorBrush
+		Color="#5B5B5B"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarEditBorderDisabledBrushKey}" />
+    <SolidColorBrush
+		Color="#333337"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarEditBackgroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#5B5B5B"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarEditBorderNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#333337"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBackgroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#5B5B5B"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBorderNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#282828"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBackgroundDisabledBrushKey}" />
+    <SolidColorBrush
+		Color="#5B5B5B"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBorderDisabledBrushKey}" />
+    <SolidColorBrush
+		Color="#37373C"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#5B5B5B"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#37373C"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBackgroundFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#5B5B5B"
+		x:Key="{x:Static themes:AssetResourceKeys.EditBorderFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#C1C1C2"
+		x:Key="{x:Static themes:AssetResourceKeys.DocumentTextAccent1ForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#AAAAAA"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonForegroundDisabledBrushKey}" />
+    <SolidColorBrush
+		Color="#FF4E4E55"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FF4E4E55"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonLargeBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.BackstageTabControlForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.BackstageTabItemForegroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.BackstageTabItemForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.BackstageTabItemForegroundSelectedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ButtonForegroundDefaultedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.DocumentTextForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.DocumentViewerForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.EditCaretBackgroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphForegroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphForegroundPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderHeaderForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ExplorerBarExpanderHeaderAlternateForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ExplorerBarExpanderHeaderForegroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ExplorerBarExpanderHeaderForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemForegroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemForegroundSelectedFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemForegroundSelectedHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemForegroundSelectedNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ListToggleButtonExpansionBackgroundCheckedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ListToggleButtonExpansionBorderCheckedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ListToggleButtonExpansionBorderNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.MenuForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.MenuItemForegroundHighlightedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.MenuItemForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonForegroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarEditForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarMenuForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.WindowForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.WindowTitleBarButtonAlternateForegroundActiveNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.WindowTitleBarButtonAlternateForegroundInactiveNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.WindowTitleBarButtonForegroundActiveNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.WindowTitleBarButtonForegroundInactiveNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ControlForegroundNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#FF999999"
+		x:Key="{x:Static themes:AssetResourceKeys.ControlForegroundDisabledBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.BulletBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.BulletBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ButtonBorderDefaultedBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.ButtonBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.ButtonBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.DropDownBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.DropDownBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphHighlightHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphHighlightPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphInnerBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderGlyphInnerBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderHeaderBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ExpanderHeaderBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ExplorerBarExpanderHeaderBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ListColumnHeaderBackgroundPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemBackgroundSelectedFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemBackgroundSelectedHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemBorderSelectedFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.ListItemBorderSelectedHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.NavigationBarPopupButtonBackgroundOpenedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.NavigationPaneHeaderBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.NavigationPaneHeaderBackgroundSelectedHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.NavigationPaneHeaderBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.NavigationPaneHeaderBorderSelectedHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.PopupGalleryFilterForegroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.RibbonTabItemBorderFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbHorizontalBackgroundFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbHorizontalBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbHorizontalBackgroundPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbHorizontalBorderFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbHorizontalBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbHorizontalBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbVerticalBackgroundFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbVerticalBackgroundHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbVerticalBackgroundPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbVerticalBorderFocusedBrushKey}" />
+    <SolidColorBrush
+		Color="#343434"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbVerticalBorderHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#55555e"
+		x:Key="{x:Static themes:AssetResourceKeys.SliderThumbVerticalBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBackgroundOpenedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBackgroundPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBorderCheckedHoverBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBorderCheckedNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#4e4e56"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBackgroundCheckedNormalBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBorderOpenedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonLargeBackgroundOpenedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarButtonLargeBackgroundPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#3a3a40"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolBarEditDropDownButtonBorderPressedBrushKey}" />
+    <SolidColorBrush
+		Color="#FFE6E6E6"
+		x:Key="{x:Static themes:AssetResourceKeys.ToolWindowContainerTabItemForegroundHoverBrushKey}" />
+
+    <SolidColorBrush
+        Color="#FF434346"
+        x:Key="{x:Static themes:AssetResourceKeys.WindowBorderActiveBrushKey}" />
+</ResourceDictionary>

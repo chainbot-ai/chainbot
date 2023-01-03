@@ -1,0 +1,104 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:Class="Plugins.Shared.Library.Editors.EditorTemplates"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib"
+                    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
+                    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+                    xmlns:PropertyEditing="clr-namespace:System.Activities.Presentation.PropertyEditing;assembly=System.Activities.Presentation"
+                    xmlns:lcz="clr-namespace:Plugins.Shared.Library.Properties">
+    
+    <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+    <sapc:ModelPropertyEntryToOwnerActivityConverter x:Key="ModelPropertyEntryToOwnerActivityConverter" />
+    <sapc:ArgumentToExpressionModelItemConverter x:Key="ArgumentToExpressionModelItemConverter" />
+    
+    <DataTemplate x:Key="CollectionArgumentEditor">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton TargetEditMode="Dialog" HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBlock Text="{x:Static lcz:Resources.Arguments}" TextTrimming="CharacterEllipsis" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DictionaryArgumentEditor">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton TargetEditMode="Dialog" HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBlock Text="{x:Static lcz:Resources.Arguments}" TextTrimming="CharacterEllipsis" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ArgumentDictionaryEditor">
+        <DockPanel LastChildFill="True">
+            <TextBlock Text="{x:Static lcz:Resources.Arguments}" TextTrimming="CharacterEllipsis" IsEnabled="False"/>
+            <PropertyEditing:EditModeSwitchButton TargetEditMode="Dialog" HorizontalAlignment="Right" DockPanel.Dock="Right" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="VBAScriptEditorTemplate">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBox Name="Code" MaxLines="1" AcceptsReturn="True" Text="{Binding Path=Value, Mode=TwoWay}" />
+        </DockPanel>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="VBNetCodeEditorTemplate">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBox Name="Code" MaxLines="1" AcceptsReturn="True" Text="{Binding Path=Value, Mode=TwoWay}" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="CodeEditorTemplate">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBox Name="Code" MaxLines="1" AcceptsReturn="True" Text="{Binding Path=Value, Mode=TwoWay}" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="PythonScriptEditorTemplate">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBox Name="Code" MaxLines="1" AcceptsReturn="True" Text="{Binding Path=Value, Mode=TwoWay}" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="JavaScriptEditorTemplate">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBox Name="Code" MaxLines="1" AcceptsReturn="True" Text="{Binding Path=Value, Mode=TwoWay}" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="TextEditorTemplate">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton HorizontalAlignment="Right" DockPanel.Dock="Right" />
+            <TextBox Name="Text" MaxLines="1" AcceptsReturn="True" Text="{Binding Path=Value, Mode=TwoWay}" />
+        </DockPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="SelectorEditorTemplate">
+        <DockPanel LastChildFill="True">
+            <PropertyEditing:EditModeSwitchButton TargetEditMode="Dialog" HorizontalAlignment="Right" DockPanel.Dock="Right" />
+                       
+            <sapv:ExpressionTextBox
+				MaxLines="1"
+				HintText="{x:Static lcz:Resources.Selector}"
+				ExpressionType="{x:Type s:String}"
+				OwnerActivity="{Binding Path=ParentProperty, Mode=OneWay, Converter={StaticResource ModelPropertyEntryToOwnerActivityConverter}}">
+                <sapv:ExpressionTextBox.Expression>
+                    <MultiBinding
+						Mode="TwoWay"
+						ConverterParameter="In"
+						Converter="{StaticResource ArgumentToExpressionModelItemConverter}">
+                        <Binding
+							Path="Value"
+							Mode="TwoWay" />
+                        <Binding
+							Path="ParentProperty"
+							Mode="OneWay" />
+                    </MultiBinding>
+                </sapv:ExpressionTextBox.Expression>
+            </sapv:ExpressionTextBox>
+        </DockPanel>
+    </DataTemplate>
+    
+
+</ResourceDictionary>

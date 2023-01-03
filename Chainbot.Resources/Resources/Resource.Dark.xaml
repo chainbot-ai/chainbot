@@ -1,0 +1,181 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:ChainbotStudio.Resources.Resources"
+                     >
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Chainbot.Resources;component/Resources/ContextMenuResource.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Chainbot.Resources;component/Resources/ImageResource.Dark.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <SolidColorBrush x:Key="WindowXCaption.Foreground" Color="White" />
+    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1" x:Key="WindowXCaption.Background">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0" Color="#343434"></GradientStop>
+            <GradientStop Offset="0.5" Color="#2C2C2C"></GradientStop>
+            <GradientStop Offset="1" Color="#242424"></GradientStop>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    
+    <SolidColorBrush x:Key="WindowXCaption.Button.Foreground" Color="White" />
+    <SolidColorBrush x:Key="WindowXCaption.Info.Border.Background" Color="#252525" />
+    <SolidColorBrush x:Key="WindowXCaption.Info.Button.Foreground" Color="#CCCCCC" />
+
+    <SolidColorBrush x:Key="WindowXCaption.Menu.Foreground" Color="White" />
+    <SolidColorBrush x:Key="WindowXCaption.Menu.Background" Color="Transparent" />
+    <Color x:Key="WindowXCaption.Menu.ContextMenu.Background">#2C2C2C</Color>
+
+    <SolidColorBrush x:Key="WindowXCaption.Arrow.Color" Color="White" />
+    <SolidColorBrush x:Key="WindowXCaption.SubMenu.Background" Color="#2C2C2C" />
+    <SolidColorBrush x:Key="WindowXCaption.SubMenu.GlyphPanel.Color" Color="White" />
+
+    <SolidColorBrush x:Key="WindowX.MaskBrush" Color="#88FFFFFF" />
+
+
+    <SolidColorBrush x:Key="Documents.ToolBar.Background" Color="#0F0F10" />
+
+    <SolidColorBrush x:Key="Output.FilterButton.Background" Color="#111112" />
+    <SolidColorBrush x:Key="Output.FilterButton.Foreground" Color="#999999" />
+    <SolidColorBrush x:Key="Output.FilterButton.HoverBrush" Color="#555555" />
+
+    <Thickness x:Key="Menu.Horizontal.Margin" >10,0</Thickness>
+    <Thickness x:Key="Menu.Vertical.Margin" >0,5</Thickness>
+
+    <SolidColorBrush x:Key="WindowX.Toolbar.Background" Color="#181818" />
+    <SolidColorBrush x:Key="WindowX.Toolbar.Border.Background" Color="#131313" />
+    <SolidColorBrush x:Key="WindowX.Toolbar.Button.HoverBrush" Color="#555555" />
+    <SolidColorBrush x:Key="WindowX.Toolbar.Button.DropDownHoverBrush" Color="#888888" />
+
+    <SolidColorBrush x:Key="WindowX.View.Title.Background" Color="#161618" />
+    <SolidColorBrush x:Key="WindowX.View.Background" Color="#121213" />
+    <SolidColorBrush x:Key="WindowX.View.SearchTextBox.Foreground" Color="White" />
+    <SolidColorBrush x:Key="WindowX.View.SearchTextBox.Background" Color="#161618" />
+    <SolidColorBrush x:Key="WindowX.View.SearchTextBox.BorderBrush" Color="#4B4B4B" />
+    <SolidColorBrush x:Key="WindowX.View.Output.SearchTextBox.Background" Color="#111112" />
+    <SolidColorBrush x:Key="WindowX.View.SearchTextBox.FocusedBorderBrush" Color="#888888" />
+    <SolidColorBrush x:Key="WindowX.View.SearchTextBox.FocusedShadowColor" Color="#161618" />
+    <Thickness x:Key="WindowX.View.SearchTextBox.BorderThickness" >1</Thickness>
+
+    <SolidColorBrush x:Key="Loading.Foreground" Color="#FF0177CE" />
+
+    <SolidColorBrush x:Key="StartDocumentView.Button.HoverBrush" Color="#C6EEF2" />
+
+    <SolidColorBrush x:Key="WindowX.GridSplitter.Background" Color="#161618" />
+
+    <!--Separator-->
+    <SolidColorBrush x:Key="Separator.Background" Color="#4B4B4B" />
+
+
+    <SolidColorBrush x:Key="WindowX.StatusBar.Background" Color="#FF2D2D30" />
+    <SolidColorBrush x:Key="WindowX.StatusBar.splitter.BorderBrush" Color="#4B4B4B" />
+
+    <SolidColorBrush x:Key="WindowX.Background" Color="#252526" />
+    <SolidColorBrush x:Key="WindowX.Foreground" Color="White" />
+
+    <GridLength x:Key="View.Left.Default.Width">300</GridLength>
+    <sys:Double x:Key="View.Left.Max.Width">600</sys:Double>
+    <GridLength x:Key="View.Right.Default.Width">300</GridLength>
+    <sys:Double x:Key="View.Right.Max.Width">600</sys:Double>
+    <GridLength x:Key="View.Output.Default.Height">150</GridLength>
+    <sys:Double x:Key="View.Output.Max.Height">600</sys:Double>
+    
+
+    <SolidColorBrush x:Key="WindowX.Button.Close.HoverBrush" Color="#D64343" />
+
+    <SolidColorBrush x:Key="Button.Foreground" Color="White" />
+    <SolidColorBrush x:Key="Button.Background" Color="#3F3F3F" />
+    <SolidColorBrush x:Key="Button.HoverBrush" Color="#565656" />
+
+    <SolidColorBrush x:Key="TextBox.Foreground" Color="White" />
+    <SolidColorBrush x:Key="TextBox.Background" Color="Transparent" />
+    <SolidColorBrush x:Key="TextBox.HoverBrush" Color="#5B5B5B" />
+    <SolidColorBrush x:Key="TextBox.CaretBrush" Color="White" />
+    <SolidColorBrush x:Key="TextBox.ReadOnly.Foreground" Color="#6D6D6D" />
+
+    <SolidColorBrush x:Key="TextBlock.Foreground" Color="White" />
+    <SolidColorBrush x:Key="TextBlock.Background" Color="Transparent" />
+    <SolidColorBrush x:Key="TextBlock.HoverBrush" Color="#5B5B5B" />
+    <SolidColorBrush x:Key="TextBlock.CaretBrush" Color="White" />
+
+    <SolidColorBrush x:Key="TreeView.ItemsSelected.Background" Color="#4E4E4E" />
+    <SolidColorBrush x:Key="TreeView.ItemsHover.Background" Color="#3F3F3F" />
+    <SolidColorBrush x:Key="TreeView.ItemsToggleBrush" Color="White" />
+    <SolidColorBrush x:Key="TreeView.ItemsHoverToggleBrush" Color="#1560A0" />
+    <SolidColorBrush x:Key="TreeViewItem.Foreground" Color="White" />
+
+    <SolidColorBrush x:Key="SearchResult.Empty.Foreground" Color="#C1C1C1" />
+    <SolidColorBrush x:Key="SearchResult.HighlightTextBrush" Color="#FF9052" />
+
+    <SolidColorBrush x:Key="Output.ListBox.Background" Color="Transparent" />
+    <SolidColorBrush x:Key="Output.ListBox.BorderBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="Output.ListBox.Left.Background" Color="Transparent" />
+    <SolidColorBrush x:Key="Output.ListBox.Right.Background" Color="Transparent" />
+
+    <SolidColorBrush x:Key="Log.Error.Foreground" Color="#E91530" />
+    <SolidColorBrush x:Key="Log.Warning.Foreground" Color="#9F3726" />
+    <SolidColorBrush x:Key="Log.Information.Foreground" Color="#E6E6E6" />
+    <SolidColorBrush x:Key="Log.Trace.Foreground" Color="#B7B7B7" />
+
+    <SolidColorBrush x:Key="ProjectView.TextBlock.Foreground" Color="#E1E1E1" />
+    <SolidColorBrush x:Key="ProjectView.MainXamlFile.Foreground" Color="#FF0177CE" />
+
+    <SolidColorBrush x:Key="ActivitiesView.TextBlock.Foreground" Color="#E1E1E1" />
+    <SolidColorBrush x:Key="ActivitiesView.SearchBlock.Foreground" Color="White" />
+
+    <SolidColorBrush x:Key="SourceCode.Document.Background" Color="#0F0F10" />
+
+    <SolidColorBrush x:Key="Border.Correct.BorderBrush" Color="#ABABAB" />
+    <SolidColorBrush x:Key="Border.Wrong.BorderBrush" Color="#EA1F1F" />
+
+    <Color x:Key="AvalonDockThemeVs2013.Background">#161618</Color>
+    <Color x:Key="AvalonDockThemeVs2013.DocumentWellTabUnselectedBackground">#0F0F10</Color>
+
+    <SolidColorBrush x:Key="MessageBox.Bottom.Background" Color="#FF2D2D30" />
+    <SolidColorBrush x:Key="MessageBox.Button.Background" Color="#3F3F3F" />
+    <SolidColorBrush x:Key="MessageBox.Button.Foreground" Color="White" />
+    <SolidColorBrush x:Key="MessageBox.Button.HoverBrush" Color="#565656" />
+    <SolidColorBrush x:Key="MessageBox.Button.DefaultButtonBackground" Color="#292929" />
+
+    <Color x:Key="TabControl.Background">#121212</Color>
+    <Color x:Key="TabControl.ItemsSelected.Background">#121212</Color>
+
+    <SolidColorBrush x:Key="TopButton.Foreground" Color="White" />
+    
+    <SolidColorBrush x:Key="StartDocument.Foreground" Color="#77B5F9" />
+    <SolidColorBrush x:Key="StartDocument.Background" Color="#0F0F10" />
+
+    <SolidColorBrush x:Key="title.Foreground" Color="White" />
+
+    <SolidColorBrush x:Key="Debug.Background" Color="#242424" />
+
+    <SolidColorBrush x:Key="ProgressBar.Foreground" Color="DimGray" />
+
+    <SolidColorBrush x:Key="CompetencyCenter.Title.Foreground" Color="White" />
+    <SolidColorBrush x:Key="CompetencyCenter.Title.Background" Color="#FF111112"/>
+    <SolidColorBrush x:Key="CompetencyCenter.Row.Foreground" Color="#999999" />
+    <SolidColorBrush x:Key="CompetencyCenter.Border.Background" Color="#FF131415" />
+    <SolidColorBrush x:Key="CompetencyCenter.ButtonHover.Background" Color="#FF2E2E2E" />
+    <SolidColorBrush x:Key="CompetencyCenter.Detail.Background" Color="#161618"/>
+    <Color x:Key="CompetencyCenter.ComboBoxBorder.Background">#FF131415</Color>
+    <Color x:Key="CompetencyCenter.ComboBoxHover.Background">#FF2E2E2E</Color>
+
+    <SolidColorBrush x:Key="StartPageView.Item.MouseOver.Background" Color="#4E4E55" />
+    <SolidColorBrush x:Key="StartPageView.Item.Title.Foreground" Color="#E6E6E6" />
+    <SolidColorBrush x:Key="StartPageView.Item.Description.Foreground" Color="#C1C1C1" />
+
+    <SolidColorBrush x:Key="ToolBar.SlowStepButton.Background" Color="#343436" />
+
+    <SolidColorBrush x:Key="Loading.Mask.Background" Color="#FFCCCCCC" />
+
+    <SolidColorBrush x:Key="OutputView.Title.Background" Color="#FF2D2D30" />
+
+    <SolidColorBrush x:Key="View.ToolBar.Background" Color="#2D2D30" />
+
+    <SolidColorBrush x:Key="View.Background" Color="#FF121213" />
+
+    <SolidColorBrush x:Key="ColorButton.HoverBackground" Color="#FF4E4E55" />
+    <SolidColorBrush x:Key="ColorButton.ActiveBackground" Color="#FF3A3A40" />
+    
+</ResourceDictionary>

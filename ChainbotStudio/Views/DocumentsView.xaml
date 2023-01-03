@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="ChainbotStudio.Views.DocumentsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+             xmlns:local="clr-namespace:ChainbotStudio.Views"
+             xmlns:utils="clr-namespace:ChainbotStudio.Utils"
+             mc:Ignorable="d" 
+             DataContext="{Binding Documents, Source={StaticResource Locator}}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <xcad:DockingManager DocumentsSource="{Binding Documents}" >
+            <xcad:DockingManager.Theme>
+                <xcad:Vs2013DarkTheme />
+                <!--<xcad:AeroTheme />-->
+                <!--<xcad:MetroTheme />-->
+                <!--<xcad:VS2010Theme />-->
+            </xcad:DockingManager.Theme>
+            <xcad:DockingManager.Resources>
+                <SolidColorBrush Color="{DynamicResource AvalonDockThemeVs2013.Background}" x:Key="AvalonDockThemeVs2013Background" />
+                <SolidColorBrush Color="{DynamicResource AvalonDockThemeVs2013.DocumentWellTabUnselectedBackground}" x:Key="AvalonDockThemeVs2013DocumentWellTabUnselectedBackground" />
+            </xcad:DockingManager.Resources>
+
+            <xcad:DockingManager.DocumentHeaderTemplate>
+                <DataTemplate>
+                
+                    <StackPanel Orientation="Horizontal" ToolTip="{Binding ToolTip}" >
+                        <Image IsHitTestVisible="False" Source="{Binding IconSource}" Visibility="{Binding Content.IsShowIcon,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}" VerticalAlignment="Center" Width="15" Height="15" Margin="5,0,0,0" />
+                        <TextBlock Text="{Binding Title}" Visibility="{Binding Content.IsShowTitle,Mode=OneWay, Converter={StaticResource BoolCollapsedConverter}}"  VerticalAlignment="Center" Margin="5,0,0,0" />
+                    </StackPanel>
+                </DataTemplate>
+            </xcad:DockingManager.DocumentHeaderTemplate>
+
+            <xcad:DockingManager.LayoutItemTemplateSelector>
+                <utils:PanesTemplateSelector>
+                    <utils:PanesTemplateSelector.DesignerDocumentViewTemplate>
+                        <DataTemplate>
+                            <ContentControl Content="{Binding WorkflowDesignerView}"/>
+                        </DataTemplate>
+                    </utils:PanesTemplateSelector.DesignerDocumentViewTemplate>
+                </utils:PanesTemplateSelector>
+            </xcad:DockingManager.LayoutItemTemplateSelector>
+
+            <xcad:DockingManager.LayoutItemContainerStyleSelector>
+                <utils:PanesStyleSelector>
+                    <utils:PanesStyleSelector.StartDocumentStyle>
+                        <Style TargetType="{x:Type xcad:LayoutItem}">
+                            <Setter Property="Title" Value="{Binding Model.Title}"/>
+                            <Setter Property="IconSource" Value="{Binding Model.IconSource}"/>
+                            <Setter Property="IsSelected" Value="{Binding Model.IsSelected, Mode=TwoWay}"/>
+                            <Setter Property="CloseCommand" Value="{Binding Model.CloseCommand}"/>
+                            <Setter Property="ToolTip" Value="{Binding Model.ToolTip}"/>
+                            <Setter Property="CanFloat" Value="False"/>
+                        </Style>
+                    </utils:PanesStyleSelector.StartDocumentStyle>
+                    <utils:PanesStyleSelector.DesignerDocumentStyle>
+                        <Style TargetType="{x:Type xcad:LayoutItem}">
+                            <Setter Property="Title" >
+                                <Setter.Value>
+                                    <MultiBinding StringFormat="{}{0}{1}{2}">
+                                        <Binding Path="Model.Title" />
+                                        <Binding Path="Model.DirtyStar" />
+                                        <Binding Path="Model.ReadOnlyDescription" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="IconSource" Value="{Binding Model.IconSource}"/>
+                            <Setter Property="IsSelected" Value="{Binding Model.IsSelected, Mode=TwoWay}"/>
+                            <Setter Property="CloseCommand" Value="{Binding Model.CloseCommand}"/>
+                            <Setter Property="ToolTip" Value="{Binding Model.ToolTip}"/>
+                            <Setter Property="CanFloat" Value="False"/>
+                        </Style>
+                    </utils:PanesStyleSelector.DesignerDocumentStyle>
+                    <utils:PanesStyleSelector.SourceCodeDocumentStyle>
+                        <Style TargetType="{x:Type xcad:LayoutItem}">
+                            <Setter Property="Title" >
+                                <Setter.Value>
+                                    <MultiBinding StringFormat="{}{0}{1}{2}">
+                                        <Binding Path="Model.Title" />
+                                        <Binding Path="Model.DirtyStar" />
+                                        <Binding Path="Model.ReadOnlyDescription" />
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="IconSource" Value="{Binding Model.IconSource}"/>
+                            <Setter Property="IsSelected" Value="{Binding Model.IsSelected, Mode=TwoWay}"/>
+                            <Setter Property="CloseCommand" Value="{Binding Model.CloseCommand}"/>
+                            <Setter Property="ToolTip" Value="{Binding Model.ToolTip}"/>
+                            <Setter Property="CanFloat" Value="False"/>
+                        </Style>
+                    </utils:PanesStyleSelector.SourceCodeDocumentStyle>
+                </utils:PanesStyleSelector>
+            </xcad:DockingManager.LayoutItemContainerStyleSelector>
+            <xcad:LayoutRoot>
+                <xcad:LayoutPanel Orientation="Horizontal">
+                    <xcad:LayoutDocumentPaneGroup>
+                        <xcad:LayoutDocumentPane>
+                        </xcad:LayoutDocumentPane>
+                    </xcad:LayoutDocumentPaneGroup >
+                </xcad:LayoutPanel>
+            </xcad:LayoutRoot>
+        </xcad:DockingManager>
+    </Grid>
+</UserControl>

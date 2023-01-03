@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileTypeConfig>
+  <Sequence Title="New Sequence" Description="Create a new sequence workflow" FileName="Sequence" />
+  <Flowchart Title="New Flowchart" Description="Create a new flowchart workflow" FileName="Flowchart" />
+  <StateMachine Title="New StateMachine" Description="Create a new state machine workflow" FileName="StateMachine" />
+  <GlobalHandler Title="New GlobalHandler" Description="Create a new global handler workflow" FileName="GlobalHandler" />
+</FileTypeConfig>

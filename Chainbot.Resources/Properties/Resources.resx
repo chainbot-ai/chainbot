@@ -1,0 +1,1553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivityBuilderImplementationVersion" xml:space="preserve">
+    <value>ImplementationVersion</value>
+  </data>
+  <data name="ActivityBuilderName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AppSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\AppSettings.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AssignToDisplayName" xml:space="preserve">
+    <value>DisplayName</value>
+  </data>
+  <data name="AssignValueDisplayName" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="BasicCategoryName" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="Body_DiaplayName" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="CodeSnippets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\CodeSnippets.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Collection</value>
+  </data>
+  <data name="CollectionResultDisplayName" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="ConditionPropertyName" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="ContextMenu_Header1" xml:space="preserve">
+    <value>Surround with Try Catch</value>
+  </data>
+  <data name="ContextMenu_Header2" xml:space="preserve">
+    <value>Remove Surrounding Try Catch</value>
+  </data>
+  <data name="ContextMenu_Header3" xml:space="preserve">
+    <value>Enable Activity</value>
+  </data>
+  <data name="ContextMenu_Header4" xml:space="preserve">
+    <value>Disable Activity</value>
+  </data>
+  <data name="ContextMenu_Header5" xml:space="preserve">
+    <value>Toggle Breakpoint</value>
+  </data>
+  <data name="ContextMenu_Header6" xml:space="preserve">
+    <value>Remove Unused Ariables and Parameters</value>
+  </data>
+  <data name="ContextMenu_Header7" xml:space="preserve">
+    <value>Run from this Activity</value>
+  </data>
+  <data name="ContextMenu_Header8" xml:space="preserve">
+    <value>Test Activity</value>
+  </data>
+  <data name="ContextMenu_Header9" xml:space="preserve">
+    <value>Help...</value>
+  </data>
+  <data name="DelayDurationDisplayName" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="DisplayNamePropertyName" xml:space="preserve">
+    <value>DisplayName</value>
+  </data>
+  <data name="DoWhileConditionDisplayName" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="FavoriteActivities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\FavoriteActivities.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FavoritesContextMenu_Header1" xml:space="preserve">
+    <value>Add To Favorites</value>
+  </data>
+  <data name="FavoritesContextMenu_Header2" xml:space="preserve">
+    <value>Remove From Favorites</value>
+  </data>
+  <data name="Flowchart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\Flowchart_en.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlowchartValidateUnconnectedNodesDisplayName" xml:space="preserve">
+    <value>ValidateUnconnectedNodes</value>
+  </data>
+  <data name="FlowDecisionConditionDisplayName" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="FlowDecisionExpressionDisplayName" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="FlowDecisionFalseDisplayName" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="FlowDecisionTrueDisplayName" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="GenericTypeArgumentsDisplayName" xml:space="preserve">
+    <value>GenericTypeArguments</value>
+  </data>
+  <data name="HistoryVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\HistoryVersion.txt;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HistoryVersion_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\HistoryVersion_en.txt;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="IfConditionDisplayName" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="InputCategoryName" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="InvokeMethodResultDisplayName" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="ItemDisplayName" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\Main_en.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Message_Exception1" xml:space="preserve">
+    <value>Workflow loading failed, please check the content of the workflow document!</value>
+  </data>
+  <data name="Message_Exception2" xml:space="preserve">
+    <value>Workflow Designer status is abnormal, please check!</value>
+  </data>
+  <data name="Message_Exception3" xml:space="preserve">
+    <value>The format of the obtained workflow document is illegal, please check!</value>
+  </data>
+  <data name="Message_UnhandledException1" xml:space="preserve">
+    <value>The UI thread is abnormal globally.</value>
+  </data>
+  <data name="Message_UnhandledException2" xml:space="preserve">
+    <value>There is an exception in the process of running the program, please contact the software developer!</value>
+  </data>
+  <data name="Message_UnhandledException3" xml:space="preserve">
+    <value>Unrecoverable UI thread global exception</value>
+  </data>
+  <data name="Message_UnhandledException4" xml:space="preserve">
+    <value>There is a serious error in the running process of the program. Please contact the software developer!</value>
+  </data>
+  <data name="Message_UnhandledException5" xml:space="preserve">
+    <value>Domain UI thread global exception:</value>
+  </data>
+  <data name="Message_UnhandledException6" xml:space="preserve">
+    <value>Domain non-UI thread global exception:</value>
+  </data>
+  <data name="Message_UnhandledException7" xml:space="preserve">
+    <value>The previous domain did not uninstall correctly!</value>
+  </data>
+  <data name="MethodNameDisplayName" xml:space="preserve">
+    <value>MethodName</value>
+  </data>
+  <data name="NewXamlFileConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\NewXamlFileConfig_en.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OutputCategoryName" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="OutputItemContextMenu_Header1" xml:space="preserve">
+    <value>Copy (Ctrl+C)</value>
+  </data>
+  <data name="OutputItemContextMenu_Header2" xml:space="preserve">
+    <value>View Message Details</value>
+  </data>
+  <data name="ParallelCompletionConditionDisplayName" xml:space="preserve">
+    <value>CompletionCondition</value>
+  </data>
+  <data name="ParallelForEachCompletionConditionDisplayName" xml:space="preserve">
+    <value>CompletionCondition</value>
+  </data>
+  <data name="ParallelForEachValuesDisplayName" xml:space="preserve">
+    <value>Values</value>
+  </data>
+  <data name="ParametersDisplayName" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="ProjectCreateName" xml:space="preserve">
+    <value>BlankProcess</value>
+  </data>
+  <data name="ProjectDirItemContextMenu_Header1" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="ProjectDirItemContextMenu_Header2" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="ProjectDirItemContextMenu_Header3" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ProjectDirItemScreenshotsContextMenu_Header1" xml:space="preserve">
+    <value>Remove Unused Screenshots</value>
+  </data>
+  <data name="ProjectFileItemMainXamlContextMenu_Header1" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="ProjectFileItemXamlContextMenu_Header1" xml:space="preserve">
+    <value>Set as Main</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header1" xml:space="preserve">
+    <value>Open Project Folder</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header2" xml:space="preserve">
+    <value>Project Settings</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header3" xml:space="preserve">
+    <value>Add Folder</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header4" xml:space="preserve">
+    <value>New Sequrence</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header5" xml:space="preserve">
+    <value>New Flowchart</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header6" xml:space="preserve">
+    <value>New StateMachine</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header7" xml:space="preserve">
+    <value>Import Workflow</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header8" xml:space="preserve">
+    <value>Export Project</value>
+  </data>
+  <data name="ProjectRootItemContextMenu_Header9" xml:space="preserve">
+    <value>Close Project</value>
+  </data>
+  <data name="ProjectUserConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\ProjectUserConfig.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProjectViewContextMenu_Header1" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="ProjectViewContextMenu_Header2" xml:space="preserve">
+    <value>Expand All</value>
+  </data>
+  <data name="ProjectViewContextMenu_Header3" xml:space="preserve">
+    <value>Collapse All</value>
+  </data>
+  <data name="RecentActivities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\RecentActivities.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RecentProjects" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\RecentProjects.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RecentUsedProjectItemContextMenu_Header1" xml:space="preserve">
+    <value>Open Project</value>
+  </data>
+  <data name="RecentUsedProjectItemContextMenu_Header2" xml:space="preserve">
+    <value>Open Project Folder</value>
+  </data>
+  <data name="RecentUsedProjectItemContextMenu_Header3" xml:space="preserve">
+    <value>Remove From List</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="RunAsynchronouslyDisplayName" xml:space="preserve">
+    <value>RunAsynchronously</value>
+  </data>
+  <data name="Sequence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\Sequence_en.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ServerSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\ServerSettings.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SnippetItemUserAddContextMenu_Header1" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="StateMachine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FileTemplate\StateMachine_en.xaml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SwitchExpressionDisplayName" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="TargetObjectDisplayName" xml:space="preserve">
+    <value>TargetObject</value>
+  </data>
+  <data name="TargetTypeDisplayName" xml:space="preserve">
+    <value>TargetType</value>
+  </data>
+  <data name="TerminateWorkflowExceptionDisplayName" xml:space="preserve">
+    <value>Exception</value>
+  </data>
+  <data name="TerminateWorkflowReasonDisplayName" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="ThrowExceptionDisplayName" xml:space="preserve">
+    <value>Exception</value>
+  </data>
+  <data name="WhileConditionDisplayName" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="WriteLineTextDisplayName" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="WriteLineTextWriterDisplayName" xml:space="preserve">
+    <value>TextWriter</value>
+  </data>
+  <data name="AccountPage_CheckBoxLabel1" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="AccountPage_CheckBoxLabel2" xml:space="preserve">
+    <value>Auto-Login</value>
+  </data>
+  <data name="AccountPage_KeyWatermark" xml:space="preserve">
+    <value>Please enter the verification code</value>
+  </data>
+  <data name="AccountPage_LoginButtonLabel" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="AccountPage_NameWatermark" xml:space="preserve">
+    <value>Please enter your user name</value>
+  </data>
+  <data name="AccountPage_PasswordWatermark" xml:space="preserve">
+    <value>Please enter your password</value>
+  </data>
+  <data name="Activities_FacoritesName" xml:space="preserve">
+    <value>Facorites</value>
+  </data>
+  <data name="Activities_FacoritesToolTip" xml:space="preserve">
+    <value>The contents of your favorites are sorted by activity name</value>
+  </data>
+  <data name="Activities_ListName" xml:space="preserve">
+    <value>Activity List</value>
+  </data>
+  <data name="Activities_RecentName" xml:space="preserve">
+    <value>Recent</value>
+  </data>
+  <data name="Activities_RecentToolTip" xml:space="preserve">
+    <value>The most recent content is sorted by the time you drag the activity</value>
+  </data>
+  <data name="ApplicationMenu_Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="ApplicationMenu_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ApplicationMenu_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="ApplicationMenu_Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="ApplicationMenu_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ApplicationMenu_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="ApplicationMenu_Tools" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="ApplicationMenu_Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Backstage_Debug" xml:space="preserve">
+    <value>DEBUG</value>
+  </data>
+  <data name="Backstage_Design" xml:space="preserve">
+    <value>DESIGN</value>
+  </data>
+  <data name="Backstage_Home" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="DataExtractor_ErrMessage1" xml:space="preserve">
+    <value>Two choices cannot be the same target.</value>
+  </data>
+  <data name="DataExtractor_ErrMessage2" xml:space="preserve">
+    <value>The targets selected twice are not of the same type.</value>
+  </data>
+  <data name="DataExtractor_ErrMessage3" xml:space="preserve">
+    <value>Exception occurred during data extracting!</value>
+  </data>
+  <data name="DataExtractor_ErrMessage4" xml:space="preserve">
+    <value>Check at least one of the Text or URL!</value>
+  </data>
+  <data name="DataExtractor_FinishButton" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="DataExtractor_MoreButton" xml:space="preserve">
+    <value>Extract More</value>
+  </data>
+  <data name="DataExtractor_NextButton" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="DataExtractor_OneLabel1" xml:space="preserve">
+    <value>Select Element</value>
+  </data>
+  <data name="DataExtractor_OneLabel2" xml:space="preserve">
+    <value>1. Open a browser or SAP program and navigate to the location from which you want to extract data.</value>
+  </data>
+  <data name="DataExtractor_OneLabel3" xml:space="preserve">
+    <value>2. Press Next in this dialog box and hover the mouse cursor over the data source field.</value>
+  </data>
+  <data name="DataExtractor_OneLabel4" xml:space="preserve">
+    <value>3. Click the data source field.</value>
+  </data>
+  <data name="DataExtractor_QuestionMessage1" xml:space="preserve">
+    <value>It is detected that you have selected a table. Do you want to extract the whole table?</value>
+  </data>
+  <data name="DataExtractor_QuestionMessage2" xml:space="preserve">
+    <value>Identify the element that navigates to the next page, which can be the "Next Page " button or arrow (not the page number). Click "Yes" to indicate it.</value>
+  </data>
+  <data name="DataExtractor_ReturnButton" xml:space="preserve">
+    <value>&lt;Return</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel1" xml:space="preserve">
+    <value>Configure Columns:</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel2" xml:space="preserve">
+    <value>The identified fields are highlighted.</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel3" xml:space="preserve">
+    <value>Extract Text</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel4" xml:space="preserve">
+    <value>Text Column Name</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel5" xml:space="preserve">
+    <value>Extract URL</value>
+  </data>
+  <data name="DataExtractor_ThreeLabel6" xml:space="preserve">
+    <value>URL Column Name</value>
+  </data>
+  <data name="DataExtractor_Title" xml:space="preserve">
+    <value>Data Scraping</value>
+  </data>
+  <data name="DataExtractor_TwoLabel1" xml:space="preserve">
+    <value>Select Second Element</value>
+  </data>
+  <data name="DataExtractor_TwoLabel2" xml:space="preserve">
+    <value>To create a pattern, point out similar fields, preferably the last field in the collection.</value>
+  </data>
+  <data name="DebugView_NameColumn" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DebugView_ValueColumn" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="DebugView_ViewButtonToolTip" xml:space="preserve">
+    <value>View more</value>
+  </data>
+  <data name="DockTitle_Activities" xml:space="preserve">
+    <value>Activities</value>
+  </data>
+  <data name="DockTitle_DebugInfo" xml:space="preserve">
+    <value>DebugInfo</value>
+  </data>
+  <data name="DockTitle_OutLine" xml:space="preserve">
+    <value>OutLine</value>
+  </data>
+  <data name="DockTitle_OutPut" xml:space="preserve">
+    <value>OutPut</value>
+  </data>
+  <data name="DockTitle_Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="DockTitle_Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="DockTitle_Snippets" xml:space="preserve">
+    <value>Snippets</value>
+  </data>
+  <data name="Export_CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Export_CustomLocation" xml:space="preserve">
+    <value>Custom Location</value>
+  </data>
+  <data name="Export_Description" xml:space="preserve">
+    <value>Export Description</value>
+  </data>
+  <data name="Export_ExceptionMessage1" xml:space="preserve">
+    <value>No exported packages found</value>
+  </data>
+  <data name="Export_ExceptionMessage2" xml:space="preserve">
+    <value>Failed toexport the project!</value>
+  </data>
+  <data name="Export_Location" xml:space="preserve">
+    <value>Export Location</value>
+  </data>
+  <data name="Export_OkButton" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Export_SelectDir" xml:space="preserve">
+    <value>Please select a location to export the project</value>
+  </data>
+  <data name="Export_SuccessMessage" xml:space="preserve">
+    <value>The project was successfully exported. 
+Name: {0}
+Version: {1}
+Location: {2}</value>
+  </data>
+  <data name="Export_Title" xml:space="preserve">
+    <value>Export Nupkg Package</value>
+  </data>
+  <data name="Export_UrlValidateWrong" xml:space="preserve">
+    <value>The specified path does not exist</value>
+  </data>
+  <data name="FileDialog_Filter1" xml:space="preserve">
+    <value>Workflow File</value>
+  </data>
+  <data name="FileDialog_Filter2" xml:space="preserve">
+    <value>Nupkg File</value>
+  </data>
+  <data name="FileDialog_Filter3" xml:space="preserve">
+    <value>Workflow Project File</value>
+  </data>
+  <data name="FileDialog_Title1" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="FileDialog_Title2" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="FileDialog_Title3" xml:space="preserve">
+    <value>Select the workflow file to import</value>
+  </data>
+  <data name="HelpPage_CommunityDescription" xml:space="preserve">
+    <value>Collaborate or get help from the community</value>
+  </data>
+  <data name="HelpPage_CommunityLable" xml:space="preserve">
+    <value>Community Forum</value>
+  </data>
+  <data name="HelpPage_DocumentDescription" xml:space="preserve">
+    <value>View product documentation</value>
+  </data>
+  <data name="HelpPage_DocumentLable" xml:space="preserve">
+    <value>Product Documentation</value>
+  </data>
+  <data name="HelpPage_HistoryVersionDescription" xml:space="preserve">
+    <value>See the full history of releases notes</value>
+  </data>
+  <data name="HelpPage_HistoryVersionLable" xml:space="preserve">
+    <value>Releases Notes</value>
+  </data>
+  <data name="HelpPage_Lable" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Listitem_DarkTheme" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Listitem_LightTheme" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="MessageBox_CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MessageBox_ErrorTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MessageBox_NoButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="MessageBox_OkButton" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="MessageBox_PromptTitle" xml:space="preserve">
+    <value>Prompt</value>
+  </data>
+  <data name="MessageBox_QuestionTitle" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="MessageBox_WarningTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="MessageBox_YesButton" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="MessageDetails_CopyButton" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="MessageDetails_Title1" xml:space="preserve">
+    <value>Attribute Value Information</value>
+  </data>
+  <data name="MessageDetails_Title2" xml:space="preserve">
+    <value>Message Details</value>
+  </data>
+  <data name="Message_CommandLine" xml:space="preserve">
+    <value>The user opens the program by double-clicking the file or passing the parameter {0}.</value>
+  </data>
+  <data name="Message_DeleteDirQuestion" xml:space="preserve">
+    <value>Are you sure to delete directory "{0}" and all its contents?</value>
+  </data>
+  <data name="Message_DeleteFileQuestion" xml:space="preserve">
+    <value>Are you sure to delete file "{0}"?</value>
+  </data>
+  <data name="Message_DeleteMainWarn" xml:space="preserve">
+    <value>The current file is the master file and cannot be deleted. Please set other files as the master file and then delete the file!</value>
+  </data>
+  <data name="Message_DocumentCloseQuery1" xml:space="preserve">
+    <value>The current document is being debugged. Are you sure to terminate debugging and close "{0}"?</value>
+  </data>
+  <data name="Message_DocumentCloseQuery2" xml:space="preserve">
+    <value>The file has been modified. Do I need to save the file "{0}"?</value>
+  </data>
+  <data name="Message_DoubleJumpError" xml:space="preserve">
+    <value>Double - click jump error, please check!</value>
+  </data>
+  <data name="Message_DropError1" xml:space="preserve">
+    <value>The destination directory has the same name and cannot be moved.</value>
+  </data>
+  <data name="Message_DropError2" xml:space="preserve">
+    <value>The target directory has a file with the same name. The file cannot be moved.</value>
+  </data>
+  <data name="Message_JumpError" xml:space="preserve">
+    <value>Activity jump abnormal!
+The reason is:</value>
+  </data>
+  <data name="Message_NupkgInvalid" xml:space="preserve">
+    <value>The Nupkg packet cannot be read normally. The packet format may be illegal!</value>
+  </data>
+  <data name="Message_OpenRecentQuestion" xml:space="preserve">
+    <value>Cannot open the project configuration file {0}. Do you want to remove the entry from the list of recent items?</value>
+  </data>
+  <data name="Message_OpenSnippetError" xml:space="preserve">
+    <value>An error occurred opening the snippet, please check!</value>
+  </data>
+  <data name="Message_OpenWorkflowFileError" xml:space="preserve">
+    <value>Error opening workflow document, please check!</value>
+  </data>
+  <data name="Message_ReadOnlyDocument" xml:space="preserve">
+    <value>(ReadOnly)</value>
+  </data>
+  <data name="Message_RemoveUnusedScreenshot1" xml:space="preserve">
+    <value>There is no screenshot directory for this project and no need to clean it.</value>
+  </data>
+  <data name="Message_RemoveUnusedScreenshot2" xml:space="preserve">
+    <value>Could not find unused screenshots to clean up.</value>
+  </data>
+  <data name="Message_RemoveUnusedScreenshot3" xml:space="preserve">
+    <value>{0} unused screenshots have been successfully removed.</value>
+  </data>
+  <data name="Message_SaveAsDocumentError" xml:space="preserve">
+    <value>An error occurred saving as a workflow document, please check!</value>
+  </data>
+  <data name="Message_SaveDocumentError" xml:space="preserve">
+    <value>An error occurred saving workflow document, please check!</value>
+  </data>
+  <data name="Message_UnhandledException8" xml:space="preserve">
+    <value>Domain non-UI thread global exception:</value>
+  </data>
+  <data name="Message_WorkflowVaildateError" xml:space="preserve">
+    <value>Workflow verification error, please check the parameter configuration!</value>
+  </data>
+  <data name="Message_WorkflowVaildateSuccess" xml:space="preserve">
+    <value>Workflow verification is correct.</value>
+  </data>
+  <data name="Name_Dependencies" xml:space="preserve">
+    <value>Dependencies</value>
+  </data>
+  <data name="NewFile_NameValidateWrong" xml:space="preserve">
+    <value>The specified file already exists</value>
+  </data>
+  <data name="NewFile_PathValidateWrong" xml:space="preserve">
+    <value>The location specified must be in the project directory or a subdirectory</value>
+  </data>
+  <data name="NewFolder_CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="NewFolder_NameValidateWrong" xml:space="preserve">
+    <value>A directory with the same name already exists</value>
+  </data>
+  <data name="NewFolder_OkButton" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="NewFolder_Title" xml:space="preserve">
+    <value>New Folder</value>
+  </data>
+  <data name="NewProject_ButtonLabel" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="NewProject_DescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="NewProject_LocationLabel" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="NewProject_LocationValidateCorrect" xml:space="preserve">
+    <value>The location field is verified successfully</value>
+  </data>
+  <data name="NewProject_LocationValidateWrong1" xml:space="preserve">
+    <value>The location cannot be blank</value>
+  </data>
+  <data name="NewProject_LocationValidateWrong2" xml:space="preserve">
+    <value>The location does not exist</value>
+  </data>
+  <data name="NewProject_NameContent" xml:space="preserve">
+    <value>BlankProcess</value>
+  </data>
+  <data name="NewProject_NameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NewProject_NameValidateCorrect" xml:space="preserve">
+    <value>The name field is verified successfully</value>
+  </data>
+  <data name="NewProject_NameValidateWrong1" xml:space="preserve">
+    <value>The name cannot be blank</value>
+  </data>
+  <data name="NewProject_NameValidateWrong2" xml:space="preserve">
+    <value>The name cannot contain illegal characters</value>
+  </data>
+  <data name="NewProject_NameValidateWrong3" xml:space="preserve">
+    <value>The name cannot contain special characters, Spaces, pauses, commas, or end with special symbols</value>
+  </data>
+  <data name="NewProject_NameValidateWrong4" xml:space="preserve">
+    <value>A project with the same name already exists</value>
+  </data>
+  <data name="NewProject_ProjectDescription" xml:space="preserve">
+    <value>Blank Project</value>
+  </data>
+  <data name="NewProject_SelectLocation" xml:space="preserve">
+    <value>Select a location to create a new project</value>
+  </data>
+  <data name="NewProject_SubTitle1" xml:space="preserve">
+    <value>New Blank Project</value>
+  </data>
+  <data name="NewProject_SubTitle2" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="NewProject_SubTitleDescription1" xml:space="preserve">
+    <value>Create a new blank project</value>
+  </data>
+  <data name="NewProject_SubTitleDescription2" xml:space="preserve">
+    <value>Import the Nupkg package to the new project</value>
+  </data>
+  <data name="NewProject_WindowTitle1" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="NewProject_WindowTitle2" xml:space="preserve">
+    <value>Import the Nupkg package</value>
+  </data>
+  <data name="OutPutView_ClearToolTip" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="OutPutView_DoubleClickToolTip" xml:space="preserve">
+    <value>Double click to jump</value>
+  </data>
+  <data name="OutPutView_ErrLabel" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="OutPutView_ErrToolTip" xml:space="preserve">
+    <value>Error Message</value>
+  </data>
+  <data name="OutPutView_InfoLabel" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="OutPutView_InfoToolTip" xml:space="preserve">
+    <value>Information Message</value>
+  </data>
+  <data name="OutPutView_ShowTimeToolTip" xml:space="preserve">
+    <value>Show Time</value>
+  </data>
+  <data name="OutPutView_TraceLabel" xml:space="preserve">
+    <value>Trace</value>
+  </data>
+  <data name="OutPutView_TraceToolTip" xml:space="preserve">
+    <value>Trace Message</value>
+  </data>
+  <data name="OutPutView_WarnLabel" xml:space="preserve">
+    <value>Warn</value>
+  </data>
+  <data name="OutPutView_WarnToolTip" xml:space="preserve">
+    <value>Warning Message</value>
+  </data>
+  <data name="ProjectSettings_DescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ProjectSettings_Detail" xml:space="preserve">
+    <value>Modify project related configuration such as name and description</value>
+  </data>
+  <data name="ProjectSettings_Title" xml:space="preserve">
+    <value>Project Settings</value>
+  </data>
+  <data name="Publish_CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Publish_ControlCenter" xml:space="preserve">
+    <value>Service Address</value>
+  </data>
+  <data name="Publish_CurrentVersion" xml:space="preserve">
+    <value>Current Version</value>
+  </data>
+  <data name="Publish_Description" xml:space="preserve">
+    <value>Release Notes</value>
+  </data>
+  <data name="Publish_ErrorMessage" xml:space="preserve">
+    <value>Project publishing failed.
+Name: {0}
+Version: {1}
+Location: {2}</value>
+  </data>
+  <data name="Publish_ExceptionMessage1" xml:space="preserve">
+    <value>No published packages found</value>
+  </data>
+  <data name="Publish_ExceptionMessage2" xml:space="preserve">
+    <value>Failed to publish the project!</value>
+  </data>
+  <data name="Publish_Location" xml:space="preserve">
+    <value>Publish Location</value>
+  </data>
+  <data name="Publish_NewVersion" xml:space="preserve">
+    <value>New Version</value>
+  </data>
+  <data name="Publish_OkButton" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="Publish_PublishTo" xml:space="preserve">
+    <value>Publish to</value>
+  </data>
+  <data name="Publish_PublishToControlCenter" xml:space="preserve">
+    <value>Control Center</value>
+  </data>
+  <data name="Publish_PublishToLocal" xml:space="preserve">
+    <value>Local Robot</value>
+  </data>
+  <data name="Publish_SuccessMessage" xml:space="preserve">
+    <value>The project was successfully published. 
+Name: {0}
+Version: {1}
+Location: {2}</value>
+  </data>
+  <data name="Publish_Title" xml:space="preserve">
+    <value>Publish Process</value>
+  </data>
+  <data name="Publish_UrlValidateCorrect" xml:space="preserve">
+    <value>The address field is verified successfully</value>
+  </data>
+  <data name="Publish_UrlValidateWrong1" xml:space="preserve">
+    <value>The address of the control center cannot be empty</value>
+  </data>
+  <data name="Publish_UrlValidateWrong2" xml:space="preserve">
+    <value>The address of the control center must be http(s)</value>
+  </data>
+  <data name="Publish_UrlValidateWrong3" xml:space="preserve">
+    <value>The address of the control center is invalid</value>
+  </data>
+  <data name="Publish_Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Publish_VersionValidateCorrect" xml:space="preserve">
+    <value>The version field is verified successfully</value>
+  </data>
+  <data name="Publish_VersionValidateWrong1" xml:space="preserve">
+    <value>The version cannot be empty</value>
+  </data>
+  <data name="Publish_VersionValidateWrong2" xml:space="preserve">
+    <value>The version must be in a.b.c form</value>
+  </data>
+  <data name="Publish_VersionValidateWrong3" xml:space="preserve">
+    <value>The version is invalid</value>
+  </data>
+  <data name="Question_Language" xml:space="preserve">
+    <value>The display language has been modified, restart the designer to apply the changes. 
+Click "Yes" to restart now. Click "No" to restart later.</value>
+  </data>
+  <data name="Question_Theme" xml:space="preserve">
+    <value>The theme style has been modified, restart the designer to apply the changes. 
+Click "Yes" to restart now. Click "No" to restart later.</value>
+  </data>
+  <data name="RecordView_ClickButton" xml:space="preserve">
+    <value>Click</value>
+  </data>
+  <data name="RecordView_DoubleClickButton" xml:space="preserve">
+    <value>Double Click</value>
+  </data>
+  <data name="RecordView_HotKeyButton" xml:space="preserve">
+    <value>HotKey</value>
+  </data>
+  <data name="RecordView_HoverButton" xml:space="preserve">
+    <value>Hover</value>
+  </data>
+  <data name="RecordView_InputButton" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="RecordView_KeyboardLabel" xml:space="preserve">
+    <value>Keyboard</value>
+  </data>
+  <data name="RecordView_KeyboardToolTip" xml:space="preserve">
+    <value>Keyboard related recording functions</value>
+  </data>
+  <data name="RecordView_MouseLabel" xml:space="preserve">
+    <value>Mouse</value>
+  </data>
+  <data name="RecordView_MouseToolTip" xml:space="preserve">
+    <value>Mouse related recording function</value>
+  </data>
+  <data name="RecordView_QuestionMessage" xml:space="preserve">
+    <value>The recording result is not saved. Are you sure to exit?</value>
+  </data>
+  <data name="RecordView_RightClickButton" xml:space="preserve">
+    <value>Right Click</value>
+  </data>
+  <data name="RecordView_SaveLabel" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="RecordView_Title" xml:space="preserve">
+    <value>Record</value>
+  </data>
+  <data name="Rename_From" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="Rename_NameValidateWrong" xml:space="preserve">
+    <value>A file with the same name already exists</value>
+  </data>
+  <data name="Rename_Title" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="Rename_To" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="SearchView_Activities" xml:space="preserve">
+    <value>Activities</value>
+  </data>
+  <data name="SearchView_ActivitiesToolTip" xml:space="preserve">
+    <value>Select whether to search for activities</value>
+  </data>
+  <data name="SearchView_AllOpen" xml:space="preserve">
+    <value>All Opened</value>
+  </data>
+  <data name="SearchView_AllOpenToolTip" xml:space="preserve">
+    <value>Look in all opened files</value>
+  </data>
+  <data name="SearchView_Arguments" xml:space="preserve">
+    <value>Arguments</value>
+  </data>
+  <data name="SearchView_ArgumentsToolTip" xml:space="preserve">
+    <value>Select whether to search for arguments</value>
+  </data>
+  <data name="SearchView_Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="SearchView_CurrentToolTip" xml:space="preserve">
+    <value>Look in the currently selected file</value>
+  </data>
+  <data name="SearchView_LookIn" xml:space="preserve">
+    <value>Look In:  </value>
+  </data>
+  <data name="SearchView_Option" xml:space="preserve">
+    <value>Option:  </value>
+  </data>
+  <data name="SearchView_Variables" xml:space="preserve">
+    <value>Variables</value>
+  </data>
+  <data name="SearchView_VariablesToolTip" xml:space="preserve">
+    <value>Select whether to search for variables</value>
+  </data>
+  <data name="SearchView_Watermark" xml:space="preserve">
+    <value>Please enter the search content</value>
+  </data>
+  <data name="SettingsPage_ActivityLable" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="SettingsPage_AIDescription" xml:space="preserve">
+    <value>Use this to change the address of the AI service</value>
+  </data>
+  <data name="SettingsPage_AILable" xml:space="preserve">
+    <value>AI Service</value>
+  </data>
+  <data name="SettingsPage_AIWatermark" xml:space="preserve">
+    <value>Address of AI service, such as "http://127.0.0.1:18888"</value>
+  </data>
+  <data name="SettingsPage_ConterCenterWatermark" xml:space="preserve">
+    <value>Address of  control center, such as "https://192.168.0.1:8080/OSPServer"</value>
+  </data>
+  <data name="SettingsPage_ControlCenterDescription" xml:space="preserve">
+    <value>Use this to change the address of the control center</value>
+  </data>
+  <data name="SettingsPage_ControlCenterLable" xml:space="preserve">
+    <value>Control Center</value>
+  </data>
+  <data name="SettingsPage_GeneralLable" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SettingsPage_Lable" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsPage_LanguageDescription" xml:space="preserve">
+    <value>Use this to change the interface language in Studio</value>
+  </data>
+  <data name="SettingsPage_LanguageLable" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="SettingsPage_ProjectDescription" xml:space="preserve">
+    <value>Use this to change the default location where projects are created</value>
+  </data>
+  <data name="SettingsPage_ProjectLable" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="SettingsPage_ProjectWatermark" xml:space="preserve">
+    <value>The default location is "My Documents\ChainbotStudio\Projects"</value>
+  </data>
+  <data name="SettingsPage_PythonDescription" xml:space="preserve">
+    <value>Custom python path (the directory where python.exe is located, Python3 only is supported)</value>
+  </data>
+  <data name="SettingsPage_PythonLable" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="SettingsPage_PythonWatermark" xml:space="preserve">
+    <value>The default location is the python directory included in the installation directory</value>
+  </data>
+  <data name="SettingsPage_SelectDirectory" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SettingsPage_SelectProjectDirectory" xml:space="preserve">
+    <value>Please select the default location where projects are created</value>
+  </data>
+  <data name="SettingsPage_SelectPythonDirectory" xml:space="preserve">
+    <value>Please select the location where python. exe is located</value>
+  </data>
+  <data name="SettingsPage_ThemeDescription" xml:space="preserve">
+    <value>Use this to change the interface theme in the Studio</value>
+  </data>
+  <data name="SettingsPage_ThemeLable" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="SettingsPage_ValidateCorrect" xml:space="preserve">
+    <value>The location field is verified successfully</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong1" xml:space="preserve">
+    <value>Directory does not exist</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong2" xml:space="preserve">
+    <value>Not a valid Python3 directory</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong3" xml:space="preserve">
+    <value>Not a valid address of Control Center</value>
+  </data>
+  <data name="SettingsPage_ValidateWrong4" xml:space="preserve">
+    <value>Not a valid address of AI service</value>
+  </data>
+  <data name="SettingsPage_WebLable" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="SnippetsView_SelectDirectory" xml:space="preserve">
+    <value>Select a directory to add to the snippets</value>
+  </data>
+  <data name="StartPage_NewLable" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="StartPage_ProcessDescription" xml:space="preserve">
+    <value>Start with a blank project to design a new automation process</value>
+  </data>
+  <data name="StartPage_ProcessLable" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="StartPage_ProcessToolTip" xml:space="preserve">
+    <value>Description: {0}
+Location: {1}</value>
+  </data>
+  <data name="StartPage_RecentLable" xml:space="preserve">
+    <value>Recent</value>
+  </data>
+  <data name="Text_ImportWorkflowSuffix" xml:space="preserve">
+    <value>-Import</value>
+  </data>
+  <data name="Text_SearchEmpty" xml:space="preserve">
+    <value>The search result is empty</value>
+  </data>
+  <data name="Text_Searching" xml:space="preserve">
+    <value>Searching……</value>
+  </data>
+  <data name="Title_Main" xml:space="preserve">
+    <value>Chainbot Studio</value>
+  </data>
+  <data name="ToolsPage_BrowserLable" xml:space="preserve">
+    <value>Browser Extensions</value>
+  </data>
+  <data name="ToolsPage_ChromeDescription" xml:space="preserve">
+    <value>Install a browser extension for automating websites in Chrome</value>
+  </data>
+  <data name="ToolsPage_ChromeInstallError" xml:space="preserve">
+    <value>Chrome extension installation failed!</value>
+  </data>
+  <data name="ToolsPage_ChromeInstallQuestion" xml:space="preserve">
+    <value>Chrome extension are not installed or disabled, you need to close Chrome before installing! Click "Yes" to install.</value>
+  </data>
+  <data name="ToolsPage_ChromeInstallSuccess" xml:space="preserve">
+    <value>Chrome extension installed successfully, please open the browser enable (com.rpa.msghost) extension!</value>
+  </data>
+  <data name="ToolsPage_FirefoxDescription" xml:space="preserve">
+    <value>Install a browser extension for automating websites in Firefox</value>
+  </data>
+  <data name="ToolsPage_FirefoxInstallError" xml:space="preserve">
+    <value>Firefox extension installation failed!</value>
+  </data>
+  <data name="ToolsPage_FirefoxInstallSuccess" xml:space="preserve">
+    <value>Firefox extension installed successfully, please click in the open browser to add (rpa_msghost) extension!</value>
+  </data>
+  <data name="ToolsPage_InstallDescription" xml:space="preserve">
+    <value>Install the screen unlock service</value>
+  </data>
+  <data name="ToolsPage_InstallLable" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="ToolsPage_UninstallDescription" xml:space="preserve">
+    <value>Uninstalll the screen unlock service</value>
+  </data>
+  <data name="ToolsPage_UninstallLable" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="ToolsPage_UnlockInstallError" xml:space="preserve">
+    <value>Unlock screen service installation failed!
+Cause of failure: </value>
+  </data>
+  <data name="ToolsPage_UnlockInstallSuccess" xml:space="preserve">
+    <value>Unlock screen service installed successfully!</value>
+  </data>
+  <data name="ToolsPage_UnlockLable" xml:space="preserve">
+    <value>Screen Unlock Service</value>
+  </data>
+  <data name="ToolsPage_UnlockUninstallError" xml:space="preserve">
+    <value>Unlock screen service uninstall failed!
+Cause of failure:</value>
+  </data>
+  <data name="ToolsPage_UnlockUninstallSuccess" xml:space="preserve">
+    <value>Unlock screen service uninstall successfully!</value>
+  </data>
+  <data name="ToolTip_AddFolder" xml:space="preserve">
+    <value>Add Folder</value>
+  </data>
+  <data name="ToolTip_Breakpoint" xml:space="preserve">
+    <value>Toggle Breakpoin (F9)</value>
+  </data>
+  <data name="ToolTip_CollapseAll" xml:space="preserve">
+    <value>Collapse All</value>
+  </data>
+  <data name="ToolTip_Continue" xml:space="preserve">
+    <value>Continue (F7)</value>
+  </data>
+  <data name="ToolTip_Copy" xml:space="preserve">
+    <value>Copy (Ctrl+C)</value>
+  </data>
+  <data name="ToolTip_Cut" xml:space="preserve">
+    <value>Cut (Ctrl+X)</value>
+  </data>
+  <data name="ToolTip_DataScrap" xml:space="preserve">
+    <value>Extrate structured data from browser</value>
+  </data>
+  <data name="ToolTip_Debug" xml:space="preserve">
+    <value>Debug (F7)</value>
+  </data>
+  <data name="ToolTip_ExpandAll" xml:space="preserve">
+    <value>Expand All</value>
+  </data>
+  <data name="ToolTip_Export" xml:space="preserve">
+    <value>Export to Nupkg package</value>
+  </data>
+  <data name="ToolTip_Help" xml:space="preserve">
+    <value>Help (F1)</value>
+  </data>
+  <data name="ToolTip_New" xml:space="preserve">
+    <value>New File (Ctrl+N)</value>
+  </data>
+  <data name="ToolTip_NewFlowchart" xml:space="preserve">
+    <value>Flowchart</value>
+  </data>
+  <data name="ToolTip_NewSequrence" xml:space="preserve">
+    <value>Sequrence (Ctrl+N)</value>
+  </data>
+  <data name="ToolTip_NewStateMachine" xml:space="preserve">
+    <value>State Machine</value>
+  </data>
+  <data name="ToolTip_OpenDir" xml:space="preserve">
+    <value>Open Project Folder</value>
+  </data>
+  <data name="ToolTip_OpenLogs" xml:space="preserve">
+    <value>Open Logs (Ctrl+L)</value>
+  </data>
+  <data name="ToolTip_Option" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="ToolTip_OutPut1" xml:space="preserve">
+    <value>Log time: {0}
+Log content: {1}</value>
+  </data>
+  <data name="ToolTip_OutPut2" xml:space="preserve">
+    <value>Log content: {0}</value>
+  </data>
+  <data name="ToolTip_Paste" xml:space="preserve">
+    <value>Paste (Ctrl+V)</value>
+  </data>
+  <data name="ToolTip_ProjectSettings" xml:space="preserve">
+    <value>Project Settings</value>
+  </data>
+  <data name="ToolTip_Publish" xml:space="preserve">
+    <value>Publish the Nupkg package to local or control center</value>
+  </data>
+  <data name="ToolTip_Record" xml:space="preserve">
+    <value>Record the sequence of user actions</value>
+  </data>
+  <data name="ToolTip_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="ToolTip_RemoveAllBreakpoints" xml:space="preserve">
+    <value>Remove All Breakpoints (Shift+F9)</value>
+  </data>
+  <data name="ToolTip_RemoveUnusedScreenshots" xml:space="preserve">
+    <value>Remove Unused Screenshots</value>
+  </data>
+  <data name="ToolTip_Run" xml:space="preserve">
+    <value>Run (F5)</value>
+  </data>
+  <data name="ToolTip_Save" xml:space="preserve">
+    <value>Save (Ctrl+S)</value>
+  </data>
+  <data name="ToolTip_SaveAll" xml:space="preserve">
+    <value>Save All (Ctrl+Shift+S)</value>
+  </data>
+  <data name="ToolTip_SaveAs" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="ToolTip_Search" xml:space="preserve">
+    <value>Search (Ctrl+F)</value>
+  </data>
+  <data name="ToolTip_SlowDebug" xml:space="preserve">
+    <value>Debug at Slow speeds, from the slowest 1x to the fastest 4x speed</value>
+  </data>
+  <data name="ToolTip_StepInto" xml:space="preserve">
+    <value>Step Into (F11)</value>
+  </data>
+  <data name="ToolTip_StepOver" xml:space="preserve">
+    <value>Step Over (Shift+F11)</value>
+  </data>
+  <data name="ToolTip_Stop" xml:space="preserve">
+    <value>Stop (F12)</value>
+  </data>
+  <data name="ToolTip_Suspend" xml:space="preserve">
+    <value>Break execution(Suspend)</value>
+  </data>
+  <data name="ToolTip_ToggleBreakpoin" xml:space="preserve">
+    <value>Toggle Breakpoin (F9)</value>
+  </data>
+  <data name="ToolTip_Validate" xml:space="preserve">
+    <value>Validate (F8)</value>
+  </data>
+  <data name="Tool_Breakpoint" xml:space="preserve">
+    <value>Breakpoint</value>
+  </data>
+  <data name="Tool_Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="Tool_Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Tool_Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Tool_DataScrap" xml:space="preserve">
+    <value>Data Scraping</value>
+  </data>
+  <data name="Tool_Debug" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="Tool_Deploy" xml:space="preserve">
+    <value>Deploy</value>
+  </data>
+  <data name="Tool_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Tool_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Tool_LogActivities" xml:space="preserve">
+    <value>Log Activities</value>
+  </data>
+  <data name="Tool_New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Tool_NewFlowchart" xml:space="preserve">
+    <value>Flowchart</value>
+  </data>
+  <data name="Tool_NewSequrence" xml:space="preserve">
+    <value>Sequrence</value>
+  </data>
+  <data name="Tool_NewStateMachine" xml:space="preserve">
+    <value>State Machine</value>
+  </data>
+  <data name="Tool_OpenLogs" xml:space="preserve">
+    <value>Open Logs</value>
+  </data>
+  <data name="Tool_Operate" xml:space="preserve">
+    <value>Operate</value>
+  </data>
+  <data name="Tool_Option" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="Tool_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Tool_Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Tool_Publish" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="Tool_Record" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="Tool_RemoveAllBreakpoints" xml:space="preserve">
+    <value>Remove All Breakpoints</value>
+  </data>
+  <data name="Tool_Run" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="Tool_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Tool_SaveAll" xml:space="preserve">
+    <value>Save All</value>
+  </data>
+  <data name="Tool_SaveAs" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="Tool_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Tool_SlowDebug" xml:space="preserve">
+    <value>Slow Debug</value>
+  </data>
+  <data name="Tool_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Tool_StepInto" xml:space="preserve">
+    <value>Step Into</value>
+  </data>
+  <data name="Tool_StepOver" xml:space="preserve">
+    <value>Step Over</value>
+  </data>
+  <data name="Tool_Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Tool_Suspend" xml:space="preserve">
+    <value>Suspend</value>
+  </data>
+  <data name="Tool_ToggleBreakpoin" xml:space="preserve">
+    <value>Toggle Breakpoin</value>
+  </data>
+  <data name="Tool_Validate" xml:space="preserve">
+    <value>Validate</value>
+  </data>
+  <data name="Tool_WorkFlow" xml:space="preserve">
+    <value>WorkFlow</value>
+  </data>
+  <data name="UpgradePage_CheckUpdateButtonLabel" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="UpgradePage_CurrentLogLabel" xml:space="preserve">
+    <value>Update log of the current version</value>
+  </data>
+  <data name="UpgradePage_CurrentVersionLabel" xml:space="preserve">
+    <value>Current Version:</value>
+  </data>
+  <data name="UpgradePage_ErrMessage1" xml:space="preserve">
+    <value>Error getting upgrade information, please check!</value>
+  </data>
+  <data name="UpgradePage_ErrMessage2" xml:space="preserve">
+    <value>Failed to rename {0} to {1}!</value>
+  </data>
+  <data name="UpgradePage_ErrMessage3" xml:space="preserve">
+    <value>An exception occurred in the upgrade package renaming operation. Please check!</value>
+  </data>
+  <data name="UpgradePage_ErrMessage4" xml:space="preserve">
+    <value>The MD5 verification of the upgrade package is inconsistent, please try again!</value>
+  </data>
+  <data name="UpgradePage_ErrMessage5" xml:space="preserve">
+    <value>An exception occurred during the download process. Please check and try again!</value>
+  </data>
+  <data name="UpgradePage_ErrMessage6" xml:space="preserve">
+    <value>Failed to get upgrade configuration file, please check! URL=</value>
+  </data>
+  <data name="UpgradePage_LatestLogLabel" xml:space="preserve">
+    <value>Update log of the latest version</value>
+  </data>
+  <data name="UpgradePage_LatestVersionLabel" xml:space="preserve">
+    <value>Latest Version:</value>
+  </data>
+  <data name="UpgradePage_NotFoundLabel" xml:space="preserve">
+    <value>No new version found</value>
+  </data>
+  <data name="UpgradePage_QuestionMessage" xml:space="preserve">
+    <value>The upgrade package has been downloaded. Do you want to update it now?</value>
+  </data>
+  <data name="UpgradePage_UpdateNowButtonLabel" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpgradePage_ViewButtonLabel" xml:space="preserve">
+    <value>View Log</value>
+  </data>
+  <data name="SystemActivities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\SystemActivities_en.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ActivitiesChildrenOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Config\ActivitiesChildrenOrder_en.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CommentOutDisplayName" xml:space="preserve">
+    <value>Comment Out</value>
+  </data>
+  <data name="Message_ActivitiesMountError" xml:space="preserve">
+    <value>Error in mounting activity.config.xml message in {0}</value>
+  </data>
+  <data name="Message_EndDebug" xml:space="preserve">
+    <value>{0} End Debugging，Elapsed Time: {1}</value>
+  </data>
+  <data name="Message_EndRun" xml:space="preserve">
+    <value>{0} End Run，Elapsed Time: {1}</value>
+  </data>
+  <data name="Message_ExecError" xml:space="preserve">
+    <value>Runtime execution error</value>
+  </data>
+  <data name="Message_StartDebug" xml:space="preserve">
+    <value>{0} Start Debugging</value>
+  </data>
+  <data name="Message_StartRun" xml:space="preserve">
+    <value>{0} Start Running</value>
+  </data>
+  <data name="SequenceDisplayName" xml:space="preserve">
+    <value>Sequence</value>
+  </data>
+  <data name="DataExtractorActivityDisplayName" xml:space="preserve">
+    <value>Data Extractor</value>
+  </data>
+  <data name="GetThemeErrMsg" xml:space="preserve">
+    <value>Failed to obtain theme style!</value>
+  </data>
+  <data name="IsRunOrDebugMsg" xml:space="preserve">
+    <value>Please stop the currently running or debugging project and then close it!</value>
+  </data>
+  <data name="NewProjectErrMsg" xml:space="preserve">
+    <value>Failed to create project directory, please check!</value>
+  </data>
+  <data name="OpenProjectErrMsg" xml:space="preserve">
+    <value>Exception occurred when opening project, please check!</value>
+  </data>
+</root>

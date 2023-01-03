@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ServerSettings>
+  <ControlServer>
+    <ControlServerUrl></ControlServerUrl>
+    <CCLX>FILE</CCLX>
+  </ControlServer>
+  <AIServer>
+    <AIServerUrl></AIServerUrl>
+  </AIServer>
+  <HelpLink>
+    <HelpLinkUrl>https://chainbot.ai</HelpLinkUrl>
+  </HelpLink>
+</ServerSettings>

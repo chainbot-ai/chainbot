@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68FB9E88-FC28-4A82-B707-3F00F12F92DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chainbot.Cores</RootNamespace>
+    <AssemblyName>Chainbot.Cores</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.DataGrid.Contrib.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.DataGrid.Contrib.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Docking.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Docking.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Editors.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Editors.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Grids.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Grids.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Ribbon.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExpressionEditor\ActiproSoftware.Shared.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shell.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Shell.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExpressionEditor\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Addons.Xml.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.SyntaxEditor.Addons.Xml.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExpressionEditor\ActiproSoftware.SyntaxEditor.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Addons.DotNet.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExpressionEditor\ActiproSoftware.Text.Addons.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Addons.Xml.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Text.Addons.Xml.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.LLParser.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExpressionEditor\ActiproSoftware.Text.LLParser.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExpressionEditor\ActiproSoftware.Text.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Themes.Luna.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Themes.Luna.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Themes.Office.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Themes.Office.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Views.Wpf, Version=19.1.685.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\ActiproSoftware.Views.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Flurl, Version=2.8.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.2.8.2\lib\net40\Flurl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Flurl.Http, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.Http.2.4.2\lib\net46\Flurl.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.3.2\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.3.2\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.Workspaces.1.3.2\lib\net45\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.VisualBasic.1.3.2\lib\net45\Microsoft.CodeAnalysis.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.VisualBasic.Workspaces.1.3.2\lib\net45\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Workspaces.Common.1.3.2\lib\net45\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces.Desktop, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Workspaces.Common.1.3.2\lib\net45\Microsoft.CodeAnalysis.Workspaces.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.XmlTransform, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Common, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Common.4.5.3\lib\net45\NuGet.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Configuration, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Configuration.4.5.3\lib\net45\NuGet.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=2.14.0.832, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Core.2.14.0\lib\net40-Client\NuGet.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Frameworks, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Frameworks.4.5.3\lib\net45\NuGet.Frameworks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Packaging, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Packaging.4.5.3\lib\net45\NuGet.Packaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Packaging.Core.4.5.3\lib\net45\NuGet.Packaging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Protocol, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Protocol.4.5.3\lib\net45\NuGet.Protocol.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Resolver, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Resolver.4.5.3\lib\net45\NuGet.Resolver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Versioning, Version=4.5.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Versioning.4.5.3\lib\net45\NuGet.Versioning.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ReflectionMagic, Version=4.1.0.0, Culture=neutral, PublicKeyToken=c4c75393d7e08e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReflectionMagic.4.1.0\lib\net45\ReflectionMagic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Activities.DurableInstancing" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.AddIn.Contract" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.1.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Composition.AttributedModel, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Console, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.0.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.FileVersionInfo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.FileVersionInfo.4.0.0\lib\net46\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.StackTrace.4.0.1\lib\net46\System.Diagnostics.StackTrace.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.0.1\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Metadata, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.0.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.0.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.1.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.4.0.1\lib\net46\System.Text.Encoding.CodePages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.0.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.WorkflowServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XmlDocument.4.0.1\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.4.0.1\lib\net46\System.Xml.XPath.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.XDocument.4.0.1\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\ActivitiesDefaultAttributesService.cs" />
+    <Compile Include="Activities\ActivitiesService.cs" />
+    <Compile Include="Activities\ActivitiesServiceProxy.cs" />
+    <Compile Include="Activities\ActivityFavoritesService.cs" />
+    <Compile Include="Activities\ActivityMountService.cs" />
+    <Compile Include="Activities\ActivityRecentService.cs" />
+    <Compile Include="Activities\DataExtractorService.cs" />
+    <Compile Include="Activities\DataExtractorServiceProxy.cs" />
+    <Compile Include="Activities\RecordingService.cs" />
+    <Compile Include="Activities\RecordingServiceProxy.cs" />
+    <Compile Include="Activities\SystemActivityIconService.cs" />
+    <Compile Include="AppDomains\AppDomainContainerService.cs" />
+    <Compile Include="AppDomains\AppDomainControllerService.cs" />
+    <Compile Include="AppDomains\AppDomainServiceHost.cs" />
+    <Compile Include="AppDomains\AssemblyResolveService.cs" />
+    <Compile Include="App\ConsoleManager.cs" />
+    <Compile Include="App\StudioApplication.cs" />
+    <Compile Include="App\UpgradeAppSettingsService.cs" />
+    <Compile Include="Classes\ActivityExtensions.cs" />
+    <Compile Include="Classes\ActivityHelper.cs" />
+    <Compile Include="Classes\DesignerThemeBehavior.cs" />
+    <Compile Include="Classes\CustomStringHelper.cs" />
+    <Compile Include="Classes\EditingContextExtensions.cs" />
+    <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Classes\FileAssociationHelper.cs" />
+    <Compile Include="Classes\InvokableArgument.cs" />
+    <Compile Include="Classes\Log4NetHelper.cs" />
+    <Compile Include="Classes\ModelItemHelper.cs" />
+    <Compile Include="Classes\ModelServiceExtensions.cs" />
+    <Compile Include="Classes\ObservableExtension.cs" />
+    <Compile Include="Classes\ChainbotDebuggerService.cs" />
+    <Compile Include="Classes\StyleHelper.cs" />
+    <Compile Include="Classes\ThemeUtils.cs" />
+    <Compile Include="Classes\WorkflowDesignerExtensions.cs" />
+    <Compile Include="CodeAnalysis\ExpressionAnalyzerFactory.cs" />
+    <Compile Include="CodeAnalysis\ExpressionHelper.cs" />
+    <Compile Include="CodeAnalysis\ExpressionToken.cs" />
+    <Compile Include="CodeAnalysis\FlatExpressionToken.cs" />
+    <Compile Include="CodeAnalysis\GenericFlatExpressionToken.cs" />
+    <Compile Include="CodeAnalysis\VisualBasicExpressionTokenizer.cs" />
+    <Compile Include="Commands\DisableActivityCommand.cs" />
+    <Compile Include="Commands\EnableActivityCommand.cs" />
+    <Compile Include="Commands\HelpActivityCommand.cs" />
+    <Compile Include="Commands\RemoveTryCatchCommand.cs" />
+    <Compile Include="Commands\StartRunFromHereCommand.cs" />
+    <Compile Include="Commands\SurroundWithTryCatchCommand.cs" />
+    <Compile Include="Commands\ToggleBreakpointCommand.cs" />
+    <Compile Include="Commands\RunThisActivityCommand.cs" />
+    <Compile Include="Commands\UnusedDeleteCommand.cs" />
+    <Compile Include="Config\ActivitiesChildrenOrderService.cs" />
+    <Compile Include="Config\AppSettingsConfigService.cs" />
+    <Compile Include="Config\ConstantConfigService.cs" />
+    <Compile Include="Config\ServerSettingsService.cs" />
+    <Compile Include="Config\PathConfigService.cs" />
+    <Compile Include="Config\ProjectUserConfigService.cs" />
+    <Compile Include="Config\RecentProjectsConfigService.cs" />
+    <Compile Include="ExpressionEditor\ActiproExpressionEditorInstance.cs" />
+    <Compile Include="ExpressionEditor\ActiproExpressionEditorService.cs" />
+    <Compile Include="ExpressionEditor\AssemblyExtensions.cs" />
+    <Compile Include="ExpressionEditor\AssemblyNameCache.cs" />
+    <Compile Include="ExpressionEditor\CollectionExtensions.cs" />
+    <Compile Include="ExpressionEditor\CustomVBCompletionProvider.cs" />
+    <Compile Include="ExpressionEditor\EditorConfig.cs" />
+    <Compile Include="ExpressionEditor\ExceptionMethods.cs" />
+    <Compile Include="ExpressionEditor\ExpressionLanguage.cs" />
+    <Compile Include="ExpressionEditor\ExternalLicenses.cs" />
+    <Compile Include="ExpressionEditor\ISyntaxService.cs" />
+    <Compile Include="ExpressionEditor\IWorkflowImportReferenceService.cs" />
+    <Compile Include="ExpressionEditor\LoadIntellisenseAssembliesContext.cs" />
+    <Compile Include="ExpressionEditor\SyntaxService.cs" />
+    <Compile Include="ExpressionEditor\TypeExtensions.cs" />
+    <Compile Include="ExpressionEditor\VariablesSession.cs" />
+    <Compile Include="ExpressionEditor\WorkflowImportReferenceService.cs" />
+    <Compile Include="JumpToChild\FlowChartJumpHandler.cs" />
+    <Compile Include="JumpToChild\SequenceJumpHandler.cs" />
+    <Compile Include="Log\ConsolePrintService.cs" />
+    <Compile Include="Log\DebugLogService.cs" />
+    <Compile Include="Log\DiagnosticsDebugPrintService.cs" />
+    <Compile Include="Log\Log4NetService.cs" />
+    <Compile Include="Config\ProjectConfigFileService.cs" />
+    <Compile Include="Nupkg\NuGetPackageControllerLogger.cs" />
+    <Compile Include="Nupkg\PackageControlService.cs" />
+    <Compile Include="Nupkg\PackageExportService.cs" />
+    <Compile Include="Nupkg\PackageIdentityService.cs" />
+    <Compile Include="Nupkg\PackageImportService.cs" />
+    <Compile Include="Nupkg\PackageRepositoryService.cs" />
+    <Compile Include="Project\ProjectDependenciesService.cs" />
+    <Compile Include="Project\ProjectManagerService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ControlServerService.cs" />
+    <Compile Include="UI\ContextMenuService.cs" />
+    <Compile Include="UI\DialogService.cs" />
+    <Compile Include="UI\DispatcherService.cs" />
+    <Compile Include="UI\MessageBoxService.cs" />
+    <Compile Include="UI\WindowService.cs" />
+    <Compile Include="Utils\AuthorizationService.cs" />
+    <Compile Include="Utils\CommonService.cs" />
+    <Compile Include="Utils\DirectoryService.cs" />
+    <Compile Include="Workflow\WorkflowActivityService.cs" />
+    <Compile Include="Workflow\WorkflowBreakpointsService.cs" />
+    <Compile Include="Workflow\WorkflowBreakpointsServiceProxy.cs" />
+    <Compile Include="Workflow\WorkflowDebugService.cs" />
+    <Compile Include="Workflow\WorkflowDesignerCollectService.cs" />
+    <Compile Include="Workflow\WorkflowDesignerCollectServiceProxy.cs" />
+    <Compile Include="Workflow\WorkflowDesignerJumpService.cs" />
+    <Compile Include="Workflow\WorkflowDesignerJumpServiceProxy.cs" />
+    <Compile Include="Workflow\WorkflowRunService.cs" />
+    <Compile Include="Workflow\WorkflowDesignerService.cs" />
+    <Compile Include="Workflow\WorkflowDesignerServiceProxy.cs" />
+    <Compile Include="Workflow\WorkflowStateService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chainbot.Contracts\Chainbot.Contracts.csproj">
+      <Project>{BF733F55-DE6B-491E-A8D7-9392E70A8714}</Project>
+      <Name>Chainbot.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chainbot.Resources\Chainbot.Resources.csproj">
+      <Project>{76c53786-1ff7-4ca9-b120-f06ee8094662}</Project>
+      <Name>Chainbot.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugins.Shared.Library\Plugins.Shared.Library.csproj">
+      <Project>{6879C801-1124-477A-97D8-0961E6D710B2}</Project>
+      <Name>Plugins.Shared.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Nupkg\NuGet.Default.Config" />
+    <None Include="Nupkg\NuGet.User.Config" />
+    <None Include="packages.config" />
+    <None Include="Resources\verify.public.rsa.pem" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="References\ActiproSoftware.DataGrid.Contrib.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.DataGrid.Contrib.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.Editors.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Grids.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Grids.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.Ribbon.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Ribbon.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.Shared.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Shell.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Shell.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.SyntaxEditor.Addons.Xml.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.SyntaxEditor.Addons.Xml.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.SyntaxEditor.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.SyntaxEditor.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.Text.Addons.DotNet.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Text.Addons.Xml.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Text.Addons.Xml.Wpf.xml" />
+    <Content Include="References\ActiproSoftware.Text.LLParser.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Text.Wpf.dll" />
+    <Content Include="References\ActiproSoftware.Text.Wpf.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)NuPkg\NuGet.*.Config" "$(SolutionDir)ChainbotStudio\$(OutDir)"  /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

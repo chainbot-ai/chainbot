@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:libs="clr-namespace:Chainbot.Resources.Librarys"
+                     >
+    <libs:BoolVisibilityConverter x:Key="BoolVisibilityConverter"/>
+    <libs:BoolNotVisibilityConverter x:Key="BoolNotVisibilityConverter"/>
+    <libs:BoolCollapsedConverter x:Key="BoolCollapsedConverter"/>
+    <libs:BoolNotCollapsedConverter x:Key="BoolNotCollapsedConverter"/>
+    <libs:NullImageConverter x:Key="NullImageConverter"/>
+    <libs:SingleLineTextConverter x:Key="SingleLineTextConverter"/>
+    <libs:SingleLineWithSpaceCombineTextConverter x:Key="SingleLineWithSpaceCombineTextConverter"/>
+    <libs:BoolNotConverter x:Key="BoolNotConverter"/>
+    <libs:ResourceToImageConverter x:Key="ResourceToImageConverter"/>
+</ResourceDictionary>

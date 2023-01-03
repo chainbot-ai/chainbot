@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--The activities are sorted by name-->
+<ActivitiesChildrenOrder>
+  <Group Name="Programming" />
+  <Group Name="System Operation" />
+  <Group Name="Web Automation" />
+  <Group Name="File Processing" />
+  <Group Name="UI Automation" />
+  <Group Name="Browser Automation" />
+  <Group Name="Office Automation" />
+  <Group Name="Email Automation" />
+  <Group Name="Database Automation" />
+  <Group Name="AI Capabilities" />
+</ActivitiesChildrenOrder>

@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     >
+    <Style x:Key="ShowLeftViewStyle" TargetType="{x:Type ColumnDefinition}">
+        <Style.Setters>
+            <Setter Property="Width" Value="{DynamicResource View.Left.Default.Width}"/>
+        </Style.Setters>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsShowLeftView}" Value="True">
+                <DataTrigger.Setters>
+                    <Setter Property="Width" Value="{DynamicResource View.Left.Default.Width}"/>
+                    <Setter Property="MaxWidth" Value="{DynamicResource View.Left.Max.Width}"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsShowLeftView}" Value="False">
+                <DataTrigger.Setters>
+                    <Setter Property="Width" Value="0"/>
+                    <Setter Property="MaxWidth" Value="0"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="ShowRightViewStyle" TargetType="{x:Type ColumnDefinition}">
+        <Style.Setters>
+            <Setter Property="Width" Value="{DynamicResource View.Right.Default.Width}"/>
+        </Style.Setters>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsShowRightView}" Value="True">
+                <DataTrigger.Setters>
+                    <Setter Property="Width" Value="{DynamicResource View.Right.Default.Width}"/>
+                    <Setter Property="MaxWidth" Value="{DynamicResource View.Right.Max.Width}"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsShowRightView}" Value="False">
+                <DataTrigger.Setters>
+                    <Setter Property="Width" Value="0"/>
+                    <Setter Property="MaxWidth" Value="0"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="ShowOutputViewStyle" TargetType="{x:Type RowDefinition}">
+        <Style.Setters>
+            <Setter Property="Height" Value="{DynamicResource View.Output.Default.Height}"/>
+        </Style.Setters>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsShowOutputView}" Value="True">
+                <DataTrigger.Setters>
+                    <Setter Property="Height" Value="{DynamicResource View.Output.Default.Height}"/>
+                    <Setter Property="MaxHeight" Value="{DynamicResource View.Output.Max.Height}"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsShowOutputView}" Value="False">
+                <DataTrigger.Setters>
+                    <Setter Property="Height" Value="0"/>
+                    <Setter Property="MaxHeight" Value="0"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    
+
+</ResourceDictionary>

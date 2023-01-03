@@ -1,0 +1,9 @@
+<?xml version="1.0"?><doc><assembly><name>ActiproSoftware.Themes.Office.Wpf</name></assembly><members><member name="T:ActiproSoftware.Windows.Themes.ThemesOfficeThemeCatalog"><summary>
+            A theme catalog that describes the theme group name implementations and available themed resource dictionaries within this assembly.
+            </summary></member><member name="P:ActiproSoftware.Windows.Themes.ThemesOfficeThemeCatalog.DictionaryReferences"><summary>
+            Gets the collection of <see cref="T:ActiproSoftware.Windows.Themes.ThemedResourceDictionaryReference" /> objects for the assembly.
+            </summary><value>
+            The collection of <see cref="T:ActiproSoftware.Windows.Themes.ThemedResourceDictionaryReference" /> objects for the assembly.
+            </value></member><member name="T:ActiproSoftware.Windows.Themes.ThemesOfficeThemeCatalogRegistrar"><summary>
+            Represents a class that registers the <see cref="T:ActiproSoftware.Windows.Themes.ThemesOfficeThemeCatalog" /> with the theme manager.
+            </summary></member></members></doc>

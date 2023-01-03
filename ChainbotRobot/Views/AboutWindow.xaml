@@ -1,0 +1,46 @@
+﻿<pu:WindowX x:Class="ChainbotRobot.Views.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:local="clr-namespace:ChainbotRobot.Views"
+        xmlns:lclz="clr-namespace:ChainbotRobot.Properties"
+        mc:Ignorable="d"
+        DataContext="{Binding About, Source={StaticResource Locator}}"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+        Style="{StaticResource WindowXStyle}"
+        Title="{x:Static lclz:Resources.AboutText}" Height="153.73" Width="377.891" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <cmd:EventToCommand Command="{Binding LoadedCommand}" PassEventArgsToCommand="True" ></cmd:EventToCommand>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="MouseLeftButtonDown">
+            <cmd:EventToCommand Command="{Binding MouseLeftButtonDownCommand}" ></cmd:EventToCommand>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Closing">
+            <cmd:EventToCommand Command="{Binding ClosingCommand}" PassEventArgsToCommand="True"></cmd:EventToCommand>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontWeight="Bold" Text="{x:Static lclz:Resources.ComputerName}"/>
+                <TextBox Text="{Binding MachineName}" IsReadOnly="True" BorderThickness="0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock FontWeight="Bold" Text="{x:Static lclz:Resources.ComputerId}"/>
+                <TextBox Text="{Binding MachineId}" IsReadOnly="True" BorderThickness="0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock FontWeight="Bold" Text="{x:Static lclz:Resources.IPAddress}"/>
+                <TextBox Text="{Binding IpAddress}" IsReadOnly="True" BorderThickness="0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock FontWeight="Bold" Text="{x:Static lclz:Resources.VersionText}"/>
+                <TextBox Text="{Binding ProgramVersion}" IsReadOnly="True" BorderThickness="0" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</pu:WindowX>

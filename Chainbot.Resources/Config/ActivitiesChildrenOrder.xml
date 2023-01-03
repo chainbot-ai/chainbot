@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ActivitiesChildrenOrder>
+  <Group Name="程序设计" />
+  <Group Name="系统操作" />
+  <Group Name="网络自动化" />
+  <Group Name="文件处理" />
+  <Group Name="界面自动化" />
+  <Group Name="浏览器自动化" />
+  <Group Name="Office自动化" />
+  <Group Name="邮件自动化" />
+  <Group Name="数据库自动化" />
+  <Group Name="AI能力" />
+</ActivitiesChildrenOrder>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AvailableActivities>
+  <Group Name="Programming" >
+    <Group Name="Data Collection">
+      <Activity Name="Add To Collection"  TypeOf="AddToCollection" ToolTip="Adds an item to a specified collection."/>
+      <Activity Name="Clear Collection"  TypeOf="ClearCollection" ToolTip="Clears a specified collection of all items." />
+      <Activity Name="Exists In Collection"  TypeOf="ExistsInCollection" ToolTip="Indicates whether a given item is present in a given collection." />
+      <Activity Name="Remove From Collection"  TypeOf="RemoveFromCollection" ToolTip="Removes an item from a specified collection." />
+    </Group>
+    <Group Name="Debug">
+      <Activity Name="Write Line"  TypeOf="WriteLine" />
+    </Group>
+    <Group Name="Flowchart">
+      <Activity Name="Flow Decision"  TypeOf="FlowDecision" />
+      <Activity Name="Flow Switch"  TypeOf="FlowSwitch" />
+      <Activity Name="Flowchart"  TypeOf="Flowchart" />
+    </Group>
+    <Group Name="State Machine" >
+      <Activity Name="Final State"  TypeOf="FinalState" />
+      <Activity Name="State"  TypeOf="State" />
+      <Activity Name="State Machine"  TypeOf="StateMachine" />
+    </Group>
+    <Group Name="Error Handling" >
+      <Activity Name="Rethrow"  TypeOf="Rethrow" />
+      <Activity Name="Terminate Workflow"  TypeOf="TerminateWorkflow" />
+      <Activity Name="Throw"  TypeOf="Throw" />
+      <Activity Name="Try Catch"  TypeOf="TryCatch" />
+    </Group>
+    <Group Name="Control" >
+      <Activity Name="Assign"  TypeOf="Assign" />
+      <Activity Name="Cancellation Scope"  TypeOf="CancellationScope" />
+      <Activity Name="Delay"  TypeOf="Delay" />
+      <Activity Name="Do While"  TypeOf="DoWhile" />
+      <Activity Name="If"  TypeOf="If" />
+      <Activity Name="Parallel"  TypeOf="Parallel" />
+      <Activity Name="Parallel For Each"  TypeOf="ParallelForEach" />
+      <Activity Name="Pick"  TypeOf="Pick" />
+      <Activity Name="Pick Branch"  TypeOf="PickBranch" />
+      <Activity Name="Sequence"  TypeOf="Sequence" />
+      <Activity Name="Switch"  TypeOf="Switch" />
+      <Activity Name="While"  TypeOf="While" />
+    </Group>
+  </Group>
+</AvailableActivities>

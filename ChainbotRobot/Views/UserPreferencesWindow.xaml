@@ -1,0 +1,96 @@
+﻿<pu:WindowX x:Class="ChainbotRobot.Views.UserPreferencesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChainbotRobot.Views"
+        xmlns:lclz="clr-namespace:ChainbotRobot.Properties"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+        xmlns:themes="http://schemas.actiprosoftware.com/winfx/xaml/themes" 
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        mc:Ignorable="d"
+        DataContext="{Binding UserPreferences, Source={StaticResource Locator}}"
+        Style="{StaticResource WindowXStyle}"
+        Title="{x:Static lclz:Resources.UserSettings}" Height="470" Width="445" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <pu:WindowX.Resources>
+        <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Static themes:SharedResourceKeys.CheckBoxStyleKey}}" />
+    </pu:WindowX.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <cmd:EventToCommand Command="{Binding LoadedCommand}" PassEventArgsToCommand="True" ></cmd:EventToCommand>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="MouseLeftButtonDown">
+            <cmd:EventToCommand Command="{Binding MouseLeftButtonDownCommand}" ></cmd:EventToCommand>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Closing">
+            <cmd:EventToCommand Command="{Binding ClosingCommand}" PassEventArgsToCommand="True"></cmd:EventToCommand>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <GroupBox Header="{x:Static lclz:Resources.SystemSettingsHeader}" Margin="10" >
+                <StackPanel Margin="10">
+                    <CheckBox IsChecked="{Binding IsAutoRun}" Content="{x:Static lclz:Resources.AutomaticallyStartAtBootContent}"/>
+                    <CheckBox IsChecked="{Binding IsAutoOpenMainWindow}" Margin="0,10,0,0" Content="{x:Static lclz:Resources.AutomaticallyOpenWindowContent}"/>
+                </StackPanel>
+            </GroupBox>
+ 
+            <GroupBox Header="{x:Static lclz:Resources.RecordingSettings}" Margin="10" >
+                <StackPanel Margin="10">
+                    
+                    <CheckBox IsChecked="{Binding IsEnableScreenRecorder}" Content="{x:Static lclz:Resources.EnableScreenRecording}"/>
+                    <Grid Margin="0,10,0,0">
+                        
+                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Text="{x:Static lclz:Resources.RecordingLimitDays}" ToolTip="Keep the video files of the last few days to prevent them from taking up too much space. The videos beyond the storage period will be deleted."/>
+                        <TextBlock Text="{Binding RecordingLimitDays}" HorizontalAlignment="Left" Width="20" Margin="90,1,0,1" VerticalAlignment="Center" />
+                        <Slider Width="280" Minimum="1" Maximum="30" IsSnapToTickEnabled="True"  Margin="120,0,0,0" Value="{Binding RecordingLimitDays}" SmallChange="1" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    </Grid>
+                    <Grid Margin="0,10,0,0">
+                        
+                        <TextBlock Margin="45,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{x:Static lclz:Resources.FramesText}"/>
+                        <TextBlock Text="{Binding FPS}" HorizontalAlignment="Left" Margin="90,1,0,1" VerticalAlignment="Center" />
+                        <Slider Width="280" Minimum="1" Maximum="100" IsSnapToTickEnabled="True"  Margin="120,0,0,0" Value="{Binding FPS}" SmallChange="1" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    </Grid>
+                    <Grid Margin="0,10,0,0">
+                        
+                        <TextBlock Margin="45,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{x:Static lclz:Resources.QualityText}"/>
+                        <TextBlock Text="{Binding Quality}" HorizontalAlignment="Left" Margin="90,1,0,1" VerticalAlignment="Center" />
+                        <Slider Width="280" Minimum="1" Maximum="100" IsSnapToTickEnabled="True" Margin="120,0,0,0" Value="{Binding Quality}" SmallChange="1" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+           
+            <GroupBox Header="{x:Static lclz:Resources.ControlCenterConfiguration}" Margin="10" >
+                <StackPanel Margin="10">
+                    
+                    <CheckBox IsChecked="{Binding IsEnableControlServer}" Content="{x:Static lclz:Resources.EnableControlCenter}"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                        
+                        <TextBlock VerticalAlignment="Center" Text="{x:Static lclz:Resources.ControlCenterAddress}"/>
+                        <TextBox Width="290" Height="25" Margin="5,0,0,0" pu:TextBoxHelper.Watermark="https://192.168.0.1:8080/OSPServer" Text="{Binding ControlServerUri}" />
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid HorizontalAlignment="Left" Margin="10,0,0,0">
+                <Button Width="100" Height="25" Command="{Binding ResetSettingsCommand}" Content="{x:Static lclz:Resources.ResetSettingsContent}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Width="80" Height="25" Command="{Binding OkCommand}" Content="{x:Static lclz:Resources.OKContent}"/>
+                    <Button Width="80" Height="25" Margin="10,0,10,0" Command="{Binding CancelCommand}" Content="{x:Static lclz:Resources.CancelContent}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</pu:WindowX>

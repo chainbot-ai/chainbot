@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppSettings schemaVersion="1.0.0" >
+  <ExportNupkg>
+    <LastExportDir></LastExportDir>
+    <ExportDirHistoryList></ExportDirHistoryList>
+  </ExportNupkg>
+  <Theme>
+    <CurrentTheme>Light</CurrentTheme>
+  </Theme>
+  <Language>
+    <CurrentLanguage>English</CurrentLanguage>
+  </Language>
+</AppSettings>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ChainbotUpgradeServerConfig>
+  <AutoUpgradePackpage Version="2.0.0.0" Md5="e0590d4719b2d7080cc3d2b2652ee225" Url="https://chainbot.ai/download/ChainbotStudioAutoUpgrade-v2.0.0.0.exe" />
+  <UpdateLog>
+    <Item>Fix other known problems</Item>
+  </UpdateLog>
+</ChainbotUpgradeServerConfig>
